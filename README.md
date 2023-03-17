@@ -33,3 +33,15 @@ mkdocs serve
 ```bash
 mkdocs build
 ```
+
+* To record the packages and their versions run
+
+```bash
+pip freeze > requirements.txt
+```
+
+* To install from the lockfile
+
+```bash
+pip install -r requirements.txt
+```
