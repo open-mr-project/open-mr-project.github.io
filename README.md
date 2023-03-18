@@ -28,7 +28,7 @@ The site can then be edited as required.
 mkdocs serve
 ```
 
-* To build the site
+* The site is built on GitHub, everytime there is a commit onto the main branch, through a GitHub Actions workflow. The workflow commits the built site onto the `gh-pages` branch from where GitHub Pages serves it. Hence you don't really need to build the site locally (apart from checking that your edits are as indented with `mkdocs serve`) and therefore the `/site` directory is currently in the `.gitignore` file. If you need to build the site locally remove that entry from `.gitignore` and run:
 
 ```bash
 mkdocs build
