@@ -1,4 +1,4 @@
-# Analytical guidelines
+# Methods
 
 ## Molecular MR
 
