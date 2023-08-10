@@ -2,6 +2,8 @@
 
 The website is built using mkdocs and mkdocs-material.
 
+To build the website on your local machine (note you don't need to do this as the site is built using GitHub Actions when commits are pushed up to the GitHub [repo](https://github.com/mr-methods-network/mr-methods-network.github.io)).
+
 * Create a virtual environment for the project.
 
 ```bash
@@ -28,7 +30,7 @@ The site can then be edited as required.
 mkdocs serve
 ```
 
-* The site is built on GitHub, everytime there is a commit onto the main branch, through a GitHub Actions workflow. The workflow commits the built site onto the `gh-pages` branch from where GitHub Pages serves it. Hence you don't really need to build the site locally (apart from checking that your edits are as indented with `mkdocs serve`) and therefore the `/site` directory is currently in the `.gitignore` file. If you need to build the site locally remove that entry from `.gitignore` and run:
+* The site is built on GitHub, everytime there is a commit onto the main branch, through a GitHub Actions workflow. The workflow commits the built site onto the `gh-pages` branch from where GitHub Pages serves it. Hence you don't really need to build the site locally (apart from checking that your edits are as intended with `mkdocs serve`) and therefore the `/site` directory is currently in the `.gitignore` file. If you need to build the site locally remove the `/site` entry from `.gitignore` and run:
 
 ```bash
 mkdocs build
