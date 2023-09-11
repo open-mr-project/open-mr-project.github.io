@@ -14,6 +14,8 @@ python3 -m venv venv
 
 ```bash
 source venv/bin/activate
+# or on Windows with
+# venv/Scripts/activate
 ```
 
 * Install the required dependencies:
