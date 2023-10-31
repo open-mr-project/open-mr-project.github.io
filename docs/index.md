@@ -8,6 +8,4 @@ Welcome to the Mendelian randomization Methods Network (MRMN)
 
     A network of Mendelian randomization analysts and methods developers who aim to build an annotated methods repository
 
-<p align="center">
-<img src="img/mr-dag-violations.excalidraw.png" width="65%">
-</p>
+![Directed acyclic graph representing the instrumental variable core conditions underlying the Mendelian randomization approach.](img/mr-dag-violations.excalidraw.png)
