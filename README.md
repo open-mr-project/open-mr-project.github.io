@@ -30,6 +30,8 @@ The site can then be edited as required.
 
 ```bash
 mkdocs serve
+# or on Windows alternatively run if obtain error mkdocs cannot be found
+# python3 -m mkdocs serve
 ```
 
 * The site is built on GitHub, everytime there is a commit onto the main branch, through a GitHub Actions workflow. The workflow commits the built site onto the `gh-pages` branch from where GitHub Pages serves it. Hence you don't really need to build the site locally (apart from checking that your edits are as intended with `mkdocs serve`) and therefore the `/site` directory is currently in the `.gitignore` file. If you need to build the site locally remove the `/site` entry from `.gitignore` and run:
