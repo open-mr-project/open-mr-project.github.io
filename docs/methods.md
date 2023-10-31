@@ -2,12 +2,12 @@
 
 ## Molecular MR
 
-### Annotated bibliography
+### Moelcular MR annotated bibliography
 
-### Notebooks
+### Molecular MR Notebooks
 
 ## Lifecourse MR
 
-### Annotated bibliography
+### Lifecourse MR annotated bibliography
 
-### Notebooks
+### Lifecourse MR Notebooks
