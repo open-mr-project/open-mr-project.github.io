@@ -6,7 +6,7 @@ Please submit your method on the [submission](submission.md) page.
 
 ## Binary R packages from MRCIEU R-universe
 
-We maintain the MRCIEU R-universe <https://mrcieu.r-universe.dev> which distributes binary R packages for many MR related packages which are currently only available on GitHub. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish. 
+We maintain the MRCIEU R-universe <https://mrcieu.r-universe.dev> which distributes binary R packages for many MR related packages which are currently only available on GitHub. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish.
 
 If you would like a package added please open an issue in our [repository](https://github.com/MRCIEU/mrcieu.r-universe.dev/issues).
 
