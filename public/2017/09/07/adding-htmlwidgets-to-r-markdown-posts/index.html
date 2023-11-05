@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.111.2">
+
+
+<title>Adding htmlwidgets to R Markdown posts - A Hugo website</title>
+<meta property="og:title" content="Adding htmlwidgets to R Markdown posts - A Hugo website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Adding htmlwidgets to R Markdown posts</h1>
+
+    
+    <span class="article-date">2017-09-07</span>
+    
+
+    <div class="article-content">
+      
+      <pre><code class="language-{r">knitr::opts_chunk$set(comment = NA, tidy = FALSE, warning = FALSE, message = FALSE)
+</code></pre>
+<p>This is a minimal example of how to use <a href="http://www.htmlwidgets.org/index.html">htmlwidgets</a> in R Markdown posts. We will use a tidy version of Anscombe&rsquo;s quartet (thanks to <a href="https://rpubs.com/dgrtwo/tidy-anscombe">David Robinson</a>). To reshape the anscombe dataset, you will need the <strong>dplyr</strong> and <strong>tidyr</strong> packages loaded. You&rsquo;ll also need to install and load the <strong>DT</strong> package for example 1, and the <strong>ggplot2</strong> and <strong>plotly</strong> packages for example 2.</p>
+<pre><code class="language-{r}">library(dplyr)
+library(tidyr)
+library(DT)
+library(ggplot2)
+library(plotly)
+anscombe_tidy &lt;- anscombe %&gt;%
+    mutate(observation = seq_along(x1)) %&gt;%
+    gather(key, value, -observation) %&gt;%
+    separate(key, c(&quot;variable&quot;, &quot;set&quot;), 1, convert = TRUE) %&gt;%
+    mutate(set = as.character(as.roman(set))) %&gt;%
+    spread(variable, value) %&gt;%
+    arrange(set)
+head(anscombe_tidy)
+</code></pre>
+<p>Now that it has been reshaped, we can view and plot Anscombe&rsquo;s quartet in our post.</p>
+<h1 id="example-1-datatables-via-the-dt-package">Example 1: DataTables via the <strong>DT</strong> package</h1>
+<p>We can interactively view the tidied Anscombe&rsquo;s quartet using the <strong>DT</strong> package:</p>
+<pre><code class="language-{r}">anscombe_tidy %&gt;% 
+datatable(rownames = FALSE, 
+          options = list(
+            pageLength = 11, 
+            autoWidth = TRUE, 
+            columnDefs = list(list(
+              className = 'dt-left', 
+              targets = 0),
+              list(className = 'dt-center', targets = 1))))
+</code></pre>
+<h1 id="example-2-using-the-plotly-package">Example 2: Using the <strong>plotly</strong> package</h1>
+<p>We can also interactively plot the tidied Anscombe&rsquo;s quartet using the <strong>plotly</strong> package (you will need the <strong>ggplot2</strong> package loaded here):</p>
+<pre><code class="language-{r}">cols &lt;- c(&quot;#0072B2&quot;, &quot;#009E73&quot;, &quot;#D55E00&quot;, &quot;#CC79A7&quot;)
+ans_plot &lt;- ggplot(anscombe_tidy, aes(x, y, colour = set)) +
+  geom_point(size = 3, alpha = .7) +
+  geom_smooth(method = &quot;lm&quot;, se = FALSE) + 
+  facet_wrap(~ set) +
+  theme_bw() +
+  theme(legend.position=&quot;none&quot;) +
+  scale_colour_manual(values = cols) 
+
+ggplotly(ans_plot)
+</code></pre>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
