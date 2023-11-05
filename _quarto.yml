@@ -1,0 +1,23 @@
+project:
+  type: website
+  pre-render: generate.r
+
+website:
+  title: "mrmn"
+  navbar:
+    right:
+      - about.qmd
+      - table.qmd
+      - simulations.qmd
+      - submit.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme: journal
+    css: styles.css
+
+
+

@@ -1,0 +1,11 @@
+---
+title: "Submit"
+page-layout: full
+title-block-banner: false
+---
+
+Submit a new method using the form below
+
+<a class="btn btn-primary" href="https://forms.office.com/e/2WpKRWVv6N" target="_blank" role="button">Submit a new method</a>
+
+<!-- <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=MH_ksn3NTkql2rGM8aQVG88z_X6DpwxEq0rbVlhlshFUNk85UjhLNVFJNDhTMFNUQk5OT1JSMU5QWS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->

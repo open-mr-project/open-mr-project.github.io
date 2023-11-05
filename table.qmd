@@ -1,0 +1,26 @@
+---
+title: "Methods"
+page-layout: full
+title-block-banner: false
+---
+
+All methods listed here
+
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(tidyr)
+library(DT)
+library(here)
+load(here("data", "mrmn.rdata"))
+names(dat) <- metadata$names
+
+dat %>%
+  filter(`Entry type`=="Analytical method") %>%
+  select(`title`, `Code repository (URL)`) %>%
+datatable()
+
+```
+
+

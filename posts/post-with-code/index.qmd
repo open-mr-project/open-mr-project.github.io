@@ -1,0 +1,63 @@
+---
+title: "Post With Code"
+author: "Harlow Malloc"
+date: "2023-11-04"
+categories: [news, code, analysis]
+image: "image.jpg"
+something:
+    something_else: "hello"
+    some thing else: "hi"
+---
+
+{{< meta something.something_else >}}
+{{< meta something.`some thing else` >}}
+
+This is a post with executable code.
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(DT)
+library(ggplot2)
+library(plotly)
+anscombe_tidy <- anscombe %>%
+    mutate(observation = seq_along(x1)) %>%
+    gather(key, value, -observation) %>%
+    separate(key, c("variable", "set"), 1, convert = TRUE) %>%
+    mutate(set = as.character(as.roman(set))) %>%
+    spread(variable, value) %>%
+    arrange(set)
+head(anscombe_tidy)
+```
+
+Now that it has been reshaped, we can view and plot Anscombe's quartet in our post.
+
+
+# Example 1: DataTables via the **DT** package
+
+We can interactively view the tidied Anscombe's quartet using the **DT** package:
+
+```{r, eval=TRUE}
+anscombe_tidy %>% 
+datatable()
+```
+
+
+# Example 2: Using the **plotly** package
+
+We can also interactively plot the tidied Anscombe's quartet using the **plotly** package (you will need the **ggplot2** package loaded here):
+
+
+```{r, eval=FALSE}
+cols <- c("#0072B2", "#009E73", "#D55E00", "#CC79A7")
+ans_plot <- ggplot(anscombe_tidy, aes(x, y, colour = set)) +
+  geom_point(size = 3, alpha = .7) +
+  geom_smooth(method = "lm", se = FALSE) + 
+  facet_wrap(~ set) +
+  theme_bw() +
+  theme(legend.position="none") +
+  scale_colour_manual(values = cols) 
+
+ggplotly(ans_plot)
+```
+

@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "entries/NA_2/index.html",
+    "href": "entries/NA_2/index.html",
+    "title": ".na.character",
+    "section": "",
+    "text": "Application of multivariable MR to estimate the causal effect of BMI at different points in the lifecourse."
+  },
+  {
+    "objectID": "entries/NA_2/index.html#description",
+    "href": "entries/NA_2/index.html#description",
+    "title": ".na.character",
+    "section": "",
+    "text": "Application of multivariable MR to estimate the causal effect of BMI at different points in the lifecourse."
+  },
+  {
+    "objectID": "entries/radial_mr/index.html",
+    "href": "entries/radial_mr/index.html",
+    "title": "Radial MR",
+    "section": "",
+    "text": "Method that allows the visualisation and removal of outliers in MR"
+  },
+  {
+    "objectID": "entries/radial_mr/index.html#description",
+    "href": "entries/radial_mr/index.html#description",
+    "title": "Radial MR",
+    "section": "",
+    "text": "Method that allows the visualisation and removal of outliers in MR"
+  },
+  {
+    "objectID": "entries/lhcmr/index.html",
+    "href": "entries/lhcmr/index.html",
+    "title": "LHC-MR",
+    "section": "",
+    "text": "We propose a Latent Heritable Confounder MR (LHC-MR) method applicable to association summary statistics, which estimates bi-directional causal effects, direct heritability, and confounder effects while accounting for sample overlap."
+  },
+  {
+    "objectID": "entries/lhcmr/index.html#description",
+    "href": "entries/lhcmr/index.html#description",
+    "title": "LHC-MR",
+    "section": "",
+    "text": "We propose a Latent Heritable Confounder MR (LHC-MR) method applicable to association summary statistics, which estimates bi-directional causal effects, direct heritability, and confounder effects while accounting for sample overlap."
+  },
+  {
+    "objectID": "entries/NA/index.html",
+    "href": "entries/NA/index.html",
+    "title": "Weak instrument robust MVMR",
+    "section": "",
+    "text": "A method for multivariable mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
+  },
+  {
+    "objectID": "entries/NA/index.html#description",
+    "href": "entries/NA/index.html#description",
+    "title": "Weak instrument robust MVMR",
+    "section": "",
+    "text": "A method for multivariable mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
+  },
+  {
+    "objectID": "entries/mrbee/index.html",
+    "href": "entries/mrbee/index.html",
+    "title": "MRBEE",
+    "section": "",
+    "text": "We introduce MRBEE (MR using Bias-corrected Estimating Equation), a novel multivariable MR method capable of simultaneously removing error-in-variable bias and identi16 fying horizontal pleiotropy."
+  },
+  {
+    "objectID": "entries/mrbee/index.html#description",
+    "href": "entries/mrbee/index.html#description",
+    "title": "MRBEE",
+    "section": "",
+    "text": "We introduce MRBEE (MR using Bias-corrected Estimating Equation), a novel multivariable MR method capable of simultaneously removing error-in-variable bias and identi16 fying horizontal pleiotropy."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\nlibrary(DT)\nlibrary(ggplot2)\nlibrary(plotly)\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\nanscombe_tidy &lt;- anscombe %&gt;%\n    mutate(observation = seq_along(x1)) %&gt;%\n    gather(key, value, -observation) %&gt;%\n    separate(key, c(\"variable\", \"set\"), 1, convert = TRUE) %&gt;%\n    mutate(set = as.character(as.roman(set))) %&gt;%\n    spread(variable, value) %&gt;%\n    arrange(set)\nhead(anscombe_tidy)\n\n  observation set  x    y\n1           1   I 10 8.04\n2           2   I  8 6.95\n3           3   I 13 7.58\n4           4   I  9 8.81\n5           5   I 11 8.33\n6           6   I 14 9.96\n\n\nNow that it has been reshaped, we can view and plot Anscombe’s quartet in our post.\n\nExample 1: DataTables via the DT package\nWe can interactively view the tidied Anscombe’s quartet using the DT package:\n\nanscombe_tidy %&gt;% \ndatatable()\n\n\n\n\n\n\n\n\nExample 2: Using the plotly package\nWe can also interactively plot the tidied Anscombe’s quartet using the plotly package (you will need the ggplot2 package loaded here):\n\ncols &lt;- c(\"#0072B2\", \"#009E73\", \"#D55E00\", \"#CC79A7\")\nans_plot &lt;- ggplot(anscombe_tidy, aes(x, y, colour = set)) +\n  geom_point(size = 3, alpha = .7) +\n  geom_smooth(method = \"lm\", se = FALSE) + \n  facet_wrap(~ set) +\n  theme_bw() +\n  theme(legend.position=\"none\") +\n  scale_colour_manual(values = cols) \n\nggplotly(ans_plot)"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "entries/cause/index.html",
+    "href": "entries/cause/index.html",
+    "title": "CAUSE",
+    "section": "",
+    "text": "A Bayesian MR method accounting for correlated and uncorrelated horizontal pleiotropy."
+  },
+  {
+    "objectID": "entries/cause/index.html#description",
+    "href": "entries/cause/index.html#description",
+    "title": "CAUSE",
+    "section": "",
+    "text": "A Bayesian MR method accounting for correlated and uncorrelated horizontal pleiotropy."
+  },
+  {
+    "objectID": "entries/NA_1/index.html",
+    "href": "entries/NA_1/index.html",
+    "title": ".na.character",
+    "section": "",
+    "text": "Application of multivairable Mendelian randomization to individual level and summary level data"
+  },
+  {
+    "objectID": "entries/NA_1/index.html#description",
+    "href": "entries/NA_1/index.html#description",
+    "title": ".na.character",
+    "section": "",
+    "text": "Application of multivairable Mendelian randomization to individual level and summary level data"
+  },
+  {
+    "objectID": "entries/mrraps/index.html",
+    "href": "entries/mrraps/index.html",
+    "title": "MR-RAPS",
+    "section": "",
+    "text": "MR-RAPS is an MR method using a consistent asymptotically normal estimator that improves weak instrument bias and accounts for horizontal pleiotropy using a random effect and an outlier robust loss function"
+  },
+  {
+    "objectID": "entries/mrraps/index.html#description",
+    "href": "entries/mrraps/index.html#description",
+    "title": "MR-RAPS",
+    "section": "",
+    "text": "MR-RAPS is an MR method using a consistent asymptotically normal estimator that improves weak instrument bias and accounts for horizontal pleiotropy using a random effect and an outlier robust loss function"
+  },
+  {
+    "objectID": "entries/mr_clust/index.html",
+    "href": "entries/mr_clust/index.html",
+    "title": "MR Clust",
+    "section": "",
+    "text": "Method for clustering the estimated effects from each SNP"
+  },
+  {
+    "objectID": "entries/mr_clust/index.html#description",
+    "href": "entries/mr_clust/index.html#description",
+    "title": "MR Clust",
+    "section": "",
+    "text": "Method for clustering the estimated effects from each SNP"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MR Methods Network",
+    "section": "",
+    "text": "Welcome to the MR Methods Network.\n\nRepository of methods used for Mendelian randomisatiom\nSimulations\nOther stuff\n\n\n\n\n\n\n\n\n\n\n\n\n\nLHC-MR\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Effect direction orientation,Bi-directional relationships,Estimation\n\n\n\n\n\n\n\n.na.character\n\n\n\n\n\n\n\n\n\n\n\n\nMRBEE\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Multivariable MR (multiple exposures, one outcome),Univariable MR (one exposure, one outcome),Estimation\n\n\n\n\n\n\n\n.na.character\n\n\nJan 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nWeak instrument robust MVMR\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Multivariable MR (multiple exposures, one outcome),Assumption testing / sensitivity analysis\n\n\n\n\n\n\n\nEleanor Sanderson\n\n\nAug 2, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nMR Clust\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Complex traits,Assumption testing / sensitivity analysis\n\n\n\n\n\n\n\nEleanor Sanderson\n\n\nSep 11, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nMR-RAPS\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Estimation\n\n\n\n\n\n\n\n.na.character\n\n\nJun 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nCAUSE\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Estimation\n\n\n\n\n\n\n\nJean Morrison\n\n\nMay 25, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nRadial MR\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Assumption testing / sensitivity analysis\n\n\n\n\n\n\n\nEleanor Sanderson\n\n\nJun 28, 2018\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Some information about the MR Methods Network"
+  },
+  {
+    "objectID": "table.html",
+    "href": "table.html",
+    "title": "Methods",
+    "section": "",
+    "text": "All methods listed here"
+  },
+  {
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html",
+    "href": "entries/weak_instrument_robust_mvmr/index.html",
+    "title": "Weak instrument robust MVMR",
+    "section": "",
+    "text": "A method for multivariable mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
+  },
+  {
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html#description",
+    "href": "entries/weak_instrument_robust_mvmr/index.html#description",
+    "title": "Weak instrument robust MVMR",
+    "section": "",
+    "text": "A method for multivariable mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
+  },
+  {
+    "objectID": "submit.html",
+    "href": "submit.html",
+    "title": "Submit",
+    "section": "",
+    "text": "Submit a new method using the form below\nSubmit a new method"
+  }
+]
