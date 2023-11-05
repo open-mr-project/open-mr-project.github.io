@@ -6,7 +6,7 @@ website:
   title: "mrmn"
   navbar:
     right:
-      - about.qmd
+      - background.qmd
       - table.qmd
       - simulations.qmd
       - blog.qmd

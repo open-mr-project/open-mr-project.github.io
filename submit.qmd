@@ -1,11 +1,88 @@
 ---
-title: "Submit"
+title: "Submission"
 page-layout: full
 title-block-banner: false
+format:
+    html:
+        toc: true
 ---
+
+Methods can be included here in two ways 
+
+- by submitting information and metadata about the Method through a form
+- by contributing the software for the method to a software registry
+
+Ideally you would submit the method to the software registry first, and then link to the software in the meta data submission.
+
+## Meta data registry
 
 Submit a new method using the form below
 
 <a class="btn btn-primary" href="https://forms.office.com/e/2WpKRWVv6N" target="_blank" role="button">Submit a new method</a>
 
 <!-- <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=MH_ksn3NTkql2rGM8aQVG88z_X6DpwxEq0rbVlhlshFUNk85UjhLNVFJNDhTMFNUQk5OT1JSMU5QWS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
+
+---
+
+
+## Software registry
+
+### Binary R packages from MRCIEU R-universe
+
+We maintain the MRCIEU R-universe <https://mrcieu.r-universe.dev> which distributes binary R packages for many MR related packages which are currently only available on GitHub. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish.
+
+If you would like a package added please open an issue in our [repository](https://github.com/MRCIEU/mrcieu.r-universe.dev/issues).
+
+#### How to use the MRCIEU R-universe
+
+To install binary R packages from the MRCIEU R-universe, include the URL in your `repos` list as shown below.
+
+For Windows and Intel Mac users the installation code to obtain a binary version of **TwoSampleMR** is
+
+```r
+# Installation code for Windows and Intel Mac users
+install.packages(
+  'TwoSampleMR',
+  repos = c(
+    'https://mrcieu.r-universe.dev',
+    'https://cloud.r-project.org'
+  )
+)
+```
+
+For Ubuntu Jammy Jellyfish users running R through RStudio Desktop or RStudio Server the installation code is
+
+```r
+# Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server
+install.packages(
+  'TwoSampleMR',
+  repos = c(
+    'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/',
+    'https://packagemanager.posit.co/cran/__linux__/jammy/latest',
+    'https://cloud.r-project.org'
+  )
+)
+```
+
+For Ubuntu Jammy Jellyfish users running R in the Terminal first amend the `HTTPUserAgent` option, as described in the following blog [post](https://tshafer.com/blog/2023/07/posit-package-manager-linux), and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages. So for this case the full installation code is
+
+```r
+# Installation code for Ubuntu Jammy Jellyfish users running R in the Terminal
+options(HTTPUserAgent = sprintf(
+  "R/%s R (%s)",
+  getRversion(),
+  paste(getRversion(),
+        R.version["platform"],
+        R.version["arch"],
+        R.version["os"])
+))
+
+install.packages(
+  'TwoSampleMR',
+  repos = c(
+    'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/',
+    'https://packagemanager.posit.co/cran/__linux__/jammy/latest',
+    'https://cloud.r-project.org'
+  )
+)
+```
