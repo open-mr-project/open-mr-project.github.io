@@ -9,6 +9,7 @@ website:
       - about.qmd
       - table.qmd
       - simulations.qmd
+      - blog.qmd
       - submit.qmd
       - icon: github
         href: https://github.com/

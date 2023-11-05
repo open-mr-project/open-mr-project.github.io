@@ -9,6 +9,38 @@
 - About page
 - Simulation results
 
+## Developers
+
+This is a static site generated using [Quarto](https://quarto.org/docs/get-started/). This means that you can write pages and posts in RMarkdown and then render those files into html pages locally. Those html pages are then pushed to github and served by github pages.
+
+1. Install [Quarto](https://quarto.org/docs/get-started/)
+2. Install `renv` in R - `install.packages("renv")`
+3. Create environment in R - `renv::restore()`
+4. Make sure the data from the submission form is stored in `data/mrmn.xlsx`
+5. Render the site on command line - `quarto render`
+6. Preview the site on command line - `quarto preview`
+
+### Add a new page
+
+- create `/newpage.qmd`, include metadata (e.g. copy from one of the other `/page.qmd`) files
+- Run `quarto render`
+
+### Add new blog post
+
+- create /posts/<new_page_name>/index.qmd
+- Run `quarto render`
+
+### Publishing
+
+Once you've previewed the changes and are happy, push them to github. 
+
+**Note: do not allow any unnecessary files to exist in the directory**
+
+```
+git add *
+git commit -a -m "<insert message>"
+git push
+```
 
 ## Notes
 
