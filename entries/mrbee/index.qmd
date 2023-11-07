@@ -1,0 +1,77 @@
+---
+title: MRBEE
+author: .na.character
+date: '2023.01'
+comments:
+  utterances:
+    repo: mr-methods-network/siteComments
+categories:
+- - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if
+    Network MR)
+  - Multivariable MR (multiple exposures, one outcome)
+  - Univariable MR (one exposure, one outcome)
+  - Estimation
+data:
+  id: 8.0
+  start_time: 1.6941353e+09
+  completion_time: 1.6941359e+09
+  email: anonymous
+  name: .na
+  last_modified_time: .na
+  primary_contact: .na.character
+  primary_contact_email_address: .na.character
+  publication_doi: https://doi.org/10.1101/2023.01.10.523480
+  brief_description_eg_up_to_150_words: We introduce MRBEE (MR using Bias-corrected
+    Estimating Equation), a novel multivariable MR method capable of simultaneously
+    removing error-in-variable bias and identi16 fying horizontal pleiotropy.
+  specific_scientific_context_if_any: .na.character
+  analytical_contexts: Multivariable MR (multiple exposures, one outcome);Univariable
+    MR (one exposure, one outcome);
+  entry_type: Analytical method
+  these_guidelines_address: .na.character
+  list_any_estimation_methods_used_in_this_application_with_publication_and_software_references: .na.character
+  describe_any_novel_features_of_this_application_not_already_addressed: .na.character
+  method_name: MR using 14 Bias-corrected Estimating Equation
+  abbreviated_method_name: MRBEE
+  what_types_of_exposure_variables_can_be_used_if_network_mr_what_types_of_traits_can_be_used: Quantitative/continuous;Binary;Molecular
+    traits;Complex / polygenic traits;
+  what_types_of_outcome_variables_can_be_used_if_network_mr_skip_this_question: Quantitative/continuous;Binary;Molecular
+    traits;Complex / polygenic traits;
+  what_data_types_can_the_method_be_used_with: GWAS summary statistics for both exposure(s)
+    and outcome(s) (or all traits if Network MR);
+  does_the_method_account_for_ancestry_differences_between_exposure_and_outcome_samples_or_between_samples_for_multiple_traits: 'No'
+  this_method_is_primarily_concerned_with: Estimation
+  does_this_assumption_testing_or_sensitivity_analysis_method_accompany_a_specific_estimation_method: .na.character
+  what_conditions__assumptions__sources_of_bias_are_addressed_or_tested_for_by_this_method: .na.character
+  how_are_instruments_selected: Instruments can be selected in the same exposure dataset
+    used for estimation
+  does_the_method_account_for_partial_or_full_overlap_between_exposure_and_outcome_samples_or_between_samples_for_multiple_traits: 'Yes'
+  which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method: The method is
+    robust to weak instruments or reduces weak instrument bias compared to traditional
+    methods such as IVW regression or relaxes the no measurement error (NOME) assumption.;The
+    method accounts for unbalanced (correlated) pleiotropy or pleiotropy that violates
+    the InSIDE assumption.;The method accounts for balanced (uncorrelated) pleiotropy
+    or pleiotropy that meets the Instrument strength independent of direct effect
+    (InSIDE) assumption. ;
+  code_repository_url: https://github.com/noahlorinczcomi/MRBEE
+  documentation_for_the_specific_method_url: .na.character
+  other_relevant_urls_eg_cran_link: .na.character
+  software_features: .na.character
+  title: MRBEE
+  author: .na.character
+  pubdate: '2023.01'
+  slug: mrbee
+  categories:
+  - - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if
+      Network MR)
+    - Multivariable MR (multiple exposures, one outcome)
+    - Univariable MR (one exposure, one outcome)
+    - Estimation
+---
+
+
+
+## Description
+
+{{< meta data.brief_description_eg_up_to_150_words >}}
+

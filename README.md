@@ -1,47 +1,80 @@
-# Mendelian randomization Methods Network site
+# MR Methods Network website
 
-The website is built using mkdocs and mkdocs-material.
+## Scope
 
-To build the website on your local machine (note you don't need to do this as the site is built using GitHub Actions when commits are pushed up to the GitHub [repo](https://github.com/mr-methods-network/mr-methods-network.github.io)).
+- Static site
+- Search / browse MR methods
+- Form to contribute new methods
+- Visualisation of methods
+- About page
+- Simulation results
 
-* Create a virtual environment for the project.
+## Developers
 
-```bash
-python3 -m venv venv
+This is a static site generated using [Quarto](https://quarto.org/docs/get-started/). This means that you can write pages and posts in RMarkdown and then render those files into html pages locally. Those html pages are then pushed to github and served by github pages.
+
+
+
+1. Install [Quarto](https://quarto.org/docs/get-started/)
+2. Install `renv` in R - `install.packages("renv")`
+3. Create environment in R - `renv::restore()`
+4. Make sure the data from the submission form is stored in `data/mrmn.xlsx`
+5. Render the site on command line - `quarto render`
+6. Preview the site on command line - `quarto preview`
+
+### Processing the data in the submission form
+
+Once you download the submission form in xlsx format to `/data/mrmn.xlsx`, two things need to happen:
+
+- Organise / format the data
+- Generate a page in the `entries` directory for every method
+
+This is achieved with the `generate.r` script. Whenever `quarto render` is run, it will run `generate.r` as a pre-rendering step automatically, so you should only have to do anything with that file if you want to edit it.
+
+It generates posts by converting the data into yaml format for each method, and then adding that to the front matter for the `data/template` file. 
+
+### Add a new page
+
+- create `/newpage.qmd`, include metadata (e.g. copy from one of the other `/page.qmd`) files
+- Run `quarto render`
+
+### Add new blog post
+
+- create /posts/<new_page_name>/index.qmd
+- Run `quarto render`
+
+### Publishing
+
+Once you've previewed the changes and are happy, push them to github. 
+
+**Note: do not allow any unnecessary files to exist in the directory**
+
+```
+git add *
+git commit -a -m "<insert message>"
+git push
 ```
 
-* Activate the virtual environment:
+## Notes
 
-```bash
-source venv/bin/activate
-# or on Windows with
-# venv/Scripts/activate
-```
+### Comments
 
-* Install the required dependencies:
+- Each post has a comments section enabled by https://utteranc.es
 
-```bash
-python3 -m pip install -r requirements.txt
-```
+### Data tables
 
-The site can then be edited as required.
+- Using https://rstudio.github.io/DT/ to display list of methods
+- Can also generate a post for every method. Potentially offer two different views of the data 
 
-* To serve a local build of the site use:
+### Forms
 
-```bash
-mkdocs serve
-# or on Windows alternatively run if obtain error mkdocs cannot be found
-# python3 -m mkdocs serve
-```
+- Currently using Microsoft Forms
+- Need to manually download the xl spreadsheet and use generate.r to convert for use on website
+- Potential to embed on static site
 
-* The site is built on GitHub, everytime there is a commit onto the main branch, through a GitHub Actions workflow. The workflow commits the built site onto the `gh-pages` branch from where GitHub Pages serves it. Hence you don't really need to build the site locally (apart from checking that your edits are as intended with `mkdocs serve`) and therefore the `/site` directory is currently in the `.gitignore` file. If you need to build the site locally remove the `/site` entry from `.gitignore` and run:
+Alternative approaches
 
-```bash
-mkdocs build
-```
-
-* To record the packages and their versions run
-
-```bash
-python3 -m pip freeze > requirements.txt
-```
+- https://github.com/json-editor/json-editor - this allows creation of forms from json schema, need to figure out if it can be used on static website, e.g. https://observablehq.com/@a10k/hello-json-editor
+- https://www.staticforms.xyz - emails form
+- https://jsonforms.io/ - richer schemas defined by json including rules - need to figure out if it can be used on a static website
+- Quarto has forms extension https://github.com/jlgraves-ubc/forms

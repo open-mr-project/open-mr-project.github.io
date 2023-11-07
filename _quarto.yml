@@ -1,0 +1,24 @@
+project:
+  type: website
+  pre-render: generate.r
+
+website:
+  title: "MRMN"
+  navbar:
+    right:
+      - background.qmd
+      - table.qmd
+      - simulations.qmd
+      - blog.qmd
+      - submit.qmd
+      - icon: github
+        href: https://github.com/mr-methods-network/mr-methods-network.github.io
+  repo-url: https://github.com/mr-methods-network/mr-methods-network.github.io
+  repo-actions: source
+  repo-branch: main
+  site-url: https://mr-methods-network.github.io/
+
+format:
+  html:
+    theme: journal
+    css: styles.css
