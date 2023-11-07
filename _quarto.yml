@@ -3,7 +3,7 @@ project:
   pre-render: generate.r
 
 website:
-  title: "mrmn"
+  title: "MRMN"
   navbar:
     right:
       - background.qmd
