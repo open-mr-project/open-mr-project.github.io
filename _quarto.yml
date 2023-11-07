@@ -1,6 +1,7 @@
 project:
   type: website
   pre-render: generate.r
+  output-dir: docs
 
 website:
   title: "MRMN"
