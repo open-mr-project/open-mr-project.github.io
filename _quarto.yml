@@ -10,6 +10,7 @@ website:
       - background.qmd
       - table.qmd
       - simulations.qmd
+      - r-universe.qmd
       - blog.qmd
       - submit.qmd
       - icon: github
