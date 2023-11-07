@@ -7,6 +7,8 @@ website:
   title: "MRMN"
   navbar:
     right:
+      - text: "Home"
+        href: index.qmd
       - background.qmd
       - table.qmd
       - simulations.qmd
