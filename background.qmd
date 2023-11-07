@@ -3,11 +3,6 @@ title: "Background"
 image: profile.jpg
 about:
   template: jolla
-  links:
-    - icon: github
-      text: Github
-      href: https://github.com/mr-methods-network
-
 ---
 
 Some information about the MR Methods Network
