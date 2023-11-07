@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MRMN - Submission</title>
+<title>MRMN - R-Universe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -64,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 
 <div id="quarto-search-results"></div>
@@ -95,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Simulations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./r-universe.html" rel="" target="">
+    <a class="nav-link active" href="./r-universe.html" rel="" target="" aria-current="page">
  <span class="menu-text">R-Universe</span></a>
   </li>  
   <li class="nav-item">
@@ -103,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./submit.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./submit.html" rel="" target="">
  <span class="menu-text">Submission</span></a>
   </li>  
   <li class="nav-item compact">
@@ -119,25 +153,16 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#meta-data-registry" id="toc-meta-data-registry" class="nav-link active" data-scroll-target="#meta-data-registry">Meta data registry</a></li>
-  <li><a href="#software-registry" id="toc-software-registry" class="nav-link" data-scroll-target="#software-registry">Software registry</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mr-methods-network/mr-methods-network.github.io/blob/main/submit.qmd" class="toc-action">View source</a></p></div></div></nav>
-    </div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Submission</h1>
+<h1 class="title">R-Universe</h1>
 </div>
 
 
@@ -152,27 +177,63 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Methods can be included here in two ways</p>
-<ul>
-<li>by submitting information and metadata about the method through a form</li>
-<li>by contributing the software for the method to a software registry</li>
-</ul>
-<p>Ideally you would submit the method to the software registry first, and then link to the software in the meta data submission.</p>
-<section id="meta-data-registry" class="level2">
-<h2 class="anchored" data-anchor-id="meta-data-registry">Meta data registry</h2>
-<p>Submit a new method using the form below</p>
-<p><a class="btn btn-primary" href="https://forms.office.com/e/2WpKRWVv6N" target="_blank" role="button">Submit a new method</a></p>
-<!-- <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=MH_ksn3NTkql2rGM8aQVG88z_X6DpwxEq0rbVlhlshFUNk85UjhLNVFJNDhTMFNUQk5OT1JSMU5QWS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
-<hr>
+<section id="binary-r-packages-from-mrc-ieu-r-universe" class="level2">
+<h2 class="anchored" data-anchor-id="binary-r-packages-from-mrc-ieu-r-universe">Binary R packages from MRC IEU R-universe</h2>
+<p>We maintain the MRC IEU R-universe <a href="https://mrcieu.r-universe.dev" class="uri">https://mrcieu.r-universe.dev</a> which distributes binary R packages for many MR related packages which are currently only available on GitHub. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish (and more will be available as the R-universe system extends).</p>
+<p>If you would like a package added to the universe please open an issue in our <a href="https://github.com/MRCIEU/mrcieu.r-universe.dev/issues">repository</a>.</p>
 </section>
-<section id="software-registry" class="level2">
-<h2 class="anchored" data-anchor-id="software-registry">Software registry</h2>
-<p>TBD</p>
+<section id="how-to-use-the-mrc-ieu-r-universe" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-the-mrc-ieu-r-universe">How to use the MRC IEU R-universe</h2>
+<p>To install binary R packages from the MRCIEU R-universe, include the URL in your <code>repos</code> list as shown below.</p>
+<p>For Windows and Intel Mac users the installation code to obtain a binary version of <strong>TwoSampleMR</strong> is</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation code for Windows and Intel Mac users</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev'</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For Ubuntu Jammy Jellyfish users running R through RStudio Desktop or RStudio Server the installation code is</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/'</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://packagemanager.posit.co/cran/__linux__/jammy/latest'</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For Ubuntu Jammy Jellyfish users running R in the Terminal first amend the <code>HTTPUserAgent</code> option,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and then run the Linux installation code above. If the <code>HTTPUserAgent</code> option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages. So for this case the full installation code is</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation code for Ubuntu Jammy Jellyfish users running R in the Terminal</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">HTTPUserAgent =</span> <span class="fu">sprintf</span>(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"R/%s R (%s)"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">getRversion</span>(),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="fu">getRversion</span>(),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        R.version[<span class="st">"platform"</span>],</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        R.version[<span class="st">"arch"</span>],</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        R.version[<span class="st">"os"</span>])</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/'</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://packagemanager.posit.co/cran/__linux__/jammy/latest'</span>,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>As described in the following blog <a href="https://tshafer.com/blog/2023/07/posit-package-manager-linux">post</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -410,4 +471,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mr-methods-network/mr-methods-network.github.io/blob/main/r-universe.qmd" class="toc-action">View source</a></p></div></div></div></div></footer></body></html>
