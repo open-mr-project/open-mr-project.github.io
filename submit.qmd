@@ -9,7 +9,7 @@ format:
 
 Methods can be included here in two ways 
 
-- by submitting information and metadata about the Method through a form
+- by submitting information and metadata about the method through a form
 - by contributing the software for the method to a software registry
 
 Ideally you would submit the method to the software registry first, and then link to the software in the meta data submission.
