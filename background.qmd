@@ -1,8 +1,5 @@
 ---
 title: "Background"
-image: profile.jpg
-about:
-  template: jolla
 ---
 
 Some information about the MR Methods Network
