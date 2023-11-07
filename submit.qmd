@@ -3,8 +3,8 @@ title: "Submission"
 page-layout: full
 title-block-banner: false
 format:
-    html:
-        toc: true
+  html:
+    toc: true
 ---
 
 Methods can be included here in two ways 
