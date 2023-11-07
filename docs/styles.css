@@ -1,1 +1,10 @@
 /* css styles */
+
+/* Use Fira Code font for code chunks */
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+pre code {
+  font-family: 'Fira Code', monospace;
+}
+* {
+  font-variant-ligatures: none;
+}
