@@ -13,6 +13,6 @@ title-block-banner: true
 
 Welcome to the MR Methods Network.
 
-- Repository of methods used for Mendelian randomisatiom
+- Repository of methods used for Mendelian randomization
 - Simulations
 - Other stuff
