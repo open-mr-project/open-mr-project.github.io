@@ -1,5 +1,5 @@
 ---
-title: "MR Methods Network"
+title: "Mendelian randomization Methods Network"
 listing:
   contents: entries
   sort: "date desc"
@@ -11,8 +11,8 @@ page-layout: full
 title-block-banner: true
 ---
 
-Welcome to the MR Methods Network.
 
 - Repository of methods used for Mendelian randomization
 - Simulations
 - Other stuff
+Welcome to the Mendelian randomization Methods Network (MRMN)
