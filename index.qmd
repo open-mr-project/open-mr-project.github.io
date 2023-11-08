@@ -20,3 +20,5 @@ Welcome to the Mendelian randomization Methods Network (MRMN)
 A network of Mendelian randomization analysts and methods developers who aim to build an annotated methods repository
 
 :::
+
+![Directed acyclic graph representing the three instrumental variable core conditions underlying the Mendelian randomization approach.](img/mr-dag-violations.excalidraw.png){fig-alt="The instrumental variable core conditions represented as a directed acyclic graph. The picture is made up of arrows and words. The arrows represent the relationships between the variables in the model; the words represent the variables in the model."}
