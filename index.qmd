@@ -12,3 +12,11 @@ title-block-banner: true
 ---
 
 Welcome to the Mendelian randomization Methods Network (MRMN)
+
+::: {.callout-note icon=false}
+
+## Mission statement
+
+A network of Mendelian randomization analysts and methods developers who aim to build an annotated methods repository
+
+:::
