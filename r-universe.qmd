@@ -12,7 +12,7 @@ If you would like a package added to the universe please open an issue in our [r
 
 ## How to use the MRC IEU R-universe
 
-To install binary R packages from the MRCIEU R-universe, include the URL in your `repos` list as shown below.
+To install binary R packages from the MRC IEU R-universe, include the URL in your `repos` list as shown below.
 
 For Windows and Intel Mac users the installation code to obtain a binary version of **TwoSampleMR** is
 
