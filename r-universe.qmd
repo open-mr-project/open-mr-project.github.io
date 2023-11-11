@@ -1,5 +1,6 @@
 ---
 title: R-Universe
+page-layout: full
 ---
 
 ## Binary R packages from MRC IEU R-universe
