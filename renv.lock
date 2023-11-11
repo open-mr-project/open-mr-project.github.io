@@ -49,7 +49,7 @@
     },
     "Matrix": {
       "Package": "Matrix",
-      "Version": "1.6-1.1",
+      "Version": "1.6-2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -62,7 +62,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "1a00d4828f33a9d690806e98bd17150c"
+      "Hash": "e4ea5684d8d52584681b7704132b5189"
     },
     "R.cache": {
       "Package": "R.cache",
@@ -710,7 +710,7 @@
     },
     "lifecycle": {
       "Package": "lifecycle",
-      "Version": "1.0.3",
+      "Version": "1.0.4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -719,11 +719,11 @@
         "glue",
         "rlang"
       ],
-      "Hash": "001cecbeac1cff9301bdc3775ee46a86"
+      "Hash": "b8552d117e1b808b09a832f589b79035"
     },
     "lintr": {
       "Package": "lintr",
-      "Version": "3.1.0",
+      "Version": "3.1.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -740,7 +740,7 @@
         "xml2",
         "xmlparsedata"
       ],
-      "Hash": "2b4b803af6017e93b67ddaf0eacba918"
+      "Hash": "93e9379f4be8c0bf1862dfc7f720193e"
     },
     "lubridate": {
       "Package": "lubridate",
