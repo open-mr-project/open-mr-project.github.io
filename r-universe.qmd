@@ -1,6 +1,7 @@
 ---
 title: R-Universe
 page-layout: full
+toc: true
 ---
 
 ## Binary R packages from MRC IEU R-universe
