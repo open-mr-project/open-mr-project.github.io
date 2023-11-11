@@ -1,5 +1,6 @@
 ---
 title: "Background"
+page-layout: full
 ---
 
 Some information about the MR Methods Network
