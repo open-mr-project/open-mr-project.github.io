@@ -4,7 +4,7 @@ page-layout: full
 toc: true
 ---
 
-## Binary R packages from MRC IEU R-universe
+## Introduction
 
 We maintain the MRC IEU R-universe <https://mrcieu.r-universe.dev> which distributes binary R packages for many MR related packages which are currently only available on GitHub. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish (and more will be available as the R-universe system extends).
 
