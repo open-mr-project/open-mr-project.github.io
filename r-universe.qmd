@@ -14,7 +14,7 @@ If you would like a package added to the universe please open an issue in our [r
 
 To install binary R packages from the MRC IEU R-universe, include the URL in your `repos` list as shown below.
 
-For Windows and Intel Mac users the installation code to obtain a binary version of **TwoSampleMR** is
+For Windows and Intel Mac users to install the binary version of **TwoSampleMR**, run the following code.
 
 ```r
 # Installation code for Windows and Intel Mac users
@@ -27,7 +27,7 @@ install.packages(
 )
 ```
 
-For Ubuntu Jammy Jellyfish users running R through RStudio Desktop or RStudio Server the installation code is
+For Ubuntu Linux Jammy Jellyfish users running R through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
 
 ```r
 # Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server
@@ -41,7 +41,7 @@ install.packages(
 )
 ```
 
-For Ubuntu Jammy Jellyfish users running R in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages. So for this case the full installation code is
+For Ubuntu Linux Jammy Jellyfish users running R in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install ***TwoSampleMR*, run the following code.
 
 [^1]: As described in the following blog [post](https://tshafer.com/blog/2023/07/posit-package-manager-linux).
 
