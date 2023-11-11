@@ -98,7 +98,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 
 <div id="quarto-search-results"></div>
@@ -157,12 +157,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#how-to-use-the-mrc-ieu-r-universe" id="toc-how-to-use-the-mrc-ieu-r-universe" class="nav-link" data-scroll-target="#how-to-use-the-mrc-ieu-r-universe">How to use the MRC IEU R-universe</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mr-methods-network/mr-methods-network.github.io/blob/main/r-universe.qmd" class="toc-action">View source</a></p></div></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -181,15 +190,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="binary-r-packages-from-mrc-ieu-r-universe" class="level2">
-<h2 class="anchored" data-anchor-id="binary-r-packages-from-mrc-ieu-r-universe">Binary R packages from MRC IEU R-universe</h2>
-<p>We maintain the MRC IEU R-universe <a href="https://mrcieu.r-universe.dev" class="uri">https://mrcieu.r-universe.dev</a> which distributes binary R packages for many MR related packages which are currently only available on GitHub. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish (and more will be available as the R-universe system extends).</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The MRC IEU R-universe <a href="https://mrcieu.r-universe.dev" class="uri">https://mrcieu.r-universe.dev</a> distributes binary R packages for many MR related packages which are currently only available on GitHub and have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish (and more will be available as the R-universe system extends).</p>
 <p>If you would like a package added to the universe please open an issue in our <a href="https://github.com/MRCIEU/mrcieu.r-universe.dev/issues">repository</a>.</p>
 </section>
 <section id="how-to-use-the-mrc-ieu-r-universe" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-the-mrc-ieu-r-universe">How to use the MRC IEU R-universe</h2>
-<p>To install binary R packages from the MRCIEU R-universe, include the URL in your <code>repos</code> list as shown below.</p>
-<p>For Windows and Intel Mac users the installation code to obtain a binary version of <strong>TwoSampleMR</strong> is</p>
+<p>To install binary R packages from the MRC IEU R-universe, include the URL in your <code>repos</code> list as shown below.</p>
+<p>For Windows and Intel Mac users to install the binary version of <strong>TwoSampleMR</strong>, run the following code.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation code for Windows and Intel Mac users</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
@@ -198,7 +207,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>For Ubuntu Jammy Jellyfish users running R through RStudio Desktop or RStudio Server the installation code is</p>
+<p>For Ubuntu Linux Jammy Jellyfish users running R through RStudio Desktop or RStudio Server, to install <strong>TwoSampleMR</strong> run the following code.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
@@ -208,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>For Ubuntu Jammy Jellyfish users running R in the Terminal first amend the <code>HTTPUserAgent</code> option,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and then run the Linux installation code above. If the <code>HTTPUserAgent</code> option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages. So for this case the full installation code is</p>
+<p>For Ubuntu Linux Jammy Jellyfish users running R in the Terminal first amend the <code>HTTPUserAgent</code> option,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and then run the Linux installation code above. If the <code>HTTPUserAgent</code> option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager’s CRAN packages. For this case, to install **<em>TwoSampleMR</em>, run the following code.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation code for Ubuntu Jammy Jellyfish users running R in the Terminal</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">HTTPUserAgent =</span> <span class="fu">sprintf</span>(</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"R/%s R (%s)"</span>,</span>
@@ -475,4 +484,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mr-methods-network/mr-methods-network.github.io/blob/main/r-universe.qmd" class="toc-action">View source</a></p></div></div></div></div></footer></body></html>
+</body></html>
