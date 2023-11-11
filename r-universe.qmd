@@ -41,7 +41,7 @@ install.packages(
 )
 ```
 
-For Ubuntu Linux Jammy Jellyfish users running R in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install ***TwoSampleMR*, run the following code.
+For Ubuntu Linux Jammy Jellyfish users running R in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install ***TwoSampleMR**, run the following code.
 
 [^1]: As described in the following blog [post](https://tshafer.com/blog/2023/07/posit-package-manager-linux).
 
