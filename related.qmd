@@ -3,5 +3,6 @@ title: Related links
 ---
 
 * MRC IEU GitHub Pages [website](https://mrcieu.github.io/#software-overview)
+* MRC IEU [MR Dictionary](https://mr-dictionary.mrcieu.ac.uk)
 * Steve Burgess' group [website](https://www.mendelianrandomization.com/index.php/software-code)
 * Chris Moreno-Stokoe's [website](https://www.morenostok.io/mrsoftwarelist.html)
