@@ -1,7 +1,7 @@
 ---
 title: Radial MR
 author: Eleanor Sanderson
-date: '2018-06-28'
+date: ''
 comments:
   utterances:
     repo: mr-methods-network/siteComments
@@ -49,7 +49,7 @@ data:
   software_features: Includes visualisation tools;
   title: Radial MR
   author: Eleanor Sanderson
-  pubdate: '2018-06-28'
+  pubdate: ''
   slug: radial_mr
   categories:
   - - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if

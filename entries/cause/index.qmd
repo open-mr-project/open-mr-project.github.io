@@ -1,7 +1,7 @@
 ---
 title: CAUSE
 author: Jean Morrison
-date: '2020-05-25'
+date: ''
 comments:
   utterances:
     repo: mr-methods-network/siteComments
@@ -56,7 +56,7 @@ data:
   software_features: Includes visualisation tools;
   title: CAUSE
   author: Jean Morrison
-  pubdate: '2020-05-25'
+  pubdate: ''
   slug: cause
   categories:
   - - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if
