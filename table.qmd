@@ -20,7 +20,4 @@ dat %>%
   filter(`Entry type`=="Analytical method") %>%
   select(`title`, `Code repository (URL)`) %>%
 datatable()
-
 ```
-
-
