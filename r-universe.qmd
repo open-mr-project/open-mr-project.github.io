@@ -10,9 +10,16 @@ The MRC IEU R-universe <https://mrcieu.r-universe.dev> distributes binary R pack
 
 If you would like a package added to the universe please open an issue in our [repository](https://github.com/MRCIEU/mrcieu.r-universe.dev/issues).
 
-## How to use the MRC IEU R-universe
+Additionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,
+
+* [the R-Universe webpage for **TwoSampleMR**](https://mrcieu.r-universe.dev/TwoSampleMR)
+* [and its exposure data vignette](https://mrcieu.r-universe.dev/articles/TwoSampleMR/exposure.html)
+
+## How to install binary R packages from the MRC IEU R-universe
 
 To install binary R packages from the MRC IEU R-universe, include the URL in your `repos` list as shown below.
+
+### Windows and Intel Mac users
 
 For Windows and Intel Mac users to install the binary version of **TwoSampleMR**, run the following code.
 
@@ -26,6 +33,8 @@ install.packages(
   )
 )
 ```
+
+### Ubuntu Linux users
 
 For Ubuntu Linux Jammy Jellyfish users running R through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
 
