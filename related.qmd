@@ -1,5 +1,6 @@
 ---
 title: Related links
+page-layout: full
 ---
 
 * MRC IEU GitHub Pages [website](https://mrcieu.github.io/#software-overview)
