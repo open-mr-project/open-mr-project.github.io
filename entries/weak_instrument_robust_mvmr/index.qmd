@@ -1,7 +1,7 @@
 ---
 title: Weak instrument robust MVMR
 author: Eleanor Sanderson
-date: ''
+date: '2021-08-02'
 comments:
   utterances:
     repo: mr-methods-network/siteComments
@@ -52,7 +52,7 @@ data:
   software_features: .na.character
   title: Weak instrument robust MVMR
   author: Eleanor Sanderson
-  pubdate: ''
+  pubdate: '2021-08-02'
   slug: weak_instrument_robust_mvmr
   categories:
   - - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if

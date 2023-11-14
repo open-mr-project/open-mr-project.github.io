@@ -1,63 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://mr-methods-network.github.io/related.html</loc>
+    <lastmod>2023-11-14T18:21:38.673Z</lastmod>
+  </url>
+  <url>
     <loc>https://mr-methods-network.github.io/table.html</loc>
-    <lastmod>2023-11-14T11:24:39.159Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/simulations.html</loc>
-    <lastmod>2023-11-14T11:24:33.887Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/r-universe.html</loc>
-    <lastmod>2023-11-14T11:24:33.285Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/weak_instrument_robust_mvmr/index.html</loc>
-    <lastmod>2023-11-14T11:24:31.938Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/mr_clust/index.html</loc>
-    <lastmod>2023-11-14T11:24:31.233Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/mrbee/index.html</loc>
-    <lastmod>2023-11-14T11:24:30.516Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/cause/index.html</loc>
-    <lastmod>2023-11-14T11:24:29.715Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/background.html</loc>
-    <lastmod>2023-11-14T11:24:28.953Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/blog.html</loc>
-    <lastmod>2023-11-14T11:24:29.347Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/lhcmr/index.html</loc>
-    <lastmod>2023-11-14T11:24:30.116Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/mrraps/index.html</loc>
-    <lastmod>2023-11-14T11:24:30.884Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/radial_mr/index.html</loc>
-    <lastmod>2023-11-14T11:24:31.553Z</lastmod>
+    <lastmod>2023-11-14T18:21:38.262Z</lastmod>
   </url>
   <url>
     <loc>https://mr-methods-network.github.io/index.html</loc>
-    <lastmod>2023-11-14T11:24:32.799Z</lastmod>
+    <lastmod>2023-11-14T18:21:36.339Z</lastmod>
   </url>
   <url>
-    <loc>https://mr-methods-network.github.io/related.html</loc>
-    <lastmod>2023-11-14T11:24:33.591Z</lastmod>
+    <loc>https://mr-methods-network.github.io/entries/radial_mr/index.html</loc>
+    <lastmod>2023-11-14T18:21:35.495Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/entries/lhcmr/index.html</loc>
+    <lastmod>2023-11-14T18:21:34.992Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/entries/cause/index.html</loc>
+    <lastmod>2023-11-14T18:21:34.491Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/background.html</loc>
+    <lastmod>2023-11-14T18:21:33.935Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/r-universe.html</loc>
+    <lastmod>2023-11-14T18:21:33.706Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/entries/mrbee/index.html</loc>
+    <lastmod>2023-11-14T18:21:34.240Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/entries/weak_instrument_robust_mvmr/index.html</loc>
+    <lastmod>2023-11-14T18:21:34.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/entries/mrraps/index.html</loc>
+    <lastmod>2023-11-14T18:21:35.262Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/entries/mr_clust/index.html</loc>
+    <lastmod>2023-11-14T18:21:35.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/simulations.html</loc>
+    <lastmod>2023-11-14T18:21:36.537Z</lastmod>
   </url>
   <url>
     <loc>https://mr-methods-network.github.io/submit.html</loc>
-    <lastmod>2023-11-14T11:24:34.210Z</lastmod>
+    <lastmod>2023-11-14T18:21:38.474Z</lastmod>
   </url>
 </urlset>

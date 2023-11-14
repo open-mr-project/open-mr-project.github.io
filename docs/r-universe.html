@@ -144,10 +144,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./related.html" rel="" target="">
  <span class="menu-text">Related</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/mr-methods-network/mr-methods-network.github.io" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
@@ -170,7 +166,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#how-to-use-the-mrc-ieu-r-universe" id="toc-how-to-use-the-mrc-ieu-r-universe" class="nav-link" data-scroll-target="#how-to-use-the-mrc-ieu-r-universe">How to use the MRC IEU R-universe</a></li>
+  <li><a href="#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe" id="toc-how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe" class="nav-link" data-scroll-target="#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe">How to install binary R packages from the MRC IEU R-universe</a>
+  <ul class="collapse">
+  <li><a href="#windows-and-intel-mac-users" id="toc-windows-and-intel-mac-users" class="nav-link" data-scroll-target="#windows-and-intel-mac-users">Windows and Intel Mac users</a></li>
+  <li><a href="#ubuntu-linux-users" id="toc-ubuntu-linux-users" class="nav-link" data-scroll-target="#ubuntu-linux-users">Ubuntu Linux users</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mr-methods-network/mr-methods-network.github.io/blob/main/r-universe.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
@@ -198,10 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>The MRC IEU R-universe <a href="https://mrcieu.r-universe.dev" class="uri">https://mrcieu.r-universe.dev</a> distributes binary R packages for many MR related packages which are currently only available on GitHub and have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish (and more will be available as the R-universe system extends).</p>
 <p>If you would like a package added to the universe please open an issue in our <a href="https://github.com/MRCIEU/mrcieu.r-universe.dev/issues">repository</a>.</p>
+<p>Additionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,</p>
+<ul>
+<li><a href="https://mrcieu.r-universe.dev/TwoSampleMR">the R-Universe webpage for <strong>TwoSampleMR</strong></a></li>
+<li><a href="https://mrcieu.r-universe.dev/articles/TwoSampleMR/exposure.html">and its exposure data vignette</a></li>
+</ul>
 </section>
-<section id="how-to-use-the-mrc-ieu-r-universe" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use-the-mrc-ieu-r-universe">How to use the MRC IEU R-universe</h2>
+<section id="how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe">How to install binary R packages from the MRC IEU R-universe</h2>
 <p>To install binary R packages from the MRC IEU R-universe, include the URL in your <code>repos</code> list as shown below.</p>
+<section id="windows-and-intel-mac-users" class="level3">
+<h3 class="anchored" data-anchor-id="windows-and-intel-mac-users">Windows and Intel Mac users</h3>
 <p>For Windows and Intel Mac users to install the binary version of <strong>TwoSampleMR</strong>, run the following code.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation code for Windows and Intel Mac users</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
@@ -211,6 +218,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="ubuntu-linux-users" class="level3">
+<h3 class="anchored" data-anchor-id="ubuntu-linux-users">Ubuntu Linux users</h3>
 <p>For Ubuntu Linux Jammy Jellyfish users running R through RStudio Desktop or RStudio Server, to install <strong>TwoSampleMR</strong> run the following code.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
@@ -242,6 +252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 </section>
 
 

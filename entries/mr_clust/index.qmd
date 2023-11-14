@@ -1,7 +1,7 @@
 ---
 title: MR Clust
 author: Eleanor Sanderson
-date: ''
+date: '2020-09-11'
 comments:
   utterances:
     repo: mr-methods-network/siteComments
@@ -14,7 +14,7 @@ categories:
 data:
   id: 5.0
   start_time: 1.6927923e+09
-  completion_time: 1.6927927e+09
+  completion_time: 1.6927926e+09
   email: anonymous
   name: .na
   last_modified_time: .na
@@ -50,7 +50,7 @@ data:
   software_features: .na.character
   title: MR Clust
   author: Eleanor Sanderson
-  pubdate: ''
+  pubdate: '2020-09-11'
   slug: mr_clust
   categories:
   - - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if

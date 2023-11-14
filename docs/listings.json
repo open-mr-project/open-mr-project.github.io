@@ -1,18 +1,14 @@
 [
   {
-    "listing": "/blog.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
-      "/entries/cause/index.html",
       "/entries/lhcmr/index.html",
-      "/entries/mrraps/index.html",
-      "/entries/mr_clust/index.html",
-      "/entries/radial_mr/index.html",
+      "/entries/mrbee/index.html",
       "/entries/weak_instrument_robust_mvmr/index.html",
-      "/entries/mrbee/index.html"
+      "/entries/mr_clust/index.html",
+      "/entries/mrraps/index.html",
+      "/entries/cause/index.html",
+      "/entries/radial_mr/index.html"
     ]
   }
 ]

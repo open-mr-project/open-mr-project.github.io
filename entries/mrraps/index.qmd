@@ -1,7 +1,7 @@
 ---
 title: MR-RAPS
 author: .na.character
-date: ''
+date: '2020-06-01'
 comments:
   utterances:
     repo: mr-methods-network/siteComments
@@ -57,7 +57,7 @@ data:
   software_features: .na.character
   title: MR-RAPS
   author: .na.character
-  pubdate: ''
+  pubdate: '2020-06-01'
   slug: mrraps
   categories:
   - - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if
