@@ -1,0 +1,7 @@
+---
+title: Related links
+---
+
+* MRC IEU GitHub Pages [website](https://mrcieu.github.io/#software-overview)
+* Steve Burgess' group [website](https://www.mendelianrandomization.com/index.php/software-code)
+* Chris Moreno-Stokoe's [website](https://www.morenostok.io/mrsoftwarelist.html)
