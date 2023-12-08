@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "related.html",
-    "href": "related.html",
-    "title": "Related links",
+    "objectID": "submit.html",
+    "href": "submit.html",
+    "title": "Submission",
     "section": "",
-    "text": "MRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
+    "text": "Methods can be included here in two ways\nIdeally you would submit the method to the software registry first, and then link to the software in the meta data submission."
   },
   {
-    "objectID": "table.html",
-    "href": "table.html",
-    "title": "Methods",
-    "section": "",
-    "text": "All methods listed here"
+    "objectID": "submit.html#meta-data-registry",
+    "href": "submit.html#meta-data-registry",
+    "title": "Submission",
+    "section": "Meta data registry",
+    "text": "Meta data registry\nSubmit a new method using the form below\nSubmit a new method"
   },
   {
     "objectID": "index.html",
@@ -67,7 +67,14 @@
     "href": "background.html",
     "title": "Background",
     "section": "",
-    "text": "Some information about the MR Methods Network"
+    "text": "Information about the MR Methods Network"
+  },
+  {
+    "objectID": "background.html#related-sites",
+    "href": "background.html#related-sites",
+    "title": "Background",
+    "section": "Related sites",
+    "text": "Related sites\n\nMRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
   },
   {
     "objectID": "r-universe.html",
@@ -154,31 +161,10 @@
     "text": "Method for clustering the estimated effects from each SNP"
   },
   {
-    "objectID": "simulations.html",
-    "href": "simulations.html",
-    "title": "Simulations",
+    "objectID": "table.html",
+    "href": "table.html",
+    "title": "Methods",
     "section": "",
-    "text": "Under construction"
-  },
-  {
-    "objectID": "submit.html",
-    "href": "submit.html",
-    "title": "Submission",
-    "section": "",
-    "text": "Methods can be included here in two ways\nIdeally you would submit the method to the software registry first, and then link to the software in the meta data submission."
-  },
-  {
-    "objectID": "submit.html#meta-data-registry",
-    "href": "submit.html#meta-data-registry",
-    "title": "Submission",
-    "section": "Meta data registry",
-    "text": "Meta data registry\nSubmit a new method using the form below\nSubmit a new method"
-  },
-  {
-    "objectID": "submit.html#software-registry",
-    "href": "submit.html#software-registry",
-    "title": "Submission",
-    "section": "Software registry",
-    "text": "Software registry\nTBD"
+    "text": "All methods listed here"
   }
 ]
