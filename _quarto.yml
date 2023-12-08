@@ -13,8 +13,6 @@ website:
       - table.qmd
       - r-universe.qmd
       - submit.qmd
-      - text: "Related"
-        href: related.qmd
       - icon: github
         href: https://github.com/mr-methods-network/mr-methods-network.github.io
   repo-url: https://github.com/mr-methods-network/mr-methods-network.github.io
