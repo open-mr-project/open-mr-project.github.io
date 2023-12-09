@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MRMN - R-Universe</title>
+<title>MRMN - MRC IEU R-Universe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,20 +121,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./background.html" rel="" target="">
- <span class="menu-text">Background</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./table.html" rel="" target="">
  <span class="menu-text">Methods</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./submit.html" rel="" target="">
+ <span class="menu-text">Submission</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./r-universe.html" rel="" target="" aria-current="page">
  <span class="menu-text">R-Universe</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./submit.html" rel="" target="">
- <span class="menu-text">Submission</span></a>
+    <a class="nav-link" href="./background.html" rel="" target="">
+ <span class="menu-text">Background</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/mr-methods-network/mr-methods-network.github.io" rel="" target=""><i class="bi bi-github" role="img">
@@ -172,7 +172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R-Universe</h1>
+<h1 class="title">MRC IEU R-Universe</h1>
 </div>
 
 
@@ -189,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>The MRC IEU R-universe <a href="https://mrcieu.r-universe.dev" class="uri">https://mrcieu.r-universe.dev</a> distributes binary R packages for many MR related packages which are currently only available on GitHub and have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with Intel processors, and Ubuntu Linux 22.04 Jammy Jellyfish (and more will be available as the R-universe system extends).</p>
+<p>The MRC IEU R-universe <a href="https://mrcieu.r-universe.dev" class="uri">https://mrcieu.r-universe.dev</a> distributes binary R packages for many MR related packages which are currently only available on GitHub and have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with Intel processors, Ubuntu Linux 22.04 Jammy Jellyfish, and for WebR (more will be available as the R-universe system extends).</p>
 <p>If you would like a package added to the universe please open an issue in our <a href="https://github.com/MRCIEU/mrcieu.r-universe.dev/issues">repository</a>.</p>
 <p>Additionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,</p>
 <ul>
@@ -246,7 +246,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="webr-users" class="level3">
 <h3 class="anchored" data-anchor-id="webr-users">WebR users</h3>
-<p>WASM binaries for WebR users are available with the code below. Note that currently not all packages are available for WebR.</p>
+<p>Web Assembly (WASM) binaries for WebR users are available with the code below when run in WebR (there is a <a href="https://webr.r-wasm.org/latest/">demo you can try out</a>). You can find out more about WebR from its <a href="https://docs.r-wasm.org/webr/latest/">documentation website</a>. Note that currently not all packages are available for WebR.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'TwoSampleMR'</span>,</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">'https://mrcieu.r-universe.dev'</span>, <span class="st">'https://repo.r-wasm.org'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
