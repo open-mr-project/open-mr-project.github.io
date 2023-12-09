@@ -77,7 +77,7 @@ install.packages(
 
 ### WebR users
 
-Web Assembly (WASM) binaries for WebR users are available with the code below when run in WebR (there is a demo you can try out at <https://webr.r-wasm.org/latest/>). You can out more about WebR from its documentation website <https://docs.r-wasm.org/webr/latest/>. Note that currently not all packages are available for WebR.
+Web Assembly (WASM) binaries for WebR users are available with the code below when run in WebR (there is a [demo you can try out](https://webr.r-wasm.org/latest/)). You can find out more about WebR from its [documentation website](https://docs.r-wasm.org/webr/latest/). Note that currently not all packages are available for WebR.
 
 ```r
 install.packages('TwoSampleMR',
