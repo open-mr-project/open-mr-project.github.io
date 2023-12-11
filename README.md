@@ -13,8 +13,6 @@
 
 This is a static site generated using [Quarto](https://quarto.org/docs/get-started/). This means that you can write pages and posts in RMarkdown and then render those files into html pages locally. Those html pages are then pushed to github and served by github pages.
 
-
-
 1. Install [Quarto](https://quarto.org/docs/get-started/)
 2. Install `renv` in R - `install.packages("renv")`
 3. Create environment in R - `renv::restore()`
@@ -31,7 +29,7 @@ Once you download the submission form in xlsx format to `/data/mrmn.xlsx`, two t
 
 This is achieved with the `generate.r` script. Whenever `quarto render` is run, it will run `generate.r` as a pre-rendering step automatically, so you should only have to do anything with that file if you want to edit it.
 
-It generates posts by converting the data into yaml format for each method, and then adding that to the front matter for the `data/template` file. 
+It generates posts by converting the data into yaml format for each method, and then adding that to the front matter for the `data/template` file.
 
 ### Add a new page
 
@@ -45,7 +43,7 @@ It generates posts by converting the data into yaml format for each method, and 
 
 ### Publishing
 
-Once you've previewed the changes and are happy, push them to github. 
+Once you've previewed the changes and are happy, push them to github.
 
 **Note: do not allow any unnecessary files to exist in the directory**
 
