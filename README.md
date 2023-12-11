@@ -47,7 +47,7 @@ Once you've previewed the changes and are happy, push them to github.
 
 **Note: do not allow any unnecessary files to exist in the directory**
 
-```
+```bash
 git add *
 git commit -a -m "<insert message>"
 git push
