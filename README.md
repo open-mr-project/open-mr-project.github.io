@@ -45,7 +45,7 @@ It generates posts by converting the data into yaml format for each method, and 
 
 Once you've previewed the changes and are happy, push them to github.
 
-**Note: do not allow any unnecessary files to exist in the directory**
+Note: *do not allow any unnecessary files to exist in the directory*
 
 ```bash
 git add *
