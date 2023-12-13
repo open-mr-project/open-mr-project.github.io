@@ -18,7 +18,7 @@ names(dat) <- metadata$names
 
 dat %>%
   mutate(`Code repository (URL)` = trimws(`Code repository (URL)`)) %>%
-  mutate(`Code repository (URL)` = paste('<a href = ', shQuote(`Code repository (URL)`), '>', `Code repository (URL)`, '</a>')) %>%
+  mutate(`Code repository (URL)` = paste0('<a href = ', shQuote(`Code repository (URL)`), '>', `Code repository (URL)`, '</a>')) %>%
   filter(`Entry type` == "Analytical method") %>%
   select(`title`, `Code repository (URL)`) %>%
   datatable(escape = FALSE)
