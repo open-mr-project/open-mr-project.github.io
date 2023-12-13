@@ -11,20 +11,20 @@ library(lubridate)
 library(Diderot)
 
 make_slug <- function(s) {
-    gsub("[^[:alnum:] ]", "", s) %>% 
+    gsub("[^[:alnum:] ]", "", s) %>%
         tolower() %>%
         gsub(" ", "_", .) %>%
-        make.unique(sep="_")
+        make.unique(sep = "_")
 }
 
 organise_categories <- function(dat) {
     o <- Map(c,
-        strsplit(dat$`What data types can the method be used with?\r\n`, split=";"),
-        strsplit(dat$`Analytical contexts?`, split=";"),
-        strsplit(dat$`Specific scientific context (if any)?`, split=";"),
-        strsplit(dat$`This method is primarily concerned with`, split=";")
+        strsplit(dat$`What data types can the method be used with?\r\n`, split = ";"),
+        strsplit(dat$`Analytical contexts?`, split = ";"),
+        strsplit(dat$`Specific scientific context (if any)?`, split = ";"),
+        strsplit(dat$`This method is primarily concerned with`, split = ";")
     )
-   
+
     lapply(o, \(x) x[!is.na(x)])
 
     # dat$`What data types can the method be used with?\r\n`
@@ -45,7 +45,7 @@ generate_posts <- function(i, dat, template) {
     l$comments <- list(utterances = list(repo = "mr-methods-network/siteComments"))
     # d <- format_data(dat[i,])
     l$categories <- dat$categories[i]
-    l$data <- dat[i,]
+    l$data <- dat[i, ]
     dir.create(here("entries", dat$slug[i]))
     c(
         "---",
@@ -61,7 +61,7 @@ generate_posts <- function(i, dat, template) {
 
 
 format_data <- function(d) {
-    if(is.na(d$abbreviated_method_name)){
+    if (is.na(d$abbreviated_method_name)) {
         d$abbreviated_method_name <- d$method_name
     }
     d$title <- d$abbreviated_method_name
@@ -98,15 +98,15 @@ metadata <- tibble(
 
 names(dat) <- metadata$slugs
 
-unlink(list.files(here("entries"), full.names=TRUE), recursive=TRUE)
-dir.create(here("entries"), recursive=TRUE, showWarning=FALSE)
+unlink(list.files(here("entries"), full.names = TRUE), recursive = TRUE)
+dir.create(here("entries"), recursive = TRUE, showWarning = FALSE)
 
-dat_methods <- subset(dat, entry_type=="Analytical method")
+dat_methods <- subset(dat, entry_type == "Analytical method")
 
-lapply(1:nrow(dat_methods), 
+lapply(seq_len(nrow(dat_methods)),
 \(i) {
     message(i)
     generate_posts(i, dat_methods, here("data", "template"))
 })
 
-save(dat, metadata, file=here("data", "mrmn.rdata"))
+save(dat, metadata, file = here("data", "mrmn.rdata"))
