@@ -17,7 +17,7 @@ load(here("data", "mrmn.rdata"))
 names(dat) <- metadata$names
 
 dat %>%
-  filter(`Entry type`=="Analytical method") %>%
+  filter(`Entry type` == "Analytical method") %>%
   select(`title`, `Code repository (URL)`) %>%
-datatable()
+  datatable()
 ```
