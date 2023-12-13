@@ -50,7 +50,7 @@ data:
     the Instrument strength independent of direct effect (InSIDE) assumption. ;The
     method accounts for unbalanced (correlated) pleiotropy or pleiotropy that violates
     the InSIDE assumption.;
-  code_repository_url: github.com/jean997/cause
+  code_repository_url: https://github.com/jean997/cause
   documentation_for_the_specific_method_url: .na.character
   other_relevant_urls_eg_cran_link: https://jean997.github.io/cause/
   software_features: Includes visualisation tools;
