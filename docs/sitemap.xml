@@ -1,51 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mr-methods-network.github.io/submit.html</loc>
-    <lastmod>2023-12-09T07:35:48.437Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/index.html</loc>
-    <lastmod>2023-11-14T18:22:31.121Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/radial_mr/index.html</loc>
-    <lastmod>2024-01-12T15:26:09.915Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/lhcmr/index.html</loc>
-    <lastmod>2024-01-12T15:26:09.917Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/cause/index.html</loc>
-    <lastmod>2024-01-12T15:26:09.916Z</lastmod>
-  </url>
-  <url>
     <loc>https://mr-methods-network.github.io/background.html</loc>
-    <lastmod>2023-12-09T07:18:01.155Z</lastmod>
+    <lastmod>2024-01-18T23:15:25.415Z</lastmod>
   </url>
   <url>
-    <loc>https://mr-methods-network.github.io/r-universe.html</loc>
-    <lastmod>2024-01-12T15:26:00.774Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/mrbee/index.html</loc>
-    <lastmod>2024-01-12T15:26:09.918Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/weak_instrument_robust_mvmr/index.html</loc>
-    <lastmod>2024-01-12T15:26:09.912Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/mrraps/index.html</loc>
-    <lastmod>2024-01-12T15:26:09.919Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mr-methods-network.github.io/entries/mr_clust/index.html</loc>
-    <lastmod>2024-01-12T15:26:09.916Z</lastmod>
+    <loc>https://mr-methods-network.github.io/submit.html</loc>
+    <lastmod>2024-01-18T23:15:25.591Z</lastmod>
   </url>
   <url>
     <loc>https://mr-methods-network.github.io/table.html</loc>
-    <lastmod>2023-12-13T20:30:17.294Z</lastmod>
+    <lastmod>2024-01-18T23:15:46.571Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/index.html</loc>
+    <lastmod>2024-01-18T23:15:39.771Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/r-universe.html</loc>
+    <lastmod>2024-01-18T23:15:28.059Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mr-methods-network.github.io/entries/weak_instrument_robust_mvmr/index.html</loc>
+    <lastmod>2024-01-18T23:15:49.367Z</lastmod>
   </url>
 </urlset>

@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "background.html",
+    "href": "background.html",
+    "title": "Background",
+    "section": "",
+    "text": "Information about the MR Methods Network"
+  },
+  {
+    "objectID": "background.html#related-sites",
+    "href": "background.html#related-sites",
+    "title": "Background",
+    "section": "Related sites",
+    "text": "Related sites\n\nMRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
+  },
+  {
     "objectID": "submit.html",
     "href": "submit.html",
     "title": "Submission",
@@ -14,67 +28,18 @@
     "text": "Metadata registry\nSubmit a new method using the form below\nSubmit a new method"
   },
   {
+    "objectID": "table.html",
+    "href": "table.html",
+    "title": "Methods",
+    "section": "",
+    "text": "All methods listed here"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Mendelian randomization Methods Network",
     "section": "",
-    "text": "Welcome to the Mendelian randomization Methods Network (MRMN)\n\n\n\n\n\n\nMission statement\n\n\n\nA network of Mendelian randomization analysts and methods developers who aim to build an annotated methods repository\n\n\n\n\n\nDirected acyclic graph representing the three instrumental variable core conditions underlying the Mendelian randomization approach.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLHC-MR\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Effect direction orientation,Bi-directional relationships,Estimation\n\n\n\n\n\n\n\n.na.character\n\n\n\n\n\n\n\n\n\n\n\n\nMRBEE\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Multivariable MR (multiple exposures, one outcome),Univariable MR (one exposure, one outcome),Estimation\n\n\n\n\n\n\n\n.na.character\n\n\nJan 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nWeak instrument robust MVMR\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Multivariable MR (multiple exposures, one outcome),Assumption testing / sensitivity analysis\n\n\n\n\n\n\n\nEleanor Sanderson\n\n\nAug 2, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nMR Clust\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Complex traits,Assumption testing / sensitivity analysis\n\n\n\n\n\n\n\nEleanor Sanderson\n\n\nSep 11, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nMR-RAPS\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Estimation\n\n\n\n\n\n\n\n.na.character\n\n\nJun 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nCAUSE\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Estimation\n\n\n\n\n\n\n\nJean Morrison\n\n\nMay 25, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nRadial MR\n\n\n\nGWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR),Univariable MR (one exposure, one outcome),Assumption testing / sensitivity analysis\n\n\n\n\n\n\n\nEleanor Sanderson\n\n\nJun 28, 2018\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "entries/radial_mr/index.html",
-    "href": "entries/radial_mr/index.html",
-    "title": "Radial MR",
-    "section": "",
-    "text": "Method that allows the visualisation and removal of outliers in MR"
-  },
-  {
-    "objectID": "entries/radial_mr/index.html#description",
-    "href": "entries/radial_mr/index.html#description",
-    "title": "Radial MR",
-    "section": "",
-    "text": "Method that allows the visualisation and removal of outliers in MR"
-  },
-  {
-    "objectID": "entries/lhcmr/index.html",
-    "href": "entries/lhcmr/index.html",
-    "title": "LHC-MR",
-    "section": "",
-    "text": "We propose a Latent Heritable Confounder MR (LHC-MR) method applicable to association summary statistics, which estimates bi-directional causal effects, direct heritability, and confounder effects while accounting for sample overlap."
-  },
-  {
-    "objectID": "entries/lhcmr/index.html#description",
-    "href": "entries/lhcmr/index.html#description",
-    "title": "LHC-MR",
-    "section": "",
-    "text": "We propose a Latent Heritable Confounder MR (LHC-MR) method applicable to association summary statistics, which estimates bi-directional causal effects, direct heritability, and confounder effects while accounting for sample overlap."
-  },
-  {
-    "objectID": "entries/cause/index.html",
-    "href": "entries/cause/index.html",
-    "title": "CAUSE",
-    "section": "",
-    "text": "A Bayesian MR method accounting for correlated and uncorrelated horizontal pleiotropy."
-  },
-  {
-    "objectID": "entries/cause/index.html#description",
-    "href": "entries/cause/index.html#description",
-    "title": "CAUSE",
-    "section": "",
-    "text": "A Bayesian MR method accounting for correlated and uncorrelated horizontal pleiotropy."
-  },
-  {
-    "objectID": "background.html",
-    "href": "background.html",
-    "title": "Background",
-    "section": "",
-    "text": "Information about the MR Methods Network"
-  },
-  {
-    "objectID": "background.html#related-sites",
-    "href": "background.html#related-sites",
-    "title": "Background",
-    "section": "Related sites",
-    "text": "Related sites\n\nMRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
+    "text": "Welcome to the Mendelian randomization Methods Network (MRMN)\n\n\n\n\n\n\nMission statement\n\n\n\nA network of Mendelian randomization analysts and methods developers who aim to build an annotated methods repository\n\n\n\n\n\nDirected acyclic graph representing the three instrumental variable core conditions underlying the Mendelian randomization approach.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeak instrument robust MVMR\n\n\n\n\n\n\nEleanor Sanderson\n\n\nAug 2, 2021\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "r-universe.html",
@@ -105,66 +70,38 @@
     "text": "Footnotes\n\n\nAs described in the following blog post.↩︎"
   },
   {
-    "objectID": "entries/mrbee/index.html",
-    "href": "entries/mrbee/index.html",
-    "title": "MRBEE",
-    "section": "",
-    "text": "We introduce MRBEE (MR using Bias-corrected Estimating Equation), a novel multivariable MR method capable of simultaneously removing error-in-variable bias and identi16 fying horizontal pleiotropy."
-  },
-  {
-    "objectID": "entries/mrbee/index.html#description",
-    "href": "entries/mrbee/index.html#description",
-    "title": "MRBEE",
-    "section": "",
-    "text": "We introduce MRBEE (MR using Bias-corrected Estimating Equation), a novel multivariable MR method capable of simultaneously removing error-in-variable bias and identi16 fying horizontal pleiotropy."
-  },
-  {
     "objectID": "entries/weak_instrument_robust_mvmr/index.html",
     "href": "entries/weak_instrument_robust_mvmr/index.html",
     "title": "Weak instrument robust MVMR",
     "section": "",
-    "text": "A method for multivariable mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
+    "text": "Code (Language: .na)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html#resources",
+    "href": "entries/weak_instrument_robust_mvmr/index.html#resources",
+    "title": "Weak instrument robust MVMR",
+    "section": "",
+    "text": "Code (Language: .na)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html#context",
+    "href": "entries/weak_instrument_robust_mvmr/index.html#context",
+    "title": "Weak instrument robust MVMR",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/weak_instrument_robust_mvmr/index.html#assumptions-and-sources-of-bias",
+    "title": "Weak instrument robust MVMR",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✗\n\n\nCorrelated horizontal pleiotropy\n✗\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
   },
   {
     "objectID": "entries/weak_instrument_robust_mvmr/index.html#description",
     "href": "entries/weak_instrument_robust_mvmr/index.html#description",
     "title": "Weak instrument robust MVMR",
-    "section": "",
-    "text": "A method for multivariable mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
-  },
-  {
-    "objectID": "entries/mrraps/index.html",
-    "href": "entries/mrraps/index.html",
-    "title": "MR-RAPS",
-    "section": "",
-    "text": "MR-RAPS is an MR method using a consistent asymptotically normal estimator that improves weak instrument bias and accounts for horizontal pleiotropy using a random effect and an outlier robust loss function"
-  },
-  {
-    "objectID": "entries/mrraps/index.html#description",
-    "href": "entries/mrraps/index.html#description",
-    "title": "MR-RAPS",
-    "section": "",
-    "text": "MR-RAPS is an MR method using a consistent asymptotically normal estimator that improves weak instrument bias and accounts for horizontal pleiotropy using a random effect and an outlier robust loss function"
-  },
-  {
-    "objectID": "entries/mr_clust/index.html",
-    "href": "entries/mr_clust/index.html",
-    "title": "MR Clust",
-    "section": "",
-    "text": "Method for clustering the estimated effects from each SNP"
-  },
-  {
-    "objectID": "entries/mr_clust/index.html#description",
-    "href": "entries/mr_clust/index.html#description",
-    "title": "MR Clust",
-    "section": "",
-    "text": "Method for clustering the estimated effects from each SNP"
-  },
-  {
-    "objectID": "table.html",
-    "href": "table.html",
-    "title": "Methods",
-    "section": "",
-    "text": "All methods listed here"
+    "section": "Description",
+    "text": "Description\nA method for multivariable Mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
   }
 ]
