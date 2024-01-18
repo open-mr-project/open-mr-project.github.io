@@ -192,4 +192,4 @@ lapply(seq_len(nrow(dat_methods)),
          generate_posts(i, dat_methods, here("data", "template"))
        })
 
-saveRDS(dat_methods, file = here("data", "openmr.rdata"))
+saveRDS(dat_methods, file = here("data", "openmr.RDS"))
