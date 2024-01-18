@@ -1,5 +1,112 @@
+<style>
+.uvmr {
+    color: white;
+    background-color: {{< meta data.uvmr_color >}};
+}
+
+.mvmr {
+    color: white;
+    background-color: {{< meta data.mvmr_color >}};
+}
+
+.network {
+    color: white;
+    background-color: {{< meta data.network_color >}};
+}
+
+.bidirectional {
+    color: white;
+    background-color: {{< meta data.bidirectional_color >}};
+}
+
+.nonlinear {
+    color: white;
+    background-color: {{< meta data.nonlinear_color >}};
+}
+
+.ii {
+    color: white;
+    background-color: {{< meta data.ii_color >}};
+}
+.is {
+    color: white;
+    background-color: {{< meta data.is_color >}};
+}
+.si {
+    color: white;
+    background-color: {{< meta data.si_color >}};
+}
+.ss {
+    color: white;
+    background-color: {{< meta data.ss_color >}};
+}
+.fam {
+    color: white;
+    background-color: {{< meta data.fam_color >}};
+}
+
+.exquant {
+    color: white;
+    background-color: {{< meta data.exquant_color >}};
+}
+.exbin {
+    color: white;
+    background-color: {{< meta data.exbin_color >}};
+}
+.extte {
+    color: white;
+    background-color: {{< meta data.extte_color >}};
+}
+.outquant {
+    color: white;
+    background-color: {{< meta data.outquant_color >}};
+}
+.outbin {
+    color: white;
+    background-color: {{< meta data.outbin_color >}};
+}
+.outtte {
+    color: white;
+    background-color: {{< meta data.outtte_color >}};
+}
+</style>
+## Resources
+
+[Code]({{< meta data.code_repository_url >}}) (Language: {{< meta data.code_language >}}) <span style="margin-right: 30px;"></span> [Website]({{< meta data.method_website >}}) <span style="margin-right: 30px;"></span> [Paper]({{< meta data.publication_doi >}}) (Pub Date: {{< meta data.pubdate >}})
+
+Other URLS: {{< meta data.other_url >}}
+
+Method Contact: {{< meta data.primary_method_contact >}} ( {{< meta data.primary_method_contact_email_address >}})
+
+Entry Contact: {{< meta data.primary_entry_contact >}} ( {{< meta data.primary_entry_contact_email_address >}})
+
+## Context
+
+
+Analysis Type:  <span class = "uvmr">UVMR</span> <span style="margin-right: 10px;"></span> <span class = "mvmr">MVMR</span> <span style="margin-right: 10px;"></span> <span class="network">Network MR</span>  <span style="margin-right: 10px;"></span> <span class = "bidirectional">Bi-Driectional MR</span></span><span style="margin-right: 10px;"></span> <span class="nonlinear">Non-Linear</span>
+
+
+Input Data Types:  <span class = "ii">Ind/Ind</span> <span style="margin-right: 10px;"></span> <span class = "is">Ind/SS</span> <span style="margin-right: 10px;"></span> <span class="si">SS/Ind</span>  <span style="margin-right: 10px;"></span> <span class = "ss">SS/SS</span><span style="margin-right: 10px;"></span><span class = "fam">family</span>
+
+Exposure Trait Types:  <span class="exquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="exbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="extte">Time to event</span> 
+
+Outcome Trait Types: <span class="outquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="outbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="outtte">Time to event</span> 
+
+## Assumptions and Sources of Bias
+
+| Source of Bias | Addressed |
+|:-----------|:--------:|
+| Weak instruments | {{< meta data.weak_inst_symbol >}} | 
+| Winner's curse | {{< meta data.winners_curse_symbol >}}  |  
+| Sample overlap | {{< meta data.sample_overlap_symbol >}} |
+| Uncorrelated horizontal pleiotropy | {{< meta data.uhp_symbol >}} |
+| Correlated horizontal pleiotropy |  {{< meta data.chp_symbol >}} | 
+| Ancestry differences in samples | {{< meta data.anc_diff_symbol >}}| 
+| Residual confounding in GWAS | {{< meta data.confounding_symbol >}}| 
+| Cross-trait assortative mating |{{< meta data.assortative_mating_symbol >}}| 
+| Index-event/conditioning on heritable trait | {{< meta data.colliding_symbol >}}| 
 
 
 ## Description
 
-{{< meta data.brief_description_eg_up_to_150_words >}}
+{{< meta data.brief_description >}}

@@ -5,65 +5,178 @@ date: '2021-08-02'
 comments:
   utterances:
     repo: mr-methods-network/siteComments
-categories:
-- - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if
-    Network MR)
-  - Multivariable MR (multiple exposures, one outcome)
-  - Assumption testing / sensitivity analysis
 data:
   id: 1.0
-  start_time: 1.6897752e+09
-  completion_time: 1.6897757e+09
+  start_time: 1.7055961e+09
+  completion_time: 1.7055964e+09
   email: anonymous
   name: .na
   last_modified_time: .na
-  primary_contact: Eleanor Sanderson
-  primary_contact_email_address: eleanor.sanderson@bristol.ac.uk
-  publication_doi: https://doi.org/10.1002/sim.9133
-  brief_description_eg_up_to_150_words: A method for multivariable mendelian randomization
-    to test for weak instruments and estimate causal effects that are robust to weak
-    instruments.
-  specific_scientific_context_if_any: .na.character
-  analytical_contexts: Multivariable MR (multiple exposures, one outcome);
-  entry_type: Analytical method
-  these_guidelines_address: .na.character
-  list_any_estimation_methods_used_in_this_application_with_publication_and_software_references: .na.character
-  describe_any_novel_features_of_this_application_not_already_addressed: .na.character
+  primary_entry_contact: Eleanor Sanderson
+  primary_entry_contact_email_address: eleanor.sanderson@bristol.ac.uk
+  primary_method_contact: Eleanor Sanderson
+  primary_method_contact_email_address: eleanor.sanderson@bristol.ac.uk
   method_name: Weak instrument robust MVMR
-  abbreviated_method_name: Weak instrument robust MVMR
-  what_types_of_exposure_variables_can_be_used_if_network_mr_what_types_of_traits_can_be_used: Quantitative/continuous;Binary;Molecular
-    traits;Complex / polygenic traits;
-  what_types_of_outcome_variables_can_be_used_if_network_mr_skip_this_question: Quantitative/continuous;Binary;Molecular
-    traits;Complex / polygenic traits;
+  abbreviated_method_name: .na
+  publication_doi: https://doi.org/10.1002/sim.9133
+  code_repository_url: https://github.com/WSpiller/MVMR
+  code_language: .na
+  method_website: https://github.com/WSpiller/MVMR
+  other_url: none
+  which_analysis_types_is_the_method_used_for: Multivariable MR (multiple exposures,
+    one outcome);
+  specific_scientific_context_if_any: .na
+  what_types_of_exposure_variables_can_be_used_if_network: Quantitative/continuous;Binary;
+  what_types_of_outcome_variables_can_be_used_if_network: Quantitative/continuous;Binary;
   what_data_types_can_the_method_be_used_with: GWAS summary statistics for both exposure(s)
     and outcome(s) (or all traits if Network MR);
-  does_the_method_account_for_ancestry_differences_between_exposure_and_outcome_samples_or_between_samples_for_multiple_traits: 'No'
-  this_method_is_primarily_concerned_with: Assumption testing / sensitivity analysis
-  does_this_assumption_testing_or_sensitivity_analysis_method_accompany_a_specific_estimation_method: Multivariable
-    Mendelian Randomization
-  what_conditions__assumptions__sources_of_bias_are_addressed_or_tested_for_by_this_method: Weak
-    instrument bias;
-  how_are_instruments_selected: .na.character
-  does_the_method_account_for_partial_or_full_overlap_between_exposure_and_outcome_samples_or_between_samples_for_multiple_traits: .na.character
-  which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method: .na.character
-  code_repository_url: https://github.com/WSpiller/MVMR
-  documentation_for_the_specific_method_url: https://github.com/WSpiller/MVMR
-  other_relevant_urls_eg_cran_link: .na.character
-  software_features: .na.character
+  how_are_instruments_selected: .na
+  which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method: The method is
+    robust to weak instruments or reduces weak instrument bias compared to traditional
+    methods such as IVW regression or relaxes the no measurement error (NOME) assumption.;
+  brief_description: A method for multivariable Mendelian randomization to test for
+    weak instruments and estimate causal effects that are robust to weak instruments.
   title: Weak instrument robust MVMR
   author: Eleanor Sanderson
-  pubdate: '2021-08-02'
   slug: weak_instrument_robust_mvmr
-  categories:
-  - - GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if
-      Network MR)
-    - Multivariable MR (multiple exposures, one outcome)
-    - Assumption testing / sensitivity analysis
+  pubdate: '2021-08-02'
+  uvmr_color: '#808080'
+  mvmr_color: '#00796B'
+  bidirectional_color: '#808080'
+  nonlinear_color: '#808080'
+  network_color: '#808080'
+  ii_color: '#808080'
+  ss_color: '#00796B'
+  fam_color: '#808080'
+  is_color: '#808080'
+  si_color: '#808080'
+  exquant_color: '#00796B'
+  exbin_color: '#00796B'
+  extte_color: '#808080'
+  outquant_color: '#00796B'
+  outbin_color: '#00796B'
+  outtte_color: '#808080'
+  weak_inst_symbol: '&check;'
+  winners_curse_symbol: '&cross;'
+  sample_overlap_symbol: '&cross;'
+  confounding_symbol: '&cross;'
+  assortative_mating_symbol: '&cross;'
+  uhp_symbol: '&cross;'
+  chp_symbol: '&cross;'
+  colliding_symbol: '&cross;'
+  anc_diff_symbol: '&cross;'
 ---
 
+<style>
+.uvmr {
+    color: white;
+    background-color: {{< meta data.uvmr_color >}};
+}
+
+.mvmr {
+    color: white;
+    background-color: {{< meta data.mvmr_color >}};
+}
+
+.network {
+    color: white;
+    background-color: {{< meta data.network_color >}};
+}
+
+.bidirectional {
+    color: white;
+    background-color: {{< meta data.bidirectional_color >}};
+}
+
+.nonlinear {
+    color: white;
+    background-color: {{< meta data.nonlinear_color >}};
+}
+
+.ii {
+    color: white;
+    background-color: {{< meta data.ii_color >}};
+}
+.is {
+    color: white;
+    background-color: {{< meta data.is_color >}};
+}
+.si {
+    color: white;
+    background-color: {{< meta data.si_color >}};
+}
+.ss {
+    color: white;
+    background-color: {{< meta data.ss_color >}};
+}
+.fam {
+    color: white;
+    background-color: {{< meta data.fam_color >}};
+}
+
+.exquant {
+    color: white;
+    background-color: {{< meta data.exquant_color >}};
+}
+.exbin {
+    color: white;
+    background-color: {{< meta data.exbin_color >}};
+}
+.extte {
+    color: white;
+    background-color: {{< meta data.extte_color >}};
+}
+.outquant {
+    color: white;
+    background-color: {{< meta data.outquant_color >}};
+}
+.outbin {
+    color: white;
+    background-color: {{< meta data.outbin_color >}};
+}
+.outtte {
+    color: white;
+    background-color: {{< meta data.outtte_color >}};
+}
+</style>
+## Resources
+
+[Code]({{< meta data.code_repository_url >}}) (Language: {{< meta data.code_language >}}) <span style="margin-right: 30px;"></span> [Website]({{< meta data.method_website >}}) <span style="margin-right: 30px;"></span> [Paper]({{< meta data.publication_doi >}}) (Pub Date: {{< meta data.pubdate >}})
+
+Other URLS: {{< meta data.other_url >}}
+
+Method Contact: {{< meta data.primary_method_contact >}} ( {{< meta data.primary_method_contact_email_address >}})
+
+Entry Contact: {{< meta data.primary_entry_contact >}} ( {{< meta data.primary_entry_contact_email_address >}})
+
+## Context
+
+
+Analysis Type:  <span class = "uvmr">UVMR</span> <span style="margin-right: 10px;"></span> <span class = "mvmr">MVMR</span> <span style="margin-right: 10px;"></span> <span class="network">Network MR</span>  <span style="margin-right: 10px;"></span> <span class = "bidirectional">Bi-Driectional MR</span></span><span style="margin-right: 10px;"></span> <span class="nonlinear">Non-Linear</span>
+
+
+Input Data Types:  <span class = "ii">Ind/Ind</span> <span style="margin-right: 10px;"></span> <span class = "is">Ind/SS</span> <span style="margin-right: 10px;"></span> <span class="si">SS/Ind</span>  <span style="margin-right: 10px;"></span> <span class = "ss">SS/SS</span><span style="margin-right: 10px;"></span><span class = "fam">family</span>
+
+Exposure Trait Types:  <span class="exquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="exbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="extte">Time to event</span> 
+
+Outcome Trait Types: <span class="outquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="outbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="outtte">Time to event</span> 
+
+## Assumptions and Sources of Bias
+
+| Source of Bias | Addressed |
+|:-----------|:--------:|
+| Weak instruments | {{< meta data.weak_inst_symbol >}} | 
+| Winner's curse | {{< meta data.winners_curse_symbol >}}  |  
+| Sample overlap | {{< meta data.sample_overlap_symbol >}} |
+| Uncorrelated horizontal pleiotropy | {{< meta data.uhp_symbol >}} |
+| Correlated horizontal pleiotropy |  {{< meta data.chp_symbol >}} | 
+| Ancestry differences in samples | {{< meta data.anc_diff_symbol >}}| 
+| Residual confounding in GWAS | {{< meta data.confounding_symbol >}}| 
+| Cross-trait assortative mating |{{< meta data.assortative_mating_symbol >}}| 
+| Index-event/conditioning on heritable trait | {{< meta data.colliding_symbol >}}| 
 
 
 ## Description
 
-{{< meta data.brief_description_eg_up_to_150_words >}}
+{{< meta data.brief_description >}}
 
