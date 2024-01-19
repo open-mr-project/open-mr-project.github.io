@@ -13,6 +13,6 @@ Methods can be included here by submitting information and metadata about the me
 
 Submit a new method using the form below
 
-<a class="btn btn-primary" href="https://forms.office.com/e/2WpKRWVv6N" target="_blank" role="button">Submit a new method</a>
+<a class="btn btn-primary" href="https://forms.office.com/r/LKiA33DABX" target="_blank" role="button">Submit a new method</a>
 
 <!-- <iframe width="640px" height="480px" src="https://forms.office.com/r/LKiA33DABX" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
