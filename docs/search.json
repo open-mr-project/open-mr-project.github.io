@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "background.html",
-    "href": "background.html",
-    "title": "Background",
-    "section": "",
-    "text": "Information about the MR Methods Network"
-  },
-  {
-    "objectID": "background.html#related-sites",
-    "href": "background.html#related-sites",
-    "title": "Background",
-    "section": "Related sites",
-    "text": "Related sites\n\nMRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
-  },
-  {
     "objectID": "submit.html",
     "href": "submit.html",
     "title": "Submission",
@@ -28,18 +14,25 @@
     "text": "Metadata registry\nSubmit a new method using the form below\nSubmit a new method"
   },
   {
-    "objectID": "table.html",
-    "href": "table.html",
-    "title": "Methods",
-    "section": "",
-    "text": "All methods listed here"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Mendelian randomization Methods Network",
     "section": "",
     "text": "Welcome to the Mendelian randomization Methods Network (MRMN)\n\n\n\n\n\n\nMission statement\n\n\n\nA network of Mendelian randomization analysts and methods developers who aim to build an annotated methods repository\n\n\n\n\n\nDirected acyclic graph representing the three instrumental variable core conditions underlying the Mendelian randomization approach.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeak instrument robust MVMR\n\n\n\n\n\n\nEleanor Sanderson\n\n\nAug 2, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "background.html",
+    "href": "background.html",
+    "title": "Background",
+    "section": "",
+    "text": "Information about the MR Methods Network"
+  },
+  {
+    "objectID": "background.html#related-sites",
+    "href": "background.html#related-sites",
+    "title": "Background",
+    "section": "Related sites",
+    "text": "Related sites\n\nMRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
   },
   {
     "objectID": "r-universe.html",
@@ -103,5 +96,12 @@
     "title": "Weak instrument robust MVMR",
     "section": "Description",
     "text": "Description\nA method for multivariable Mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
+  },
+  {
+    "objectID": "table.html",
+    "href": "table.html",
+    "title": "Methods",
+    "section": "",
+    "text": "All methods listed here"
   }
 ]
