@@ -1,24 +1,28 @@
 ---
-title: "Mendelian randomization Methods Network"
-listing:
-  contents: entries
-  sort: "date desc"
-  type: grid
-  categories: true
-  sort-ui: false
-  filter-ui: false
+title: "Methods"
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
 
-Welcome to the Mendelian randomization Methods Network (MRMN)
+All methods listed here
 
-::: {.callout-note icon=false}
+---
 
-## Mission statement
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(tidyr)
+library(DT)
+library(here)
+dat <- readRDS(here("data", "openmr.RDS"))
 
-A network of Mendelian randomization analysts and methods developers who aim to build an annotated methods repository
 
-:::
-
-![Directed acyclic graph representing the three instrumental variable core conditions underlying the Mendelian randomization approach.](img/mr-dag-violations.excalidraw.png){fig-alt="The instrumental variable core conditions represented as a directed acyclic graph. The picture is made up of arrows and words. The arrows represent the relationships between the variables in the model; the words represent the variables in the model."}
+dat %>%
+  rename(`Code repository (URL)` = code_repository_url, 
+         Method = title) %>%
+  mutate(`Code repository (URL)` = trimws(`Code repository (URL)`),
+         `Code repository (URL)` = paste0('<a href = ', shQuote(`Code repository (URL)`), "target='_blank'", '>', `Code repository (URL)`, '</a>'),
+         Method = paste0('<a href= ', shQuote(paste0("entries/", slug, "/index.html")), "target='_blank'", '>', Method, '</a>')) %>%
+         #  "[", Method, "](entries/", slug, "/index.html)" )) %>%
+  select(`Method`, `Code repository (URL)`) %>%
+  datatable(escape = FALSE)
+```

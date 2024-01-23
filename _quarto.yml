@@ -4,15 +4,12 @@ project:
   output-dir: docs
 
 website:
-  title: "MRMN"
+  title: "OpenMR project"
   navbar:
     right:
-      - text: "Home"
-        href: index.qmd
-      - table.qmd
+      - index.qmd
       - submit.qmd
-      - text: "R-Universe"
-        href: r-universe.qmd
+      - software.qmd
       - background.qmd
       - icon: github
         href: https://github.com/mr-methods-network/mr-methods-network.github.io

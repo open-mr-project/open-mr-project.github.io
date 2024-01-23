@@ -4,7 +4,29 @@ page-layout: full
 toc: true
 ---
 
-Information about the MR Methods Network
+## MR in context
+
+Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.
+
+MR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.
+
+The OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed.
+
+## Aims of the OpenMR project
+
+1. **Inventory of MR methods**, consistently annotated to enable selection of appropriate methods for specific analyses
+2. **Software repository** of MR methods with regularised environments
+3. **Rolling simulations** to allow consistent comparison and annotation of methods against the MR conditions required for robust inference
+
+
+## Tenets of OpenMR
+
+- **The OpenMR project should be open**
+    - Anybody should be able to contribute with minimal gatekeeping.
+    - Identities of contributors should be public.
+- **The OpenMR project should represent methods for a diverse set of analysis settings and concerns**
+- **The OpenMR project does not perform scientific review**
+    - Methods in the database are listed with the features claimed of them in published or preprint manuscripts. We do not further vet these claims
 
 ## Related sites
 
