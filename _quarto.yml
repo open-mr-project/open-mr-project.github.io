@@ -12,11 +12,11 @@ website:
       - software.qmd
       - background.qmd
       - icon: github
-        href: https://github.com/mr-methods-network/mr-methods-network.github.io
-  repo-url: https://github.com/mr-methods-network/mr-methods-network.github.io
+        href: https://github.com/open-mr-project/open-mr-project.github.io
+  repo-url: https://github.com/open-mr-project/open-mr-project.github.io
   repo-actions: source
   repo-branch: main
-  site-url: https://mr-methods-network.github.io/
+  site-url: https://open-mr-project.github.io/
 
 format:
   html:
