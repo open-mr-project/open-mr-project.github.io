@@ -1,4 +1,4 @@
-# MR Methods Network website
+# OpenMR project website
 
 ## Scope
 
