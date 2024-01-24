@@ -1,24 +1,59 @@
 [
   {
-    "objectID": "pages/submit.html",
-    "href": "pages/submit.html",
+    "objectID": "submit.html",
+    "href": "submit.html",
     "title": "Submission",
     "section": "",
     "text": "Methods can be included here by submitting information and metadata about the method using the form linked below."
   },
   {
-    "objectID": "pages/submit.html#metadata-registry",
-    "href": "pages/submit.html#metadata-registry",
+    "objectID": "submit.html#metadata-registry",
+    "href": "submit.html#metadata-registry",
     "title": "Submission",
     "section": "Metadata registry",
     "text": "Metadata registry\nSubmit a new method using the form below\nSubmit a new method"
   },
   {
-    "objectID": "pages/index.html",
-    "href": "pages/index.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Methods",
     "section": "",
     "text": "All methods listed here"
+  },
+  {
+    "objectID": "background.html",
+    "href": "background.html",
+    "title": "Background",
+    "section": "",
+    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
+  },
+  {
+    "objectID": "background.html#mr-in-context",
+    "href": "background.html#mr-in-context",
+    "title": "Background",
+    "section": "",
+    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
+  },
+  {
+    "objectID": "background.html#aims-of-the-openmr-project",
+    "href": "background.html#aims-of-the-openmr-project",
+    "title": "Background",
+    "section": "Aims of the OpenMR project",
+    "text": "Aims of the OpenMR project\n\nInventory of MR methods, consistently annotated to enable selection of appropriate methods for specific analyses\nSoftware repository of MR methods with regularised environments\nRolling simulations to allow consistent comparison and annotation of methods against the MR conditions required for robust inference"
+  },
+  {
+    "objectID": "background.html#tenets-of-openmr",
+    "href": "background.html#tenets-of-openmr",
+    "title": "Background",
+    "section": "Tenets of OpenMR",
+    "text": "Tenets of OpenMR\n\nThe OpenMR project should be open\n\nAnybody should be able to contribute with minimal gatekeeping.\nIdentities of contributors should be public.\n\nThe OpenMR project should represent methods for a diverse set of analysis settings and concerns\nThe OpenMR project does not perform scientific review\n\nMethods in the database are listed with the features claimed of them in published or preprint manuscripts. We do not further vet these claims"
+  },
+  {
+    "objectID": "background.html#related-sites",
+    "href": "background.html#related-sites",
+    "title": "Background",
+    "section": "Related sites",
+    "text": "Related sites\n\nMRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
   },
   {
     "objectID": "entries/weak_instrument_robust_mvmr/index.html",
@@ -56,76 +91,6 @@
     "text": "Description\nA method for multivariable Mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
   },
   {
-    "objectID": "pages/background.html",
-    "href": "pages/background.html",
-    "title": "Background",
-    "section": "",
-    "text": "Information about the MR Methods Network"
-  },
-  {
-    "objectID": "pages/background.html#related-sites",
-    "href": "pages/background.html#related-sites",
-    "title": "Background",
-    "section": "Related sites",
-    "text": "Related sites\n\nMRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
-  },
-  {
-    "objectID": "pages/software.html",
-    "href": "pages/software.html",
-    "title": "Software",
-    "section": "",
-    "text": "The MRC IEU R-universe https://mrcieu.r-universe.dev distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 22.04 Jammy Jellyfish, and for WebR.\nIf you would like a package added to the universe please open an issue in our repository.\nAdditionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,\n\nthe R-Universe webpage for TwoSampleMR\nand its exposure data vignette"
-  },
-  {
-    "objectID": "pages/software.html#introduction",
-    "href": "pages/software.html#introduction",
-    "title": "Software",
-    "section": "",
-    "text": "The MRC IEU R-universe https://mrcieu.r-universe.dev distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 22.04 Jammy Jellyfish, and for WebR.\nIf you would like a package added to the universe please open an issue in our repository.\nAdditionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,\n\nthe R-Universe webpage for TwoSampleMR\nand its exposure data vignette"
-  },
-  {
-    "objectID": "pages/software.html#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe",
-    "href": "pages/software.html#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe",
-    "title": "Software",
-    "section": "How to install binary R packages from the MRC IEU R-universe",
-    "text": "How to install binary R packages from the MRC IEU R-universe\nTo install binary R packages from the MRC IEU R-universe, include the URL in your repos list as shown below.\n\nWindows and Mac users\nFor Windows and Mac users to install the binary version of TwoSampleMR, run the following code.\n# Installation code for Windows and Mac users\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev',\n    'https://cloud.r-project.org'\n  )\n)\n\n\nUbuntu Linux users\nFor Ubuntu Linux Jammy Jellyfish users running R through RStudio Desktop or RStudio Server, to install TwoSampleMR run the following code.\n# Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/',\n    'https://packagemanager.posit.co/cran/__linux__/jammy/latest',\n    'https://cloud.r-project.org'\n  )\n)\nFor Ubuntu Linux Jammy Jellyfish users running R in the Terminal first amend the HTTPUserAgent option,1 and then run the Linux installation code above. If the HTTPUserAgent option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager’s CRAN packages. For this case, to install TwoSampleMR, run the following code.\n# Installation code for Ubuntu Jammy Jellyfish users running R in the Terminal\noptions(HTTPUserAgent = sprintf(\n  \"R/%s R (%s)\",\n  getRversion(),\n  paste(getRversion(),\n        R.version[\"platform\"],\n        R.version[\"arch\"],\n        R.version[\"os\"])\n))\n\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/',\n    'https://packagemanager.posit.co/cran/__linux__/jammy/latest',\n    'https://cloud.r-project.org'\n  )\n)\n\n\nWebR users\nWeb Assembly (WASM) binaries for WebR users are available with the code below when run in WebR (there is a demo you can try out). You can find out more about WebR from its documentation website. Note that currently not all packages are available for WebR.\ninstall.packages('TwoSampleMR',\n  repos = c('https://mrcieu.r-universe.dev', 'https://repo.r-wasm.org'))"
-  },
-  {
-    "objectID": "pages/software.html#footnotes",
-    "href": "pages/software.html#footnotes",
-    "title": "Software",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nAs described in the following blog post.↩︎"
-  },
-  {
-    "objectID": "submit.html",
-    "href": "submit.html",
-    "title": "Submission",
-    "section": "",
-    "text": "Methods can be included here by submitting information and metadata about the method using the form linked below."
-  },
-  {
-    "objectID": "submit.html#metadata-registry",
-    "href": "submit.html#metadata-registry",
-    "title": "Submission",
-    "section": "Metadata registry",
-    "text": "Metadata registry\nSubmit a new method using the form below\nSubmit a new method"
-  },
-  {
-    "objectID": "background.html",
-    "href": "background.html",
-    "title": "Background",
-    "section": "",
-    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
-  },
-  {
-    "objectID": "background.html#related-sites",
-    "href": "background.html#related-sites",
-    "title": "Background",
-    "section": "Related sites",
-    "text": "Related sites\n\nMRC IEU GitHub Pages website\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website"
-  },
-  {
     "objectID": "software.html",
     "href": "software.html",
     "title": "Software",
@@ -152,40 +117,5 @@
     "title": "Software",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nAs described in the following blog post.↩︎"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Methods",
-    "section": "",
-    "text": "All methods listed here"
-  },
-  {
-    "objectID": "background.html#background",
-    "href": "background.html#background",
-    "title": "Background",
-    "section": "",
-    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
-  },
-  {
-    "objectID": "background.html#aims-of-the-openmr-project",
-    "href": "background.html#aims-of-the-openmr-project",
-    "title": "Background",
-    "section": "Aims of the OpenMR project",
-    "text": "Aims of the OpenMR project\n\nInventory of MR methods, consistently annotated to enable selection of appropriate methods for specific analyses\nSoftware repository of MR methods with regularised environments\nRolling simulations to allow consistent comparison and annotation of methods against the MR conditions required for robust inference"
-  },
-  {
-    "objectID": "background.html#mr-in-context",
-    "href": "background.html#mr-in-context",
-    "title": "Background",
-    "section": "",
-    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
-  },
-  {
-    "objectID": "background.html#tenets-of-openmr",
-    "href": "background.html#tenets-of-openmr",
-    "title": "Background",
-    "section": "Tenets of OpenMR",
-    "text": "Tenets of OpenMR\n\nThe OpenMR project should be open\n\nAnybody should be able to contribute with minimal gatekeeping.\nIdentities of contributors should be public.\n\nThe OpenMR project should represent methods for a diverse set of analysis settings and concerns\nThe OpenMR project does not perform scientific review\n\nMethods in the database are listed with the features claimed of them in published or preprint manuscripts. We do not further vet these claims"
   }
 ]

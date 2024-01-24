@@ -1,1 +1,1 @@
-Sitemap: https://mr-methods-network.github.io/sitemap.xml
+Sitemap: https://open-mr-project.github.io/sitemap.xml
