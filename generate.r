@@ -51,7 +51,7 @@ generate_posts <- function(i, dat, template) {
   l$author <- dat$author[i]
   l$date <- dat$pubdate[i]
   l$comments <-
-    list(utterances = list(repo = "mr-methods-network/siteComments"))
+    list(utterances = list(repo = "open-mr-project/siteComments"))
   # d <- format_data(dat[i,])
   #l$categories <- dat$categories[i]
   l$data <- dat[i, ]

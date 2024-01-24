@@ -4,7 +4,7 @@ author: Eleanor Sanderson
 date: '2021-08-02'
 comments:
   utterances:
-    repo: mr-methods-network/siteComments
+    repo: open-mr-project/siteComments
 data:
   id: 1.0
   start_time: 1.7055961e+09
