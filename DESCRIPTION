@@ -1,4 +1,4 @@
-Package: mr-methods-network.github.io
+Package: open-mr-project.github.io
 Title: This is not really an R package. This file lists extra dependencies
     for renv to use.
 Version: 0.1
