@@ -8,8 +8,7 @@ Authors@R: c(
     person("Tom", "Palmer", , "remlapmot@hotmail.com", role = "aut",
            comment = c(ORCID = "0000-0003-4655-4511"))
   )
-URL: https://github.com/mr-methods-network/mr-methods-network.github.io,
-    https://github.com/remlapmot/remlapmot.github.io
+URL: https://github.com/open-mr-project/open-mr-project.github.io
 Depends: 
     R (>= 4.1.0)
 Imports:
