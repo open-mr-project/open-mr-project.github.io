@@ -21,137 +21,39 @@
     "text": "Welcome to the OpenMR project. This is a community created registry of statistical methods that aims to ultimately enable more reliable causal inference in Mendelian randomisation studies.\nSubmit a new method to the registry using the form below, and also see the software page on how to improve accessibility of your software.\nSubmit a new method"
   },
   {
-    "objectID": "background.html",
-    "href": "background.html",
-    "title": "Background",
+    "objectID": "entries/mbe/index.html",
+    "href": "entries/mbe/index.html",
+    "title": "MBE",
     "section": "",
-    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\n\n\n\n\n\nPublications per week from PubMed search for Mendelian randomi[s/z]ation, title only. Credits @MR_lit\n\n\n\n\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2017-07-12)\nOther URLS: none\nMethod Contact: Fernando Hartwig ( fernandophartwig@gmail.com)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
   },
   {
-    "objectID": "background.html#mr-in-context",
-    "href": "background.html#mr-in-context",
-    "title": "Background",
+    "objectID": "entries/mbe/index.html#resources",
+    "href": "entries/mbe/index.html#resources",
+    "title": "MBE",
     "section": "",
-    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\n\n\n\n\n\nPublications per week from PubMed search for Mendelian randomi[s/z]ation, title only. Credits @MR_lit\n\n\n\n\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2017-07-12)\nOther URLS: none\nMethod Contact: Fernando Hartwig ( fernandophartwig@gmail.com)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
   },
   {
-    "objectID": "background.html#openmr-project-work-packages",
-    "href": "background.html#openmr-project-work-packages",
-    "title": "Background",
-    "section": "OpenMR project work packages",
-    "text": "OpenMR project work packages\n\nInventory of MR methods, consistently annotated to enable selection of appropriate methods for specific analyses\nSoftware repository of MR methods with regularised environments\nRolling simulations to allow consistent comparison and annotation of methods against the MR conditions required for robust inference"
-  },
-  {
-    "objectID": "background.html#tenets-of-the-openmr-project",
-    "href": "background.html#tenets-of-the-openmr-project",
-    "title": "Background",
-    "section": "Tenets of the OpenMR project",
-    "text": "Tenets of the OpenMR project\n\nThe OpenMR project should be open\n\nAnybody should be able to contribute with minimal gatekeeping.\nIdentities of contributors should be public.\n\nThe OpenMR project should represent methods for a diverse set of analysis settings and concerns\nThe OpenMR project does not perform scientific review\n\nMethods in the database are listed with the features claimed of them in published or preprint manuscripts. We do not further vet these claims"
-  },
-  {
-    "objectID": "background.html#related-sites",
-    "href": "background.html#related-sites",
-    "title": "Background",
-    "section": "Related sites",
-    "text": "Related sites\n\nMRC IEU software page\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website\nTwoSampleMR guide to performing MR"
-  },
-  {
-    "objectID": "entries/weak_instrument_robust_mvmr/index.html",
-    "href": "entries/weak_instrument_robust_mvmr/index.html",
-    "title": "Weak instrument robust MVMR",
-    "section": "",
-    "text": "Code (Language: .na.character)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
-  },
-  {
-    "objectID": "entries/weak_instrument_robust_mvmr/index.html#resources",
-    "href": "entries/weak_instrument_robust_mvmr/index.html#resources",
-    "title": "Weak instrument robust MVMR",
-    "section": "",
-    "text": "Code (Language: .na.character)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
-  },
-  {
-    "objectID": "entries/weak_instrument_robust_mvmr/index.html#context",
-    "href": "entries/weak_instrument_robust_mvmr/index.html#context",
-    "title": "Weak instrument robust MVMR",
+    "objectID": "entries/mbe/index.html#context",
+    "href": "entries/mbe/index.html#context",
+    "title": "MBE",
     "section": "Context",
     "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
   },
   {
-    "objectID": "entries/weak_instrument_robust_mvmr/index.html#assumptions-and-sources-of-bias",
-    "href": "entries/weak_instrument_robust_mvmr/index.html#assumptions-and-sources-of-bias",
-    "title": "Weak instrument robust MVMR",
-    "section": "Assumptions and Sources of Bias",
-    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✗\n\n\nCorrelated horizontal pleiotropy\n✗\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
-  },
-  {
-    "objectID": "entries/weak_instrument_robust_mvmr/index.html#description",
-    "href": "entries/weak_instrument_robust_mvmr/index.html#description",
-    "title": "Weak instrument robust MVMR",
-    "section": "Description",
-    "text": "Description\nA method for multivariable Mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
-  },
-  {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software",
-    "section": "",
-    "text": "The MRC IEU R-universe https://mrcieu.r-universe.dev distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 22.04 Jammy Jellyfish, and for WebR.\nIf you would like a package added to the universe please open an issue in our repository.\nAdditionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,\n\nthe R-Universe webpage for TwoSampleMR\nand its exposure data vignette"
-  },
-  {
-    "objectID": "software.html#introduction",
-    "href": "software.html#introduction",
-    "title": "Software",
-    "section": "",
-    "text": "The MRC IEU R-universe https://mrcieu.r-universe.dev distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 22.04 Jammy Jellyfish, and for WebR.\nIf you would like a package added to the universe please open an issue in our repository.\nAdditionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,\n\nthe R-Universe webpage for TwoSampleMR\nand its exposure data vignette"
-  },
-  {
-    "objectID": "software.html#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe",
-    "href": "software.html#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe",
-    "title": "Software",
-    "section": "How to install binary R packages from the MRC IEU R-universe",
-    "text": "How to install binary R packages from the MRC IEU R-universe\nTo install binary R packages from the MRC IEU R-universe, include the URL in your repos list as shown below (note that you can also set options(repos = c(...)) in your .Rprofile file).\n\nWindows and Mac users\nFor Windows and Mac users to install the binary version of TwoSampleMR, run the following code.\n# Installation code for Windows and Mac users\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev',\n    'https://cloud.r-project.org'\n  )\n)\n\n\nUbuntu Linux users\nFor Ubuntu Linux Jammy Jellyfish users running R through RStudio Desktop or RStudio Server, to install TwoSampleMR run the following code.\n# Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/',\n    'https://packagemanager.posit.co/cran/__linux__/jammy/latest',\n    'https://cloud.r-project.org'\n  )\n)\nFor Ubuntu Linux Jammy Jellyfish users running R in the Terminal first amend the HTTPUserAgent option,1 and then run the Linux installation code above. If the HTTPUserAgent option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager’s CRAN packages. For this case, to install TwoSampleMR, run the following code.\n# Installation code for Ubuntu Jammy Jellyfish users running R in the Terminal\noptions(HTTPUserAgent = sprintf(\n  \"R/%s R (%s)\",\n  getRversion(),\n  paste(getRversion(),\n        R.version[\"platform\"],\n        R.version[\"arch\"],\n        R.version[\"os\"])\n))\n\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/',\n    'https://packagemanager.posit.co/cran/__linux__/jammy/latest',\n    'https://cloud.r-project.org'\n  )\n)\n\n\nWebR users\nWeb Assembly (WASM) binaries for WebR users are available with the code below when run in WebR (there is a demo you can try out). You can find out more about WebR from its documentation website. Note that currently not all packages are available for WebR.\ninstall.packages('TwoSampleMR',\n  repos = c('https://mrcieu.r-universe.dev', 'https://repo.r-wasm.org'))"
-  },
-  {
-    "objectID": "software.html#footnotes",
-    "href": "software.html#footnotes",
-    "title": "Software",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nAs described in the following blog post.↩︎"
-  },
-  {
-    "objectID": "entries/mrraps/index.html",
-    "href": "entries/mrraps/index.html",
-    "title": "MR-RAPS",
-    "section": "",
-    "text": "Code (Language: R)  Website  Paper (Pub Date: 2020-06-01)\nOther URLS: https://cran.r-project.org/web/packages/mr.raps/index.html\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
-  },
-  {
-    "objectID": "entries/mrraps/index.html#resources",
-    "href": "entries/mrraps/index.html#resources",
-    "title": "MR-RAPS",
-    "section": "",
-    "text": "Code (Language: R)  Website  Paper (Pub Date: 2020-06-01)\nOther URLS: https://cran.r-project.org/web/packages/mr.raps/index.html\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
-  },
-  {
-    "objectID": "entries/mrraps/index.html#context",
-    "href": "entries/mrraps/index.html#context",
-    "title": "MR-RAPS",
-    "section": "Context",
-    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
-  },
-  {
-    "objectID": "entries/mrraps/index.html#assumptions-and-sources-of-bias",
-    "href": "entries/mrraps/index.html#assumptions-and-sources-of-bias",
-    "title": "MR-RAPS",
+    "objectID": "entries/mbe/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/mbe/index.html#assumptions-and-sources-of-bias",
+    "title": "MBE",
     "section": "Assumptions and Sources of Bias",
     "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
   },
   {
-    "objectID": "entries/mrraps/index.html#description",
-    "href": "entries/mrraps/index.html#description",
-    "title": "MR-RAPS",
+    "objectID": "entries/mbe/index.html#description",
+    "href": "entries/mbe/index.html#description",
+    "title": "MBE",
     "section": "Description",
-    "text": "Description\nMR-RAPS is an MR method using a consistent asymptotically normal estimator that improves weak instrument bias and accounts for horizontal pleiotropy using a random effect and an outlier robust loss function"
+    "text": "Description\nThe MBE is consistent when the largest number of similar (identical in infinite samples) individual-instrument causal effect estimates comes from valid instruments, even if the majority of instruments are invalid."
   },
   {
     "objectID": "entries/weighted_median/index.html",
@@ -259,6 +161,41 @@
     "text": "Description\nWe introduce MRBEE (MR using Bias-corrected Estimating Equation), a novel multivariable MR method capable of simultaneously removing error-in-variable bias and identifying horizontal pleiotropy."
   },
   {
+    "objectID": "background.html",
+    "href": "background.html",
+    "title": "Background",
+    "section": "",
+    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\n\n\n\n\n\nPublications per week from PubMed search for Mendelian randomi[s/z]ation, title only. Credits @MR_lit\n\n\n\n\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
+  },
+  {
+    "objectID": "background.html#mr-in-context",
+    "href": "background.html#mr-in-context",
+    "title": "Background",
+    "section": "",
+    "text": "Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.\n\n\n\n\n\nPublications per week from PubMed search for Mendelian randomi[s/z]ation, title only. Credits @MR_lit\n\n\n\n\nMR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.\nThe OpenMR project aims to improve empirical epidemiological studies by providing method developers a platform for MR analytical tools to be annotated, searched and discussed."
+  },
+  {
+    "objectID": "background.html#openmr-project-work-packages",
+    "href": "background.html#openmr-project-work-packages",
+    "title": "Background",
+    "section": "OpenMR project work packages",
+    "text": "OpenMR project work packages\n\nInventory of MR methods, consistently annotated to enable selection of appropriate methods for specific analyses\nSoftware repository of MR methods with regularised environments\nRolling simulations to allow consistent comparison and annotation of methods against the MR conditions required for robust inference"
+  },
+  {
+    "objectID": "background.html#tenets-of-the-openmr-project",
+    "href": "background.html#tenets-of-the-openmr-project",
+    "title": "Background",
+    "section": "Tenets of the OpenMR project",
+    "text": "Tenets of the OpenMR project\n\nThe OpenMR project should be open\n\nAnybody should be able to contribute with minimal gatekeeping.\nIdentities of contributors should be public.\n\nThe OpenMR project should represent methods for a diverse set of analysis settings and concerns\nThe OpenMR project does not perform scientific review\n\nMethods in the database are listed with the features claimed of them in published or preprint manuscripts. We do not further vet these claims"
+  },
+  {
+    "objectID": "background.html#related-sites",
+    "href": "background.html#related-sites",
+    "title": "Background",
+    "section": "Related sites",
+    "text": "Related sites\n\nMRC IEU software page\nMRC IEU MR Dictionary\nSteve Burgess’ group website\nChris Moreno-Stokoe’s website\nTwoSampleMR guide to performing MR"
+  },
+  {
     "objectID": "entries/steiger_filtering/index.html",
     "href": "entries/steiger_filtering/index.html",
     "title": "Steiger filtering",
@@ -364,38 +301,101 @@
     "text": "Description\nWe propose a Latent Heritable Confounder MR (LHC-MR) method applicable to association summary statistics, which estimates bi-directional causal effects, direct heritability, and confounder effects while accounting for sample overlap."
   },
   {
-    "objectID": "entries/mbe/index.html",
-    "href": "entries/mbe/index.html",
-    "title": "MBE",
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html",
+    "href": "entries/weak_instrument_robust_mvmr/index.html",
+    "title": "Weak instrument robust MVMR",
     "section": "",
-    "text": "Code (Language: R)  Website  Paper (Pub Date: 2017-07-12)\nOther URLS: none\nMethod Contact: Fernando Hartwig ( fernandophartwig@gmail.com)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+    "text": "Code (Language: .na.character)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
   },
   {
-    "objectID": "entries/mbe/index.html#resources",
-    "href": "entries/mbe/index.html#resources",
-    "title": "MBE",
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html#resources",
+    "href": "entries/weak_instrument_robust_mvmr/index.html#resources",
+    "title": "Weak instrument robust MVMR",
     "section": "",
-    "text": "Code (Language: R)  Website  Paper (Pub Date: 2017-07-12)\nOther URLS: none\nMethod Contact: Fernando Hartwig ( fernandophartwig@gmail.com)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+    "text": "Code (Language: .na.character)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
   },
   {
-    "objectID": "entries/mbe/index.html#context",
-    "href": "entries/mbe/index.html#context",
-    "title": "MBE",
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html#context",
+    "href": "entries/weak_instrument_robust_mvmr/index.html#context",
+    "title": "Weak instrument robust MVMR",
     "section": "Context",
     "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
   },
   {
-    "objectID": "entries/mbe/index.html#assumptions-and-sources-of-bias",
-    "href": "entries/mbe/index.html#assumptions-and-sources-of-bias",
-    "title": "MBE",
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/weak_instrument_robust_mvmr/index.html#assumptions-and-sources-of-bias",
+    "title": "Weak instrument robust MVMR",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✗\n\n\nCorrelated horizontal pleiotropy\n✗\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/weak_instrument_robust_mvmr/index.html#description",
+    "href": "entries/weak_instrument_robust_mvmr/index.html#description",
+    "title": "Weak instrument robust MVMR",
+    "section": "Description",
+    "text": "Description\nA method for multivariable Mendelian randomization to test for weak instruments and estimate causal effects that are robust to weak instruments."
+  },
+  {
+    "objectID": "entries/mrraps/index.html",
+    "href": "entries/mrraps/index.html",
+    "title": "MR-RAPS",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2020-06-01)\nOther URLS: https://cran.r-project.org/web/packages/mr.raps/index.html\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/mrraps/index.html#resources",
+    "href": "entries/mrraps/index.html#resources",
+    "title": "MR-RAPS",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2020-06-01)\nOther URLS: https://cran.r-project.org/web/packages/mr.raps/index.html\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/mrraps/index.html#context",
+    "href": "entries/mrraps/index.html#context",
+    "title": "MR-RAPS",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/mrraps/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/mrraps/index.html#assumptions-and-sources-of-bias",
+    "title": "MR-RAPS",
     "section": "Assumptions and Sources of Bias",
     "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
   },
   {
-    "objectID": "entries/mbe/index.html#description",
-    "href": "entries/mbe/index.html#description",
-    "title": "MBE",
+    "objectID": "entries/mrraps/index.html#description",
+    "href": "entries/mrraps/index.html#description",
+    "title": "MR-RAPS",
     "section": "Description",
-    "text": "Description\nThe MBE is consistent when the largest number of similar (identical in infinite samples) individual-instrument causal effect estimates comes from valid instruments, even if the majority of instruments are invalid."
+    "text": "Description\nMR-RAPS is an MR method using a consistent asymptotically normal estimator that improves weak instrument bias and accounts for horizontal pleiotropy using a random effect and an outlier robust loss function"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "The MRC IEU R-universe https://mrcieu.r-universe.dev distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 22.04 Jammy Jellyfish, and for WebR.\nIf you would like a package added to the universe please open an issue in our repository.\nAdditionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,\n\nthe R-Universe webpage for TwoSampleMR\nand its exposure data vignette"
+  },
+  {
+    "objectID": "software.html#introduction",
+    "href": "software.html#introduction",
+    "title": "Software",
+    "section": "",
+    "text": "The MRC IEU R-universe https://mrcieu.r-universe.dev distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 22.04 Jammy Jellyfish, and for WebR.\nIf you would like a package added to the universe please open an issue in our repository.\nAdditionally, each package included in the R-Universe has its own webpages, meaning you can read the rendered vignettes, which is helpful if a package does not have its own website, e.g.,\n\nthe R-Universe webpage for TwoSampleMR\nand its exposure data vignette"
+  },
+  {
+    "objectID": "software.html#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe",
+    "href": "software.html#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe",
+    "title": "Software",
+    "section": "How to install binary R packages from the MRC IEU R-universe",
+    "text": "How to install binary R packages from the MRC IEU R-universe\nTo install binary R packages from the MRC IEU R-universe, include the URL in your repos list as shown below (note that you can also set options(repos = c(...)) in your .Rprofile file).\n\nWindows and Mac users\nFor Windows and Mac users to install the binary version of TwoSampleMR, run the following code.\n# Installation code for Windows and Mac users\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev',\n    'https://cloud.r-project.org'\n  )\n)\n\n\nUbuntu Linux users\nFor Ubuntu Linux Jammy Jellyfish users running R through RStudio Desktop or RStudio Server, to install TwoSampleMR run the following code.\n# Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/',\n    'https://packagemanager.posit.co/cran/__linux__/jammy/latest',\n    'https://cloud.r-project.org'\n  )\n)\nFor Ubuntu Linux Jammy Jellyfish users running R in the Terminal first amend the HTTPUserAgent option,1 and then run the Linux installation code above. If the HTTPUserAgent option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager’s CRAN packages. For this case, to install TwoSampleMR, run the following code.\n# Installation code for Ubuntu Jammy Jellyfish users running R in the Terminal\noptions(HTTPUserAgent = sprintf(\n  \"R/%s R (%s)\",\n  getRversion(),\n  paste(getRversion(),\n        R.version[\"platform\"],\n        R.version[\"arch\"],\n        R.version[\"os\"])\n))\n\ninstall.packages(\n  'TwoSampleMR',\n  repos = c(\n    'https://mrcieu.r-universe.dev/bin/linux/jammy/4.3/',\n    'https://packagemanager.posit.co/cran/__linux__/jammy/latest',\n    'https://cloud.r-project.org'\n  )\n)\n\n\nWebR users\nWeb Assembly (WASM) binaries for WebR users are available with the code below when run in WebR (there is a demo you can try out). You can find out more about WebR from its documentation website. Note that currently not all packages are available for WebR.\ninstall.packages('TwoSampleMR',\n  repos = c('https://mrcieu.r-universe.dev', 'https://repo.r-wasm.org'))"
+  },
+  {
+    "objectID": "software.html#footnotes",
+    "href": "software.html#footnotes",
+    "title": "Software",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nAs described in the following blog post.↩︎"
   }
 ]
