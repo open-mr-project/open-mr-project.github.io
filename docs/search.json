@@ -16,9 +16,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Methods",
+    "title": "Registry",
     "section": "",
-    "text": "All methods listed here"
+    "text": "Welcome to the OpenMR project. This is a community created registry of statistical methods that aims to ultimately enable more reliable causal inference in Mendelian randomisation studies.\nSubmit a new method to the registry using the form below, and also see the software page on how to improve accessibility of your software.\nSubmit a new method"
   },
   {
     "objectID": "background.html",

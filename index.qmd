@@ -1,10 +1,14 @@
 ---
-title: "Methods"
+title: "Registry"
 page-layout: full
 title-block-banner: false
 ---
 
-All methods listed here
+Welcome to the OpenMR project. This is a community created registry of statistical methods that aims to ultimately enable more reliable causal inference in Mendelian randomisation studies.
+
+Submit a new method to the registry using the form below, and also see the [software](software.qmd) page on how to improve accessibility of your software.
+
+<a class="btn btn-primary" href="https://forms.office.com/r/LKiA33DABX" target="_blank" role="button">Submit a new method</a>
 
 ---
 

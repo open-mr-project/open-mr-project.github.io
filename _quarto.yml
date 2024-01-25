@@ -8,7 +8,6 @@ website:
   navbar:
     right:
       - index.qmd
-      - submit.qmd
       - software.qmd
       - background.qmd
       - icon: github
