@@ -469,6 +469,41 @@
     "text": "Description\nGSMR performs a multi-SNP Mendelian randomization analysis using summary-level data from genome-wide association studies, allowing for outlier removal to account for pleiotropy, multivariable models, correlation of instruments and bi-directional effect estimation."
   },
   {
+    "objectID": "entries/lhcmr/index.html",
+    "href": "entries/lhcmr/index.html",
+    "title": "LHC-MR",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: )\nOther URLS: none\nMethod Contact: Liza Darrous ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/lhcmr/index.html#resources",
+    "href": "entries/lhcmr/index.html#resources",
+    "title": "LHC-MR",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: )\nOther URLS: none\nMethod Contact: Liza Darrous ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/lhcmr/index.html#context",
+    "href": "entries/lhcmr/index.html#context",
+    "title": "LHC-MR",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/lhcmr/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/lhcmr/index.html#assumptions-and-sources-of-bias",
+    "title": "LHC-MR",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✗\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✓\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/lhcmr/index.html#description",
+    "href": "entries/lhcmr/index.html#description",
+    "title": "LHC-MR",
+    "section": "Description",
+    "text": "Description\nWe propose a Latent Heritable Confounder MR (LHC-MR) method applicable to association summary statistics, which estimates bi-directional causal effects, direct heritability, and confounder effects while accounting for sample overlap."
+  },
+  {
     "objectID": "entries/cause/index.html",
     "href": "entries/cause/index.html",
     "title": "CAUSE",
