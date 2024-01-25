@@ -53,6 +53,17 @@ git commit -a -m "<insert message>"
 git push
 ```
 
+### Updating the mr_lit publications per week
+
+1. Go to https://pubmed.ncbi.nlm.nih.gov
+2. Search for `"Mendelian randomisation" [Title] OR "Mendelian randomization" [Title]`
+3. Click `Save`
+4. Selection: `All results`
+5. Format: `CSV`
+6. Click `Create file`
+7. Move that saved file `csv-Mendelianr-set.csv` to the `/data` directory (replacing the previous version)
+8. Regenerate quarto site (`quarto render`)
+
 ## Notes
 
 ### Comments
