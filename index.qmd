@@ -17,16 +17,58 @@ library(dplyr)
 library(tidyr)
 library(DT)
 library(here)
+library(stringr)
 dat <- readRDS(here("data", "openmr.RDS"))
 
 
+weak_inst <- "The method is robust to weak instruments or reduces weak instrument bias compared to traditional methods such as IVW regression or relaxes the no measurement error (NOME) assumption."
+winners_curse <- "The method accounts for winner's curse bias due to in-sample variant selection."
+sample_overlap <- "Bias due to sample overlap"
+uhp <- "The method accounts for balanced (uncorrelated) pleiotropy or pleiotropy that meets the Instrument strength independent of direct effect (InSIDE) assumption."
+chp <- "The method accounts for unbalanced (correlated) pleiotropy or pleiotropy that violates the InSIDE assumption."
+anc <- "The method accounts for ancestry differences between exposure and outcome samples."
+conf <- "The method accounts for population stratification"
+cam <- "The method accounts for effects of assortative mating"
+conditioning <- "The method accounts for index-event bias or bias due to conditioning on a heritable trait."
+
 dat %>%
+  mutate(analysis = str_replace(which_analysis_types_is_the_method_used_for, fixed("Univariable MR (one exposure, one outcome)"), "UVMR") %>%
+                      str_replace(fixed("Multivariable MR (multiple exposures, one outcome)"), "MVMR") %>% 
+                      str_replace_all(fixed(";"), ", ") %>% 
+                      str_replace(", $", ""), 
+         data_types = str_replace(what_data_types_can_the_method_be_used_with, 
+                                  fixed("GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR)"), 
+                                  "Summary stats") %>% 
+                       str_replace(fixed("Individual level data for both exposure(s) and outcome(s) (or all traits if Network MR)"), 
+                                   "Individual") %>%
+                       str_replace(fixed("Stratum-specific summary statistics"), "Stratum spec. summary stats") %>%
+                       str_replace_all(fixed(";"), ", ") %>% 
+                      str_replace(", $", ""), 
+         assumptions = str_replace(which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method, 
+                                   fixed(weak_inst), "Weak instruments") %>%
+                       str_replace(fixed(winners_curse), "Winners curse") %>% 
+                       str_replace(fixed(sample_overlap), "Sample overlap") %>%
+                       str_replace(fixed(uhp), "UHP") %>% 
+                       str_replace(fixed(chp), "CHP") %>%
+                       str_replace(fixed(conf), "GWAS confounding") %>% 
+                       str_replace(fixed(anc), "Ancestry diffs") %>%
+                       str_replace(fixed(cam), "Assortative mating") %>%
+                       str_replace(fixed(conditioning), "Conditioning") %>%
+                       str_replace_all(fixed(";"), ", ") %>% 
+                      str_replace(", $", "")) %>% 
   rename(`Code repository (URL)` = code_repository_url, 
-         Method = title) %>%
+         Method = title, 
+         `Analysis Type` = analysis, 
+         `Data Types` = data_types, 
+         `Robust To` = assumptions) %>%
   mutate(`Code repository (URL)` = trimws(`Code repository (URL)`),
          `Code repository (URL)` = paste0('<a href = ', shQuote(`Code repository (URL)`), "target='_blank'", '>', `Code repository (URL)`, '</a>'),
          Method = paste0('<a href= ', shQuote(paste0("entries/", slug, "/index.html")), "target='_blank'", '>', Method, '</a>')) %>%
          #  "[", Method, "](entries/", slug, "/index.html)" )) %>%
-  select(`Method`, `Code repository (URL)`) %>%
-  datatable(escape = FALSE)
+  select(`Method`, `Code repository (URL)`, `Analysis Type`, `Data Types`, `Robust To`) %>%
+  datatable(escape = FALSE, filter = "top", extensions = c('ColReorder', 'Buttons'), 
+            options = list(colReorder = TRUE, dom = "Bfrtip", 
+                           buttons = I('colvis'), 
+                           columnDefs = list(list(visible = FALSE, targets = c(2,4)))),
+            plugins = c("scrollResize"))
 ```
