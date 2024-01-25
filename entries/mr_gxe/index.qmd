@@ -1,60 +1,62 @@
 ---
-title: .na.character
-author: Jean Morrison
-date: ''
+title: MR GxE
+author: Gibran Hemani
+date: '2018-11-20'
 comments:
   utterances:
     repo: open-mr-project/siteComments
 data:
-  id: 3.0
-  start_time: 1.706053e+09
-  completion_time: 1.7060532e+09
+  id: 10.0
+  start_time: 1.7061923e+09
+  completion_time: 1.7062019e+09
   email: anonymous
   name: .na
   last_modified_time: .na
-  primary_entry_contact: Jean Morrison
-  primary_entry_contact_email_address: jvmorr@umich.edu
-  primary_method_contact: none
-  primary_method_contact_email_address: none
-  method_name: .na.character
-  abbreviated_method_name: .na.character
-  publication_doi: https://doi.org/10.1038/s41467-021-26970-w
-  code_repository_url: https://github.com/LizaDarrous/lhcMR
+  primary_entry_contact: Gibran Hemani
+  primary_entry_contact_email_address: g.hemani@bristol.ac.uk
+  primary_method_contact: Jack Bowden
+  primary_method_contact_email_address: J.Bowden2@exeter.ac.uk
+  method_name: MR using gene-by-environment interactions
+  abbreviated_method_name: MR GxE
+  publication_doi: https://doi.org/10.1093/ije/dyy204
+  code_repository_url: https://github.com/yoonsucho/CAMERA/tree/main
   code_language: R
   method_website: none
   other_url: none
-  which_analysis_types_is_the_method_used_for: Univariable MR (one exposure, one outcome);Bi-directional
-    MR;
-  specific_scientific_context_if_any: .na.character
-  what_types_of_exposure_variables_can_be_used_if_network: Quantitative/continuous;Binary;
+  which_analysis_types_is_the_method_used_for: Univariable MR (one exposure, one outcome);
+  specific_scientific_context_if_any: Complex traits;Molecular traits;
+  what_types_of_exposure_variables_can_be_used_if_network: Quantitative/continuous;
   what_types_of_outcome_variables_can_be_used_if_network: Quantitative/continuous;Binary;
-  what_data_types_can_the_method_be_used_with: GWAS summary statistics for both exposure(s)
-    and outcome(s) (or all traits if Network MR);
+  what_data_types_can_the_method_be_used_with: Individual level data for both exposure(s)
+    and outcome(s) (or all traits if Network MR);Stratum-specific summary statistics;
   which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method: The method accounts
     for balanced (uncorrelated) pleiotropy or pleiotropy that meets the Instrument
     strength independent of direct effect (InSIDE) assumption. ;The method accounts
     for unbalanced (correlated) pleiotropy or pleiotropy that violates the InSIDE
-    assumption.;The method accounts for partial or full overlap between exposure and
-    outcome samples.;
-  brief_description: We propose a Latent Heritable Confounder MR (LHC-MR) method applicable
-    to association summary statistics, which estimates bi-directional causal effects,
-    direct heritability, and confounder effects while accounting for sample overlap.
-  title: .na.character
-  author: Jean Morrison
-  slug: NA
-  pubdate: ''
+    assumption.;
+  brief_description: MR using Gene-by-Environment interactions (MRGxE) is a framework
+    capable of identifying and correcting for pleiotropic bias. If an instrument–covariate
+    interaction induces variation in the association between a genetic instrument
+    and exposure, it is possible to identify and correct for pleiotropic effects.
+    The interpretation of MRGxE is similar to conventional summary MR approaches,
+    with a particular advantage of MRGxE being the ability to assess the validity
+    of an individual instrument.
+  title: MR GxE
+  author: Gibran Hemani
+  slug: mr_gxe
+  pubdate: '2018-11-20'
   uvmr_color: '#00796B'
   mvmr_color: '#808080'
-  bidirectional_color: '#00796B'
+  bidirectional_color: '#808080'
   nonlinear_color: '#808080'
   network_color: '#808080'
-  ii_color: '#808080'
-  ss_color: '#00796B'
+  ii_color: '#00796B'
+  ss_color: '#808080'
   fam_color: '#808080'
   is_color: '#808080'
   si_color: '#808080'
   exquant_color: '#00796B'
-  exbin_color: '#00796B'
+  exbin_color: '#808080'
   extte_color: '#808080'
   outquant_color: '#00796B'
   outbin_color: '#00796B'

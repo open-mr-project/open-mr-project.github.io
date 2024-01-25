@@ -1,0 +1,185 @@
+---
+title: lhcMR
+author: Jean Morrison
+date: ''
+comments:
+  utterances:
+    repo: open-mr-project/siteComments
+data:
+  id: 3.0
+  start_time: 1.706053e+09
+  completion_time: 1.7060532e+09
+  email: anonymous
+  name: .na
+  last_modified_time: .na
+  primary_entry_contact: Jean Morrison
+  primary_entry_contact_email_address: jvmorr@umich.edu
+  primary_method_contact: none
+  primary_method_contact_email_address: none
+  method_name: Latent heritable confounder MR
+  abbreviated_method_name: lhcMR
+  publication_doi: https://doi.org/10.1038/s41467-021-26970-w
+  code_repository_url: https://github.com/LizaDarrous/lhcMR
+  code_language: R
+  method_website: none
+  other_url: none
+  which_analysis_types_is_the_method_used_for: Univariable MR (one exposure, one outcome);Bi-directional
+    MR;
+  specific_scientific_context_if_any: .na.character
+  what_types_of_exposure_variables_can_be_used_if_network: Quantitative/continuous;Binary;
+  what_types_of_outcome_variables_can_be_used_if_network: Quantitative/continuous;Binary;
+  what_data_types_can_the_method_be_used_with: GWAS summary statistics for both exposure(s)
+    and outcome(s) (or all traits if Network MR);
+  which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method: The method accounts
+    for balanced (uncorrelated) pleiotropy or pleiotropy that meets the Instrument
+    strength independent of direct effect (InSIDE) assumption. ;The method accounts
+    for unbalanced (correlated) pleiotropy or pleiotropy that violates the InSIDE
+    assumption.;The method accounts for partial or full overlap between exposure and
+    outcome samples.;
+  brief_description: We propose a Latent Heritable Confounder MR (LHC-MR) method applicable
+    to association summary statistics, which estimates bi-directional causal effects,
+    direct heritability, and confounder effects while accounting for sample overlap.
+  title: lhcMR
+  author: Jean Morrison
+  slug: lhcmr
+  pubdate: ''
+  uvmr_color: '#00796B'
+  mvmr_color: '#808080'
+  bidirectional_color: '#00796B'
+  nonlinear_color: '#808080'
+  network_color: '#808080'
+  ii_color: '#808080'
+  ss_color: '#00796B'
+  fam_color: '#808080'
+  is_color: '#808080'
+  si_color: '#808080'
+  exquant_color: '#00796B'
+  exbin_color: '#00796B'
+  extte_color: '#808080'
+  outquant_color: '#00796B'
+  outbin_color: '#00796B'
+  outtte_color: '#808080'
+  weak_inst_symbol: '&cross;'
+  winners_curse_symbol: '&cross;'
+  sample_overlap_symbol: '&cross;'
+  confounding_symbol: '&cross;'
+  assortative_mating_symbol: '&cross;'
+  uhp_symbol: '&check;'
+  chp_symbol: '&check;'
+  colliding_symbol: '&cross;'
+  anc_diff_symbol: '&cross;'
+---
+
+<style>
+.uvmr {
+    color: white;
+    background-color: {{< meta data.uvmr_color >}};
+}
+
+.mvmr {
+    color: white;
+    background-color: {{< meta data.mvmr_color >}};
+}
+
+.network {
+    color: white;
+    background-color: {{< meta data.network_color >}};
+}
+
+.bidirectional {
+    color: white;
+    background-color: {{< meta data.bidirectional_color >}};
+}
+
+.nonlinear {
+    color: white;
+    background-color: {{< meta data.nonlinear_color >}};
+}
+
+.ii {
+    color: white;
+    background-color: {{< meta data.ii_color >}};
+}
+.is {
+    color: white;
+    background-color: {{< meta data.is_color >}};
+}
+.si {
+    color: white;
+    background-color: {{< meta data.si_color >}};
+}
+.ss {
+    color: white;
+    background-color: {{< meta data.ss_color >}};
+}
+.fam {
+    color: white;
+    background-color: {{< meta data.fam_color >}};
+}
+
+.exquant {
+    color: white;
+    background-color: {{< meta data.exquant_color >}};
+}
+.exbin {
+    color: white;
+    background-color: {{< meta data.exbin_color >}};
+}
+.extte {
+    color: white;
+    background-color: {{< meta data.extte_color >}};
+}
+.outquant {
+    color: white;
+    background-color: {{< meta data.outquant_color >}};
+}
+.outbin {
+    color: white;
+    background-color: {{< meta data.outbin_color >}};
+}
+.outtte {
+    color: white;
+    background-color: {{< meta data.outtte_color >}};
+}
+</style>
+## Resources
+
+[Code]({{< meta data.code_repository_url >}}) (Language: {{< meta data.code_language >}}) <span style="margin-right: 30px;"></span> [Website]({{< meta data.method_website >}}) <span style="margin-right: 30px;"></span> [Paper]({{< meta data.publication_doi >}}) (Pub Date: {{< meta data.pubdate >}})
+
+Other URLS: {{< meta data.other_url >}}
+
+Method Contact: {{< meta data.primary_method_contact >}} ( {{< meta data.primary_method_contact_email_address >}})
+
+Entry Contact: {{< meta data.primary_entry_contact >}} ( {{< meta data.primary_entry_contact_email_address >}})
+
+## Context
+
+
+Analysis Type:  <span class = "uvmr">UVMR</span> <span style="margin-right: 10px;"></span> <span class = "mvmr">MVMR</span> <span style="margin-right: 10px;"></span> <span class="network">Network MR</span>  <span style="margin-right: 10px;"></span> <span class = "bidirectional">Bi-Driectional MR</span></span><span style="margin-right: 10px;"></span> <span class="nonlinear">Non-Linear</span>
+
+
+Input Data Types:  <span class = "ii">Ind/Ind</span> <span style="margin-right: 10px;"></span> <span class = "is">Ind/SS</span> <span style="margin-right: 10px;"></span> <span class="si">SS/Ind</span>  <span style="margin-right: 10px;"></span> <span class = "ss">SS/SS</span><span style="margin-right: 10px;"></span><span class = "fam">family</span>
+
+Exposure Trait Types:  <span class="exquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="exbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="extte">Time to event</span> 
+
+Outcome Trait Types: <span class="outquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="outbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="outtte">Time to event</span> 
+
+## Assumptions and Sources of Bias
+
+| Source of Bias | Addressed |
+|:-----------|:--------:|
+| Weak instruments | {{< meta data.weak_inst_symbol >}} | 
+| Winner's curse | {{< meta data.winners_curse_symbol >}}  |  
+| Sample overlap | {{< meta data.sample_overlap_symbol >}} |
+| Uncorrelated horizontal pleiotropy | {{< meta data.uhp_symbol >}} |
+| Correlated horizontal pleiotropy |  {{< meta data.chp_symbol >}} | 
+| Ancestry differences in samples | {{< meta data.anc_diff_symbol >}}| 
+| Residual confounding in GWAS | {{< meta data.confounding_symbol >}}| 
+| Cross-trait assortative mating |{{< meta data.assortative_mating_symbol >}}| 
+| Index-event/conditioning on heritable trait | {{< meta data.colliding_symbol >}}| 
+
+
+## Description
+
+{{< meta data.brief_description >}}
+

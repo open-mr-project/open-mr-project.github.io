@@ -2,54 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://open-mr-project.github.io/submit.html</loc>
-    <lastmod>2024-01-25T17:00:14.728Z</lastmod>
+    <lastmod>2024-01-25T17:13:58.568Z</lastmod>
   </url>
   <url>
     <loc>https://open-mr-project.github.io/index.html</loc>
-    <lastmod>2024-01-25T17:00:13.786Z</lastmod>
+    <lastmod>2024-01-25T17:13:57.699Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/entries/gsmr/index.html</loc>
+    <lastmod>2024-01-25T17:13:53.601Z</lastmod>
   </url>
   <url>
     <loc>https://open-mr-project.github.io/entries/mbe/index.html</loc>
-    <lastmod>2024-01-25T17:00:10.321Z</lastmod>
-  </url>
-  <url>
-    <loc>https://open-mr-project.github.io/entries/weighted_median/index.html</loc>
-    <lastmod>2024-01-25T17:00:09.329Z</lastmod>
-  </url>
-  <url>
-    <loc>https://open-mr-project.github.io/entries/cause/index.html</loc>
-    <lastmod>2024-01-25T17:00:08.377Z</lastmod>
-  </url>
-  <url>
-    <loc>https://open-mr-project.github.io/entries/mrbee/index.html</loc>
-    <lastmod>2024-01-25T17:00:07.089Z</lastmod>
-  </url>
-  <url>
-    <loc>https://open-mr-project.github.io/background.html</loc>
-    <lastmod>2024-01-25T17:00:05.362Z</lastmod>
-  </url>
-  <url>
-    <loc>https://open-mr-project.github.io/entries/steiger_filtering/index.html</loc>
-    <lastmod>2024-01-25T17:00:06.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://open-mr-project.github.io/entries/egger/index.html</loc>
-    <lastmod>2024-01-25T17:00:07.814Z</lastmod>
-  </url>
-  <url>
-    <loc>https://open-mr-project.github.io/entries/NA/index.html</loc>
-    <lastmod>2024-01-25T17:00:08.884Z</lastmod>
+    <lastmod>2024-01-25T17:13:52.778Z</lastmod>
   </url>
   <url>
     <loc>https://open-mr-project.github.io/entries/weak_instrument_robust_mvmr/index.html</loc>
-    <lastmod>2024-01-25T17:00:09.878Z</lastmod>
+    <lastmod>2024-01-25T17:13:51.841Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/entries/cause/index.html</loc>
+    <lastmod>2024-01-25T17:13:50.540Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/entries/mrbee/index.html</loc>
+    <lastmod>2024-01-25T17:13:49.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/background.html</loc>
+    <lastmod>2024-01-25T17:13:48.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/entries/steiger_filtering/index.html</loc>
+    <lastmod>2024-01-25T17:13:49.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/entries/egger/index.html</loc>
+    <lastmod>2024-01-25T17:13:50.068Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/entries/weighted_median/index.html</loc>
+    <lastmod>2024-01-25T17:13:51.346Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/entries/lhcmr/index.html</loc>
+    <lastmod>2024-01-25T17:13:52.374Z</lastmod>
   </url>
   <url>
     <loc>https://open-mr-project.github.io/entries/mrraps/index.html</loc>
-    <lastmod>2024-01-25T17:00:10.812Z</lastmod>
+    <lastmod>2024-01-25T17:13:53.202Z</lastmod>
+  </url>
+  <url>
+    <loc>https://open-mr-project.github.io/entries/mr_gxe/index.html</loc>
+    <lastmod>2024-01-25T17:13:54.028Z</lastmod>
   </url>
   <url>
     <loc>https://open-mr-project.github.io/software.html</loc>
-    <lastmod>2024-01-25T17:00:14.360Z</lastmod>
+    <lastmod>2024-01-25T17:13:58.251Z</lastmod>
   </url>
 </urlset>
