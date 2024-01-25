@@ -1,54 +1,53 @@
 ---
-title: CAUSE
-author: Jean Morrison
-date: '2020-05-25'
+title: MVMR
+author: Eleanor Sanderson
+date: '2018-12-10'
 comments:
   utterances:
     repo: open-mr-project/siteComments
 data:
-  id: 2.0
-  start_time: 1.7060346e+09
-  completion_time: 1.7060348e+09
+  id: 13.0
+  start_time: 1.7061862e+09
+  completion_time: 1.7061865e+09
   email: anonymous
   name: .na
   last_modified_time: .na
-  primary_entry_contact: Jean Morrison
-  primary_entry_contact_email_address: jvmorr@umich.edu
-  primary_method_contact: Jean Morrson
-  primary_method_contact_email_address: jvmorr@umich.edu
-  method_name: Causal Analysis Using Summary Effect estimates
-  abbreviated_method_name: CAUSE
-  publication_doi: https://doi.org/10.1038/s41588-020-0631-4
-  code_repository_url: https://github.com/jean997/cause
+  primary_entry_contact: Eleanor Sanderson
+  primary_entry_contact_email_address: eleanor.sanderson@bristol.ac.uk
+  primary_method_contact: none
+  primary_method_contact_email_address: none
+  method_name: Multivariable MR
+  abbreviated_method_name: MVMR
+  publication_doi: https://doi.org/10.1093/ije/dyy262
+  code_repository_url: https://github.com/WSpiller/MVMR
   code_language: R
-  method_website: https://jean997.github.io/cause/
+  method_website: none
   other_url: none
-  which_analysis_types_is_the_method_used_for: Univariable MR (one exposure, one outcome);
+  which_analysis_types_is_the_method_used_for: Multivariable MR (multiple exposures,
+    one outcome);
   specific_scientific_context_if_any: .na.character
   what_types_of_exposure_variables_can_be_used_if_network: Quantitative/continuous;Binary;
   what_types_of_outcome_variables_can_be_used_if_network: Quantitative/continuous;Binary;
-  what_data_types_can_the_method_be_used_with: GWAS summary statistics for both exposure(s)
-    and outcome(s) (or all traits if Network MR);
-  which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method: The method is
-    robust to weak instruments or reduces weak instrument bias compared to traditional
-    methods such as IVW regression or relaxes the no measurement error (NOME) assumption.;The
-    method accounts for balanced (uncorrelated) pleiotropy or pleiotropy that meets
-    the Instrument strength independent of direct effect (InSIDE) assumption. ;The
-    method accounts for unbalanced (correlated) pleiotropy or pleiotropy that violates
-    the InSIDE assumption.;The method accounts for partial or full overlap between
-    exposure and outcome samples.;
-  brief_description: A Bayesian MR method accounting for correlated and uncorrelated
-    horizontal pleiotropy.
-  title: CAUSE
-  author: Jean Morrison
-  slug: cause
-  pubdate: '2020-05-25'
-  uvmr_color: '#00796B'
-  mvmr_color: '#808080'
+  what_data_types_can_the_method_be_used_with: Individual level data for both exposure(s)
+    and outcome(s) (or all traits if Network MR);GWAS summary statistics for both
+    exposure(s) and outcome(s) (or all traits if Network MR);
+  which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method: The method accounts
+    for balanced (uncorrelated) pleiotropy or pleiotropy that meets the Instrument
+    strength independent of direct effect (InSIDE) assumption. ;The method accounts
+    for unbalanced (correlated) pleiotropy or pleiotropy that violates the InSIDE
+    assumption.;
+  brief_description: This method estimates causal effects in multivariable MR models,
+    including sensitivity tests for heterogeneity and weak instruments
+  title: MVMR
+  author: Eleanor Sanderson
+  slug: mvmr
+  pubdate: '2018-12-10'
+  uvmr_color: '#808080'
+  mvmr_color: '#00796B'
   bidirectional_color: '#808080'
   nonlinear_color: '#808080'
   network_color: '#808080'
-  ii_color: '#808080'
+  ii_color: '#00796B'
   ss_color: '#00796B'
   fam_color: '#808080'
   is_color: '#808080'
@@ -59,9 +58,9 @@ data:
   outquant_color: '#00796B'
   outbin_color: '#00796B'
   outtte_color: '#808080'
-  weak_inst_symbol: '&check;'
+  weak_inst_symbol: '&cross;'
   winners_curse_symbol: '&cross;'
-  sample_overlap_symbol: '&check;'
+  sample_overlap_symbol: '&cross;'
   confounding_symbol: '&cross;'
   assortative_mating_symbol: '&cross;'
   uhp_symbol: '&check;'

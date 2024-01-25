@@ -1,5 +1,5 @@
 ---
-title: lhcMR
+title: LHC-MR
 author: Jean Morrison
 date: ''
 comments:
@@ -7,17 +7,17 @@ comments:
     repo: open-mr-project/siteComments
 data:
   id: 3.0
-  start_time: 1.706053e+09
-  completion_time: 1.7060532e+09
+  start_time: 1.706035e+09
+  completion_time: 1.7060352e+09
   email: anonymous
   name: .na
   last_modified_time: .na
   primary_entry_contact: Jean Morrison
   primary_entry_contact_email_address: jvmorr@umich.edu
-  primary_method_contact: none
+  primary_method_contact: Liza Darrous
   primary_method_contact_email_address: none
   method_name: Latent heritable confounder MR
-  abbreviated_method_name: lhcMR
+  abbreviated_method_name: LHC-MR
   publication_doi: https://doi.org/10.1038/s41467-021-26970-w
   code_repository_url: https://github.com/LizaDarrous/lhcMR
   code_language: R
@@ -39,7 +39,7 @@ data:
   brief_description: We propose a Latent Heritable Confounder MR (LHC-MR) method applicable
     to association summary statistics, which estimates bi-directional causal effects,
     direct heritability, and confounder effects while accounting for sample overlap.
-  title: lhcMR
+  title: LHC-MR
   author: Jean Morrison
   slug: lhcmr
   pubdate: ''
@@ -61,7 +61,7 @@ data:
   outtte_color: '#808080'
   weak_inst_symbol: '&cross;'
   winners_curse_symbol: '&cross;'
-  sample_overlap_symbol: '&cross;'
+  sample_overlap_symbol: '&check;'
   confounding_symbol: '&cross;'
   assortative_mating_symbol: '&cross;'
   uhp_symbol: '&check;'

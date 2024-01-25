@@ -7,8 +7,8 @@ comments:
     repo: open-mr-project/siteComments
 data:
   id: 1.0
-  start_time: 1.7056141e+09
-  completion_time: 1.7056144e+09
+  start_time: 1.7055961e+09
+  completion_time: 1.7055964e+09
   email: anonymous
   name: .na
   last_modified_time: .na
@@ -20,7 +20,7 @@ data:
   abbreviated_method_name: .na.character
   publication_doi: https://doi.org/10.1002/sim.9133
   code_repository_url: https://github.com/WSpiller/MVMR
-  code_language: .na.character
+  code_language: R
   method_website: https://github.com/WSpiller/MVMR
   other_url: none
   which_analysis_types_is_the_method_used_for: Multivariable MR (multiple exposures,

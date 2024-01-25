@@ -7,14 +7,14 @@ comments:
     repo: open-mr-project/siteComments
 data:
   id: 4.0
-  start_time: 1.7060537e+09
-  completion_time: 1.7060539e+09
+  start_time: 1.7060357e+09
+  completion_time: 1.7060359e+09
   email: anonymous
   name: .na
   last_modified_time: .na
   primary_entry_contact: Jean Morrison
   primary_entry_contact_email_address: jvmorr@umich.edu
-  primary_method_contact: none
+  primary_method_contact: Noah Lorincz-Comi
   primary_method_contact_email_address: none
   method_name: MR using Bias-corrected Estimating Equation
   abbreviated_method_name: MRBEE

@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Gibran Hemani">
-<meta name="dcterms.date" content="2018-01-15">
+<meta name="author" content="Eleanor Sanderson">
+<meta name="dcterms.date" content="2021-08-02">
 
-<title>OpenMR project - GSMR</title>
+<title>OpenMR project - Pleiotropy robust MVMR</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">GSMR</h1>
+<h1 class="title">Pleiotropy robust MVMR</h1>
 </div>
 
 
@@ -126,14 +126,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Gibran Hemani </p>
+             <p>Eleanor Sanderson </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 15, 2018</p>
+      <p class="date">August 2, 2021</p>
     </div>
   </div>
   
@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 <style>
 .uvmr {
     color: white;
-    background-color: #00796B;
+    background-color: #808080;
 }
 
 .mvmr {
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 
 .bidirectional {
     color: white;
-    background-color: #00796B;
+    background-color: #808080;
 }
 
 .nonlinear {
@@ -217,10 +217,10 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<p><a href="https://yanglab.westlake.edu.cn/software/gsmr/">Code</a> (Language: R) <span style="margin-right: 30px;"></span> <a href="https://yanglab.westlake.edu.cn/software/gsmr/">Website</a> <span style="margin-right: 30px;"></span> <a href="https://doi.org/10.1038/s41467-017-02317-2">Paper</a> (Pub Date: 2018-01-15)</p>
+<p><a href="https://github.com/aj-grant/robust-mvmr">Code</a> (Language: R) <span style="margin-right: 30px;"></span> <a href="none">Website</a> <span style="margin-right: 30px;"></span> <a href="https://doi.org/10.1002/sim.9156">Paper</a> (Pub Date: 2021-08-02)</p>
 <p>Other URLS: none</p>
-<p>Method Contact: Jian Yang ( jian.yang@westlake.edu.cn)</p>
-<p>Entry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)</p>
+<p>Method Contact: Andrew Grant ( none)</p>
+<p>Entry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)</p>
 </section>
 <section id="context" class="level2">
 <h2 class="anchored" data-anchor-id="context">Context</h2>
@@ -261,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Correlated horizontal pleiotropy</td>
-<td style="text-align: center;"><p>✗</p></td>
+<td style="text-align: center;"><p>✓</p></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Ancestry differences in samples</td>
@@ -284,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="description" class="level2">
 <h2 class="anchored" data-anchor-id="description">Description</h2>
-<p>GSMR performs a multi-SNP Mendelian randomization analysis using summary-level data from genome-wide association studies, allowing for outlier removal to account for pleiotropy, multivariable models, correlation of instruments and bi-directional effect estimation.</p>
+<p>This method extends MR-robust, MR-Median and MR-Lasso to multivariable MR. These methods provide MVMR estimation that is robust to pleiotropy in the genetic variants violating the third IV assumption under different assumptions about the nature of that pleiotropy.</p>
 
 
 </section>
@@ -529,4 +529,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/open-mr-project/open-mr-project.github.io/blob/main/entries/gsmr/index.qmd" class="toc-action">View source</a></p></div></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/open-mr-project/open-mr-project.github.io/blob/main/entries/pleiotropy_robust_mvmr/index.qmd" class="toc-action">View source</a></p></div></div></div></div></footer></body></html>

@@ -154,7 +154,7 @@ get_metadata <- function(d, on_color = "#00796B", off_color = "#808080",
                    "The method accounts for winner's curse bias due to in-sample variant selection.",
                    "winners_curse_symbol", on_symbol, off_symbol) %>%
     make_color_var(.,assumptions_var, 
-                   "Bias due to sample overlap",
+                   "The method accounts for partial or full overlap between exposure and outcome samples.",
                    "sample_overlap_symbol", on_symbol, off_symbol) %>%
     make_color_var(.,assumptions_var, 
                    "The method accounts for population stratification",
