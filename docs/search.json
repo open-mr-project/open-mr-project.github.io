@@ -60,14 +60,14 @@
     "href": "entries/weak_instrument_robust_mvmr/index.html",
     "title": "Weak instrument robust MVMR",
     "section": "",
-    "text": "Code (Language: .na)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
+    "text": "Code (Language: .na.character)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
   },
   {
     "objectID": "entries/weak_instrument_robust_mvmr/index.html#resources",
     "href": "entries/weak_instrument_robust_mvmr/index.html#resources",
     "title": "Weak instrument robust MVMR",
     "section": "",
-    "text": "Code (Language: .na)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
+    "text": "Code (Language: .na.character)  Website  Paper (Pub Date: 2021-08-02)\nOther URLS: none\nMethod Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)\nEntry Contact: Eleanor Sanderson ( eleanor.sanderson@bristol.ac.uk)"
   },
   {
     "objectID": "entries/weak_instrument_robust_mvmr/index.html#context",
@@ -117,5 +117,285 @@
     "title": "Software",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nAs described in the following blog post.↩︎"
+  },
+  {
+    "objectID": "entries/mrraps/index.html",
+    "href": "entries/mrraps/index.html",
+    "title": "MR-RAPS",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2020-06-01)\nOther URLS: https://cran.r-project.org/web/packages/mr.raps/index.html\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/mrraps/index.html#resources",
+    "href": "entries/mrraps/index.html#resources",
+    "title": "MR-RAPS",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2020-06-01)\nOther URLS: https://cran.r-project.org/web/packages/mr.raps/index.html\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/mrraps/index.html#context",
+    "href": "entries/mrraps/index.html#context",
+    "title": "MR-RAPS",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/mrraps/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/mrraps/index.html#assumptions-and-sources-of-bias",
+    "title": "MR-RAPS",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/mrraps/index.html#description",
+    "href": "entries/mrraps/index.html#description",
+    "title": "MR-RAPS",
+    "section": "Description",
+    "text": "Description\nMR-RAPS is an MR method using a consistent asymptotically normal estimator that improves weak instrument bias and accounts for horizontal pleiotropy using a random effect and an outlier robust loss function"
+  },
+  {
+    "objectID": "entries/weighted_median/index.html",
+    "href": "entries/weighted_median/index.html",
+    "title": "Weighted Median",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2016-04-07)\nOther URLS: https://cran.r-project.org/web/packages/MendelianRandomization/index.html\nMethod Contact: Jack Bowden ( J.Bowden2@exeter.ac.uk)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/weighted_median/index.html#resources",
+    "href": "entries/weighted_median/index.html#resources",
+    "title": "Weighted Median",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2016-04-07)\nOther URLS: https://cran.r-project.org/web/packages/MendelianRandomization/index.html\nMethod Contact: Jack Bowden ( J.Bowden2@exeter.ac.uk)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/weighted_median/index.html#context",
+    "href": "entries/weighted_median/index.html#context",
+    "title": "Weighted Median",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/weighted_median/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/weighted_median/index.html#assumptions-and-sources-of-bias",
+    "title": "Weighted Median",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✗\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✗\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/weighted_median/index.html#description",
+    "href": "entries/weighted_median/index.html#description",
+    "title": "Weighted Median",
+    "section": "Description",
+    "text": "Description\nA novel weighted median estimator for combining data on multiple genetic variants into a single causal estimate. This estimator is consistent even when up to 50% of the information comes from invalid instrumental variables. In a simulation analysis, it is shown to have better finite-sample Type 1 error rates than the inverse-variance weighted method, and is complementary to the recently proposed MR-Egger (Mendelian randomization-Egger) regression method."
+  },
+  {
+    "objectID": "entries/cause/index.html",
+    "href": "entries/cause/index.html",
+    "title": "CAUSE",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2020-05-25)\nOther URLS: none\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/cause/index.html#resources",
+    "href": "entries/cause/index.html#resources",
+    "title": "CAUSE",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2020-05-25)\nOther URLS: none\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/cause/index.html#context",
+    "href": "entries/cause/index.html#context",
+    "title": "CAUSE",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/cause/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/cause/index.html#assumptions-and-sources-of-bias",
+    "title": "CAUSE",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/cause/index.html#description",
+    "href": "entries/cause/index.html#description",
+    "title": "CAUSE",
+    "section": "Description",
+    "text": "Description\nA Bayesian MR method accounting for correlated and uncorrelated horizontal pleiotropy."
+  },
+  {
+    "objectID": "entries/mrbee/index.html",
+    "href": "entries/mrbee/index.html",
+    "title": "MRBEE",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2023.01)\nOther URLS: none\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/mrbee/index.html#resources",
+    "href": "entries/mrbee/index.html#resources",
+    "title": "MRBEE",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2023.01)\nOther URLS: none\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/mrbee/index.html#context",
+    "href": "entries/mrbee/index.html#context",
+    "title": "MRBEE",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/mrbee/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/mrbee/index.html#assumptions-and-sources-of-bias",
+    "title": "MRBEE",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/mrbee/index.html#description",
+    "href": "entries/mrbee/index.html#description",
+    "title": "MRBEE",
+    "section": "Description",
+    "text": "Description\nWe introduce MRBEE (MR using Bias-corrected Estimating Equation), a novel multivariable MR method capable of simultaneously removing error-in-variable bias and identifying horizontal pleiotropy."
+  },
+  {
+    "objectID": "entries/steiger_filtering/index.html",
+    "href": "entries/steiger_filtering/index.html",
+    "title": "Steiger filtering",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2017-08-10)\nOther URLS: none\nMethod Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/steiger_filtering/index.html#resources",
+    "href": "entries/steiger_filtering/index.html#resources",
+    "title": "Steiger filtering",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2017-08-10)\nOther URLS: none\nMethod Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/steiger_filtering/index.html#context",
+    "href": "entries/steiger_filtering/index.html#context",
+    "title": "Steiger filtering",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/steiger_filtering/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/steiger_filtering/index.html#assumptions-and-sources-of-bias",
+    "title": "Steiger filtering",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✗\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✗\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/steiger_filtering/index.html#description",
+    "href": "entries/steiger_filtering/index.html#description",
+    "title": "Steiger filtering",
+    "section": "Description",
+    "text": "Description\nSteiger filtering aims to improve MR analyses by identifying genetic factors that primarily associate with an unintended trait. For example in the situation where the hypothesised outcome in fact influences the hypothesised exposure, apparent instruments for the exposure may primarily associate with the outcome, and lead to bias in the MR estimate. Steiger filtering aims to remove such instruments from the data prior to analysis."
+  },
+  {
+    "objectID": "entries/egger/index.html",
+    "href": "entries/egger/index.html",
+    "title": "Egger",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2015-04-01)\nOther URLS: https://cran.r-project.org/web/packages/MendelianRandomization/index.html\nMethod Contact: Jack Bowden ( J.Bowden2@exeter.ac.uk)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/egger/index.html#resources",
+    "href": "entries/egger/index.html#resources",
+    "title": "Egger",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2015-04-01)\nOther URLS: https://cran.r-project.org/web/packages/MendelianRandomization/index.html\nMethod Contact: Jack Bowden ( J.Bowden2@exeter.ac.uk)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/egger/index.html#context",
+    "href": "entries/egger/index.html#context",
+    "title": "Egger",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/egger/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/egger/index.html#assumptions-and-sources-of-bias",
+    "title": "Egger",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✗\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✗\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/egger/index.html#description",
+    "href": "entries/egger/index.html#description",
+    "title": "Egger",
+    "section": "Description",
+    "text": "Description\nEgger regression, a tool to detect small study bias in meta-analysis, can be adapted to test for bias from pleiotropy, and the slope coefficient from Egger regression provides an estimate of the causal effect. Under the assumption that the association of each genetic variant with the exposure is independent of the pleiotropic effect of the variant (not via the exposure), Egger’s test gives a valid test of the null causal hypothesis and a consistent causal effect estimate even when all the genetic variants are invalid instrumental variables."
+  },
+  {
+    "objectID": "entries/NA/index.html",
+    "href": "entries/NA/index.html",
+    "title": ".na.character",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: )\nOther URLS: none\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/NA/index.html#resources",
+    "href": "entries/NA/index.html#resources",
+    "title": ".na.character",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: )\nOther URLS: none\nMethod Contact: none ( none)\nEntry Contact: Jean Morrison ( jvmorr@umich.edu)"
+  },
+  {
+    "objectID": "entries/NA/index.html#context",
+    "href": "entries/NA/index.html#context",
+    "title": ".na.character",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/NA/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/NA/index.html#assumptions-and-sources-of-bias",
+    "title": ".na.character",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✗\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/NA/index.html#description",
+    "href": "entries/NA/index.html#description",
+    "title": ".na.character",
+    "section": "Description",
+    "text": "Description\nWe propose a Latent Heritable Confounder MR (LHC-MR) method applicable to association summary statistics, which estimates bi-directional causal effects, direct heritability, and confounder effects while accounting for sample overlap."
+  },
+  {
+    "objectID": "entries/mbe/index.html",
+    "href": "entries/mbe/index.html",
+    "title": "MBE",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2017-07-12)\nOther URLS: none\nMethod Contact: Fernando Hartwig ( fernandophartwig@gmail.com)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/mbe/index.html#resources",
+    "href": "entries/mbe/index.html#resources",
+    "title": "MBE",
+    "section": "",
+    "text": "Code (Language: R)  Website  Paper (Pub Date: 2017-07-12)\nOther URLS: none\nMethod Contact: Fernando Hartwig ( fernandophartwig@gmail.com)\nEntry Contact: Gibran Hemani ( g.hemani@bristol.ac.uk)"
+  },
+  {
+    "objectID": "entries/mbe/index.html#context",
+    "href": "entries/mbe/index.html#context",
+    "title": "MBE",
+    "section": "Context",
+    "text": "Context\nAnalysis Type: UVMR  MVMR  Network MR  Bi-Driectional MR Non-Linear\nInput Data Types: Ind/Ind  Ind/SS  SS/Ind  SS/SSfamily\nExposure Trait Types: Quantitative  Binary  Time to event\nOutcome Trait Types: Quantitative  Binary  Time to event"
+  },
+  {
+    "objectID": "entries/mbe/index.html#assumptions-and-sources-of-bias",
+    "href": "entries/mbe/index.html#assumptions-and-sources-of-bias",
+    "title": "MBE",
+    "section": "Assumptions and Sources of Bias",
+    "text": "Assumptions and Sources of Bias\n\n\n\n\n\n\n\nSource of Bias\nAddressed\n\n\n\n\nWeak instruments\n✓\n\n\nWinner’s curse\n✗\n\n\nSample overlap\n✗\n\n\nUncorrelated horizontal pleiotropy\n✓\n\n\nCorrelated horizontal pleiotropy\n✓\n\n\nAncestry differences in samples\n✗\n\n\nResidual confounding in GWAS\n✗\n\n\nCross-trait assortative mating\n✗\n\n\nIndex-event/conditioning on heritable trait\n✗"
+  },
+  {
+    "objectID": "entries/mbe/index.html#description",
+    "href": "entries/mbe/index.html#description",
+    "title": "MBE",
+    "section": "Description",
+    "text": "Description\nThe MBE is consistent when the largest number of similar (identical in infinite samples) individual-instrument causal effect estimates comes from valid instruments, even if the majority of instruments are invalid."
   }
 ]

@@ -87,6 +87,7 @@ p=ggplot(res|>
   
   labs(x="Date",
        y=paste(ylab_root,"per week"),
+       caption=paste("Most recent publication date:", max(subset(res, time_level=="Weeks")$pubmed_date)),
        x="Date") +
   theme_mrlit()
 # p
