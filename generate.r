@@ -81,8 +81,9 @@ make_color_var <- function(d, ref_field, ref_string, out_name, on_color = "#0079
   return(d)
 }
 
-get_metadata <- function(d, on_color = "#00796B", off_color = "#808080", 
-                         on_symbol = "&check;", off_symbol = "&cross;"){
+get_metadata <- function(d, on_color = "greenbg", off_color = "greybg", 
+                         on_symbol = "&check;", off_symbol = "&cross;", 
+                         on_class = "checkclass", off_class = "crossclass"){
   
   names(d) <- make_slug(names(d))
   
@@ -114,39 +115,40 @@ get_metadata <- function(d, on_color = "#00796B", off_color = "#808080",
   ex_data_var <- "what_types_of_exposure_variables_can_be_used_if_network"
   out_data_var <- "what_types_of_outcome_variables_can_be_used_if_network"
   assumptions_var <- "which_mr_conditions__assumptions_are_requiredrelaxed_by_the_method"
-  d <- d %>% make_color_var(., analysis_var, "Univariable MR (one exposure, one outcome)", "uvmr_color", on_color, off_color) %>% 
-    make_color_var(., analysis_var, "Multivariable MR (multiple exposures, one outcome)", "mvmr_color", on_color, off_color) %>% 
-    make_color_var(., analysis_var, "Bi-directional MR", "bidirectional_color", on_color, off_color) %>% 
-    make_color_var(., analysis_var, "Non-linear effect estimation", "nonlinear_color", on_color, off_color) %>% 
-    make_color_var(., analysis_var, "Network MR (forming a causal DAG containing multiple traits)", "network_color", on_color, off_color) %>%
+  d <- d %>% 
+    make_color_var(., analysis_var, "Univariable MR (one exposure, one outcome)", "uvmr_class", "greenbg", "greybg") %>% 
+    make_color_var(., analysis_var, "Multivariable MR (multiple exposures, one outcome)", "mvmr_class", "greenbg", "greybg") %>% 
+    make_color_var(., analysis_var, "Bi-directional MR", "bidirectional_class", "greenbg", "greybg") %>% 
+    make_color_var(., analysis_var, "Non-linear effect estimation", "nonlinear_class", "greenbg", "greybg") %>% 
+    make_color_var(., analysis_var, "Network MR (forming a causal DAG containing multiple traits)", "network_class", "greenbg", "greybg") %>%
     make_color_var(., data_types_var, "Individual level data for both exposure(s) and outcome(s) (or all traits if Network MR)", 
-                   "ii_color", on_color, off_color) %>%
+                   "ii_class", on_color, off_color) %>%
     make_color_var(., data_types_var, "GWAS summary statistics for both exposure(s) and outcome(s) (or all traits if Network MR)", 
-                   "ss_color", on_color, off_color) %>%
+                   "ss_class", on_color, off_color) %>%
     make_color_var(., data_types_var, "Individual level family data (siblings, trios, twins, etc.) for either exposure(s) or outcome(s) or both.", 
-                   "fam_color", on_color, off_color) %>%
+                   "fam_class", on_color, off_color) %>%
     make_color_var(., data_types_var, "Individual level data for exposure(s), summary statistics for outcome(s)", 
-                   "is_color", on_color, off_color) %>%
+                   "is_class", on_color, off_color) %>%
     make_color_var(., data_types_var, "Summary statistics for exposure(s), individual level for outcome(s)", 
-                   "si_color", on_color, off_color) %>%
+                   "si_class", on_color, off_color) %>%
     make_color_var(., ex_data_var, 
                    "Quantitative/continuous", 
-                   "exquant_color", on_color, off_color) %>%
+                   "exquant_class", on_color, off_color) %>%
     make_color_var(., ex_data_var, 
                    "Binary", 
-                   "exbin_color", on_color, off_color) %>%
+                   "exbin_class", on_color, off_color) %>%
     make_color_var(., ex_data_var, 
                    "Survival/Time-to-event", 
-                   "extte_color", on_color, off_color) %>%
+                   "extte_class", on_color, off_color) %>%
     make_color_var(., out_data_var, 
                    "Quantitative/continuous", 
-                   "outquant_color", on_color, off_color) %>%
+                   "outquant_class", on_color, off_color) %>%
     make_color_var(., out_data_var, 
                    "Binary", 
-                   "outbin_color", on_color, off_color) %>%
+                   "outbin_class", on_color, off_color) %>%
     make_color_var(., out_data_var, 
                    "Survival/Time-to-event", 
-                   "outtte_color", on_color, off_color) %>%
+                   "outtte_class", on_color, off_color) %>%
     make_color_var(., assumptions_var, 
                    "The method is robust to weak instruments or reduces weak instrument bias",
                    "weak_inst_symbol", on_symbol, off_symbol) %>%
@@ -173,7 +175,34 @@ get_metadata <- function(d, on_color = "#00796B", off_color = "#808080",
                    "colliding_symbol", on_symbol, off_symbol) %>%
     make_color_var(., assumptions_var, 
                    "The method accounts for ancestry differences between exposure and outcome samples.",
-                   "anc_diff_symbol", on_symbol, off_symbol)
+                   "anc_diff_symbol", on_symbol, off_symbol) %>%
+    make_color_var(., assumptions_var, 
+                   "The method is robust to weak instruments or reduces weak instrument bias",
+                   "weak_inst_class", on_class, off_class) %>%
+    make_color_var(., assumptions_var, 
+                   "The method accounts for winner's curse bias due to in-sample variant selection.",
+                   "winners_curse_class", on_class, off_class) %>%
+    make_color_var(.,assumptions_var, 
+                   "The method accounts for partial or full overlap between exposure and outcome samples.",
+                   "sample_overlap_class", on_class, off_class) %>%
+    make_color_var(.,assumptions_var, 
+                   "The method accounts for population stratification",
+                   "confounding_class", on_class, off_class) %>%
+    make_color_var(., assumptions_var, 
+                   "The method accounts for effects of assortative mating",
+                   "assortative_mating_class", on_class, off_class) %>%
+    make_color_var(., assumptions_var, 
+                   "The method accounts for balanced (uncorrelated) ",
+                   "uhp_class", on_class, off_class) %>%
+    make_color_var(.,assumptions_var, 
+                   "The method accounts for unbalanced (correlated)",
+                   "chp_class", on_class, off_class) %>%
+    make_color_var(., assumptions_var, 
+                   "The method accounts for index-event bias or bias due to conditioning on a heritable trait.",
+                   "colliding_class", on_class, off_class) %>%
+    make_color_var(., assumptions_var, 
+                   "The method accounts for ancestry differences between exposure and outcome samples.",
+                   "anc_diff_class", on_class, off_class)
   return(d)
 }
 
