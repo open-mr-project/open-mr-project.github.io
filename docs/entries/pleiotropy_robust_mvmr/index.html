@@ -144,76 +144,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <style>
-.uvmr {
-    color: white;
-    background-color: #808080;
-}
 
-.mvmr {
+.greenbg {
     color: white;
     background-color: #00796B;
 }
 
-.network {
+.greybg {
     color: white;
     background-color: #808080;
 }
 
-.bidirectional {
-    color: white;
-    background-color: #808080;
+.checkclass {
+    color: #00796B;
+    font-weight: 800;
+    font-size: 2.5em;
 }
 
-.nonlinear {
-    color: white;
-    background-color: #808080;
+.crossclass {
+    color: #808080;
+    font-weight: 600;
+    font-size: 2.5em;
 }
 
-.ii {
-    color: white;
-    background-color: #808080;
-}
-.is {
-    color: white;
-    background-color: #808080;
-}
-.si {
-    color: white;
-    background-color: #808080;
-}
-.ss {
-    color: white;
-    background-color: #00796B;
-}
-.fam {
-    color: white;
-    background-color: #808080;
-}
 
-.exquant {
-    color: white;
-    background-color: #00796B;
-}
-.exbin {
-    color: white;
-    background-color: #00796B;
-}
-.extte {
-    color: white;
-    background-color: #808080;
-}
-.outquant {
-    color: white;
-    background-color: #00796B;
-}
-.outbin {
-    color: white;
-    background-color: #00796B;
-}
-.outtte {
-    color: white;
-    background-color: #808080;
-}
+
 </style>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
@@ -224,10 +179,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="context" class="level2">
 <h2 class="anchored" data-anchor-id="context">Context</h2>
-<p>Analysis Type: <span class="uvmr">UVMR</span> <span style="margin-right: 10px;"></span> <span class="mvmr">MVMR</span> <span style="margin-right: 10px;"></span> <span class="network">Network MR</span> <span style="margin-right: 10px;"></span> <span class="bidirectional">Bi-Driectional MR</span><span style="margin-right: 10px;"></span> <span class="nonlinear">Non-Linear</span></p>
-<p>Input Data Types: <span class="ii">Ind/Ind</span> <span style="margin-right: 10px;"></span> <span class="is">Ind/SS</span> <span style="margin-right: 10px;"></span> <span class="si">SS/Ind</span> <span style="margin-right: 10px;"></span> <span class="ss">SS/SS</span><span style="margin-right: 10px;"></span><span class="fam">family</span></p>
-<p>Exposure Trait Types: <span class="exquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="exbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="extte">Time to event</span></p>
-<p>Outcome Trait Types: <span class="outquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="outbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="outtte">Time to event</span></p>
+<p>Analysis Type: <span class="greybg">UVMR</span> <span style="margin-right: 10px;"></span> <span class="greenbg">MVMR</span> <span style="margin-right: 10px;"></span> <span class="greybg">Network MR</span> <span style="margin-right: 10px;"></span> <span class="greybg">Bi-Directional MR</span><span style="margin-right: 10px;"></span> <span class="greybg">Non-Linear</span></p>
+<p>Input Data Types: <span class="greybg">Ind/Ind</span> <span style="margin-right: 10px;"></span> <span class="greybg">Ind/SS</span> <span style="margin-right: 10px;"></span> <span class="greybg">SS/Ind</span> <span style="margin-right: 10px;"></span> <span class="greenbg">SS/SS</span><span style="margin-right: 10px;"></span><span class="greybg">family</span></p>
+<p>Exposure Trait Types: <span class="greenbg">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="greenbg">Binary</span> <span style="margin-right: 10px;"></span> <span class="greybg">Time to event</span></p>
+<p>Outcome Trait Types: <span class="greenbg">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="greenbg">Binary</span> <span style="margin-right: 10px;"></span> <span class="greybg">Time to event</span></p>
 </section>
 <section id="assumptions-and-sources-of-bias" class="level2">
 <h2 class="anchored" data-anchor-id="assumptions-and-sources-of-bias">Assumptions and Sources of Bias</h2>
@@ -245,39 +200,39 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Weak instruments</td>
-<td style="text-align: center;"><p>✗</p></td>
+<td style="text-align: center;"><span class="crossclass">✗</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Winner’s curse</td>
-<td style="text-align: center;"><p>✗</p></td>
+<td style="text-align: center;"><span class="crossclass">✗</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Sample overlap</td>
-<td style="text-align: center;"><p>✗</p></td>
+<td style="text-align: center;"><span class="crossclass">✗</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Uncorrelated horizontal pleiotropy</td>
-<td style="text-align: center;"><p>✓</p></td>
+<td style="text-align: center;"><span class="checkclass">✓</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Correlated horizontal pleiotropy</td>
-<td style="text-align: center;"><p>✓</p></td>
+<td style="text-align: center;"><span class="checkclass">✓</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Ancestry differences in samples</td>
-<td style="text-align: center;"><p>✗</p></td>
+<td style="text-align: center;"><span class="crossclass">✗</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Residual confounding in GWAS</td>
-<td style="text-align: center;"><p>✗</p></td>
+<td style="text-align: center;"><span class="crossclass">✗</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Cross-trait assortative mating</td>
-<td style="text-align: center;"><p>✗</p></td>
+<td style="text-align: center;"><span class="crossclass">✗</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Index-event/conditioning on heritable trait</td>
-<td style="text-align: center;"><p>✗</p></td>
+<td style="text-align: center;"><span class="crossclass">✗</span></td>
 </tr>
 </tbody>
 </table>

@@ -43,22 +43,22 @@ data:
   author: Gibran Hemani
   slug: steiger_filtering
   pubdate: '2017-08-10'
-  uvmr_color: '#00796B'
-  mvmr_color: '#00796B'
-  bidirectional_color: '#00796B'
-  nonlinear_color: '#808080'
-  network_color: '#808080'
-  ii_color: '#808080'
-  ss_color: '#00796B'
-  fam_color: '#808080'
-  is_color: '#808080'
-  si_color: '#808080'
-  exquant_color: '#00796B'
-  exbin_color: '#00796B'
-  extte_color: '#808080'
-  outquant_color: '#00796B'
-  outbin_color: '#00796B'
-  outtte_color: '#808080'
+  uvmr_class: greenbg
+  mvmr_class: greenbg
+  bidirectional_class: greenbg
+  nonlinear_class: greybg
+  network_class: greybg
+  ii_class: greybg
+  ss_class: greenbg
+  fam_class: greybg
+  is_class: greybg
+  si_class: greybg
+  exquant_class: greenbg
+  exbin_class: greenbg
+  extte_class: greybg
+  outquant_class: greenbg
+  outbin_class: greenbg
+  outtte_class: greybg
   weak_inst_symbol: '&cross;'
   winners_curse_symbol: '&cross;'
   sample_overlap_symbol: '&cross;'
@@ -68,79 +68,43 @@ data:
   chp_symbol: '&check;'
   colliding_symbol: '&cross;'
   anc_diff_symbol: '&cross;'
+  weak_inst_class: crossclass
+  winners_curse_class: crossclass
+  sample_overlap_class: crossclass
+  confounding_class: crossclass
+  assortative_mating_class: crossclass
+  uhp_class: crossclass
+  chp_class: checkclass
+  colliding_class: crossclass
+  anc_diff_class: crossclass
 ---
 
 <style>
-.uvmr {
+
+.greenbg {
     color: white;
-    background-color: {{< meta data.uvmr_color >}};
+    background-color: #00796B;
 }
 
-.mvmr {
+.greybg {
     color: white;
-    background-color: {{< meta data.mvmr_color >}};
+    background-color: #808080;
 }
 
-.network {
-    color: white;
-    background-color: {{< meta data.network_color >}};
+.checkclass {
+    color: #00796B;
+    font-weight: 800;
+    font-size: 2.5em;
 }
 
-.bidirectional {
-    color: white;
-    background-color: {{< meta data.bidirectional_color >}};
+.crossclass {
+    color: #808080;
+    font-weight: 600;
+    font-size: 2.5em;
 }
 
-.nonlinear {
-    color: white;
-    background-color: {{< meta data.nonlinear_color >}};
-}
 
-.ii {
-    color: white;
-    background-color: {{< meta data.ii_color >}};
-}
-.is {
-    color: white;
-    background-color: {{< meta data.is_color >}};
-}
-.si {
-    color: white;
-    background-color: {{< meta data.si_color >}};
-}
-.ss {
-    color: white;
-    background-color: {{< meta data.ss_color >}};
-}
-.fam {
-    color: white;
-    background-color: {{< meta data.fam_color >}};
-}
 
-.exquant {
-    color: white;
-    background-color: {{< meta data.exquant_color >}};
-}
-.exbin {
-    color: white;
-    background-color: {{< meta data.exbin_color >}};
-}
-.extte {
-    color: white;
-    background-color: {{< meta data.extte_color >}};
-}
-.outquant {
-    color: white;
-    background-color: {{< meta data.outquant_color >}};
-}
-.outbin {
-    color: white;
-    background-color: {{< meta data.outbin_color >}};
-}
-.outtte {
-    color: white;
-    background-color: {{< meta data.outtte_color >}};
-}
 </style>
 ## Resources
 
@@ -154,29 +118,31 @@ Entry Contact: {{< meta data.primary_entry_contact >}} ( {{< meta data.primary_e
 
 ## Context
 
+```{r, echo=FALSE, results='asis'}
+```
 
-Analysis Type:  <span class = "uvmr">UVMR</span> <span style="margin-right: 10px;"></span> <span class = "mvmr">MVMR</span> <span style="margin-right: 10px;"></span> <span class="network">Network MR</span>  <span style="margin-right: 10px;"></span> <span class = "bidirectional">Bi-Driectional MR</span></span><span style="margin-right: 10px;"></span> <span class="nonlinear">Non-Linear</span>
+Analysis Type:  <span class = "`r rmarkdown::metadata$data$uvmr_class`">UVMR</span> <span style="margin-right: 10px;"></span> <span class = "`r rmarkdown::metadata$data$mvmr_class`">MVMR</span> <span style="margin-right: 10px;"></span> <span class="`r rmarkdown::metadata$data$network_class`">Network MR</span>  <span style="margin-right: 10px;"></span> <span class = "`r rmarkdown::metadata$data$bidirectional_class`">Bi-Directional MR</span></span><span style="margin-right: 10px;"></span> <span class="`r rmarkdown::metadata$data$nonlinear_class`">Non-Linear</span>
 
 
-Input Data Types:  <span class = "ii">Ind/Ind</span> <span style="margin-right: 10px;"></span> <span class = "is">Ind/SS</span> <span style="margin-right: 10px;"></span> <span class="si">SS/Ind</span>  <span style="margin-right: 10px;"></span> <span class = "ss">SS/SS</span><span style="margin-right: 10px;"></span><span class = "fam">family</span>
+Input Data Types:  <span class = "`r rmarkdown::metadata$data$ii_class`">Ind/Ind</span> <span style="margin-right: 10px;"></span> <span class = "`r rmarkdown::metadata$data$is_class`">Ind/SS</span> <span style="margin-right: 10px;"></span> <span class="`r rmarkdown::metadata$data$si_class`">SS/Ind</span>  <span style="margin-right: 10px;"></span> <span class = "`r rmarkdown::metadata$data$ss_class`">SS/SS</span><span style="margin-right: 10px;"></span><span class = "`r rmarkdown::metadata$data$fam_class`">family</span>
 
-Exposure Trait Types:  <span class="exquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="exbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="extte">Time to event</span> 
+Exposure Trait Types:  <span class="`r rmarkdown::metadata$data$exquant_class`">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="`r rmarkdown::metadata$data$exbin_class`">Binary</span> <span style="margin-right: 10px;"></span> <span class="`r rmarkdown::metadata$data$extte_class`">Time to event</span> 
 
-Outcome Trait Types: <span class="outquant">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="outbin">Binary</span> <span style="margin-right: 10px;"></span> <span class="outtte">Time to event</span> 
+Outcome Trait Types: <span class="`r rmarkdown::metadata$data$outquant_class`">Quantitative</span> <span style="margin-right: 10px;"></span> <span class="`r rmarkdown::metadata$data$outbin_class`">Binary</span> <span style="margin-right: 10px;"></span> <span class="`r rmarkdown::metadata$data$outtte_class`">Time to event</span> 
 
 ## Assumptions and Sources of Bias
 
 | Source of Bias | Addressed |
 |:-----------|:--------:|
-| Weak instruments | {{< meta data.weak_inst_symbol >}} | 
-| Winner's curse | {{< meta data.winners_curse_symbol >}}  |  
-| Sample overlap | {{< meta data.sample_overlap_symbol >}} |
-| Uncorrelated horizontal pleiotropy | {{< meta data.uhp_symbol >}} |
-| Correlated horizontal pleiotropy |  {{< meta data.chp_symbol >}} | 
-| Ancestry differences in samples | {{< meta data.anc_diff_symbol >}}| 
-| Residual confounding in GWAS | {{< meta data.confounding_symbol >}}| 
-| Cross-trait assortative mating |{{< meta data.assortative_mating_symbol >}}| 
-| Index-event/conditioning on heritable trait | {{< meta data.colliding_symbol >}}| 
+| Weak instruments | <span class = "`r rmarkdown::metadata$data$weak_inst_class`">{{< meta data.weak_inst_symbol >}}</span> | 
+| Winner's curse | <span class = "`r rmarkdown::metadata$data$winners_curse_class`">{{< meta data.winners_curse_symbol >}}</span>  |  
+| Sample overlap | <span class = "`r rmarkdown::metadata$data$sample_overlap_class`">{{< meta data.sample_overlap_symbol >}}</span> |
+| Uncorrelated horizontal pleiotropy | <span class = "`r rmarkdown::metadata$data$uhp_class`">{{< meta data.uhp_symbol >}}</span> |
+| Correlated horizontal pleiotropy |  <span class = "`r rmarkdown::metadata$data$chp_class`">{{< meta data.chp_symbol >}}</span> | 
+| Ancestry differences in samples | <span class = "`r rmarkdown::metadata$data$anc_diff_class`">{{< meta data.anc_diff_symbol >}}</span>| 
+| Residual confounding in GWAS | <span class = "`r rmarkdown::metadata$data$confounding_class`">{{< meta data.confounding_symbol >}}</span>| 
+| Cross-trait assortative mating |<span class = "`r rmarkdown::metadata$data$assortative_mating_class`">{{< meta data.assortative_mating_symbol >}}</span>| 
+| Index-event/conditioning on heritable trait | <span class = "`r rmarkdown::metadata$data$colliding_class`">{{< meta data.colliding_symbol >}}</span>| 
 
 
 ## Description
