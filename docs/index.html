@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -45,7 +45,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,11 +60,12 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
-
 <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
 <script src="site_libs/datatables-binding-0.31/datatables.js"></script>
@@ -89,9 +96,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">OpenMR project</span>
     </a>
@@ -103,26 +110,26 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Registry</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Registry</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html" rel="" target="">
- <span class="menu-text">Software</span></a>
+    <a class="nav-link" href="./software.html"> 
+<span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./background.html" rel="" target="">
- <span class="menu-text">Background</span></a>
+    <a class="nav-link" href="./background.html"> 
+<span class="menu-text">Background</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/open-mr-project/open-mr-project.github.io" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/open-mr-project/open-mr-project.github.io"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -141,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -149,7 +156,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Welcome to the OpenMR project. This is a community created registry of statistical methods that aims to ultimately enable more reliable causal inference in Mendelian randomisation studies.</p>
 <p>Submit a new method to the registry using the form below, and also see the <a href="./software.html">software</a> page on how to improve accessibility of your software.</p>
@@ -157,9 +166,8 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="datatables html-widget html-fill-item" id="htmlwidget-c016b680dc7da880dfde" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-c016b680dc7da880dfde">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["ColReorder","Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14"],["<a href= 'entries/weak_instrument_robust_mvmr/index.html'target='_blank'>Weak instrument robust MVMR<\/a>","<a href= 'entries/cause/index.html'target='_blank'>CAUSE<\/a>","<a href= 'entries/lhcmr/index.html'target='_blank'>LHC-MR<\/a>","<a href= 'entries/mrbee/index.html'target='_blank'>MRBEE<\/a>","<a href= 'entries/mrraps/index.html'target='_blank'>MR-RAPS<\/a>","<a href= 'entries/egger/index.html'target='_blank'>Egger<\/a>","<a href= 'entries/weighted_median/index.html'target='_blank'>Weighted Median<\/a>","<a href= 'entries/mbe/index.html'target='_blank'>MBE<\/a>","<a href= 'entries/steiger_filtering/index.html'target='_blank'>Steiger filtering<\/a>","<a href= 'entries/mr_gxe/index.html'target='_blank'>MR GxE<\/a>","<a href= 'entries/gsmr/index.html'target='_blank'>GSMR<\/a>","<a href= 'entries/mrclust/index.html'target='_blank'>MR-Clust<\/a>","<a href= 'entries/mvmr/index.html'target='_blank'>MVMR<\/a>","<a href= 'entries/pleiotropy_robust_mvmr/index.html'target='_blank'>Pleiotropy robust MVMR<\/a>"],["Weak instrument robust MVMR","Causal Analysis Using Summary Effect estimates","Latent heritable confounder MR","MR using Bias-corrected Estimating Equation","Mendelian randomization with robust adjusted profile score","MR Egger regression","MR Weighted Median","MR Weighted Mode based estimator","Steiger filtering","MR using gene-by-environment interactions","Generalised summary-data-based mendelian randomisation","MR-Clust","Multivariable MR","Pleiotropy robust MVMR"],["<a href = 'https://github.com/WSpiller/MVMR'target='_blank'>https://github.com/WSpiller/MVMR<\/a>","<a href = 'https://github.com/jean997/cause'target='_blank'>https://github.com/jean997/cause<\/a>","<a href = 'https://github.com/LizaDarrous/lhcMR'target='_blank'>https://github.com/LizaDarrous/lhcMR<\/a>","<a href = 'https://github.com/noahlorinczcomi/MRBEE'target='_blank'>https://github.com/noahlorinczcomi/MRBEE<\/a>","<a href = 'https://github.com/qingyuanzhao/mr.raps'target='_blank'>https://github.com/qingyuanzhao/mr.raps<\/a>","<a href = 'https://github.com/mrcieu/twosamplemr'target='_blank'>https://github.com/mrcieu/twosamplemr<\/a>","<a href = 'https://github.com/mrcieu/twosamplemr'target='_blank'>https://github.com/mrcieu/twosamplemr<\/a>","<a href = 'https://github.com/mrcieu/twosamplemr'target='_blank'>https://github.com/mrcieu/twosamplemr<\/a>","<a href = 'https://github.com/mrcieu/twosamplemr'target='_blank'>https://github.com/mrcieu/twosamplemr<\/a>","<a href = 'https://github.com/yoonsucho/CAMERA/tree/main'target='_blank'>https://github.com/yoonsucho/CAMERA/tree/main<\/a>","<a href = 'https://yanglab.westlake.edu.cn/software/gsmr/'target='_blank'>https://yanglab.westlake.edu.cn/software/gsmr/<\/a>","<a href = 'https://github.com/cnfoley/mrclust'target='_blank'>https://github.com/cnfoley/mrclust<\/a>","<a href = 'https://github.com/WSpiller/MVMR'target='_blank'>https://github.com/WSpiller/MVMR<\/a>","<a href = 'https://github.com/aj-grant/robust-mvmr'target='_blank'>https://github.com/aj-grant/robust-mvmr<\/a>"],["MVMR","UVMR","UVMR, Bi-directional MR","UVMR, MVMR","UVMR","UVMR","UVMR","UVMR","UVMR, MVMR, Bi-directional MR","UVMR","UVMR, Bi-directional MR, MVMR","UVMR","MVMR","MVMR"],["Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Individual, Stratum spec. summary stats","Summary stats","Summary stats","Individual, Summary stats","Summary stats"],["Weak instruments","Weak instruments, UHP , CHP, Sample overlap","UHP , CHP, Sample overlap","Weak instruments, CHP, UHP ","Weak instruments, CHP, UHP ","UHP ","UHP ","Weak instruments, UHP , CHP","CHP","UHP , CHP","UHP ","UHP , CHP","UHP , CHP","UHP , CHP"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Method<\/th>\n      <th>Method (full name)<\/th>\n      <th>Code repository (URL)<\/th>\n      <th>Analysis Type<\/th>\n      <th>Data Types<\/th>\n      <th>Robust To<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"colReorder":true,"dom":"Brtlp","buttons":["colvis"],"columnDefs":[{"visible":false,"targets":[2,3,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Method","targets":1},{"name":"Method (full name)","targets":2},{"name":"Code repository (URL)","targets":3},{"name":"Analysis Type","targets":4},{"name":"Data Types","targets":5},{"name":"Robust To","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-c4a82bd861a215d6e6fa" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c4a82bd861a215d6e6fa">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["ColReorder","Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14"],["<a href= 'entries/weak_instrument_robust_mvmr/index.html'target='_blank'>Weak instrument robust MVMR<\/a>","<a href= 'entries/cause/index.html'target='_blank'>CAUSE<\/a>","<a href= 'entries/lhcmr/index.html'target='_blank'>LHC-MR<\/a>","<a href= 'entries/mrbee/index.html'target='_blank'>MRBEE<\/a>","<a href= 'entries/mrraps/index.html'target='_blank'>MR-RAPS<\/a>","<a href= 'entries/egger/index.html'target='_blank'>Egger<\/a>","<a href= 'entries/weighted_median/index.html'target='_blank'>Weighted Median<\/a>","<a href= 'entries/mbe/index.html'target='_blank'>MBE<\/a>","<a href= 'entries/steiger_filtering/index.html'target='_blank'>Steiger filtering<\/a>","<a href= 'entries/mr_gxe/index.html'target='_blank'>MR GxE<\/a>","<a href= 'entries/gsmr/index.html'target='_blank'>GSMR<\/a>","<a href= 'entries/mrclust/index.html'target='_blank'>MR-Clust<\/a>","<a href= 'entries/mvmr/index.html'target='_blank'>MVMR<\/a>","<a href= 'entries/pleiotropy_robust_mvmr/index.html'target='_blank'>Pleiotropy robust MVMR<\/a>"],["Weak instrument robust MVMR","Causal Analysis Using Summary Effect estimates","Latent heritable confounder MR","MR using Bias-corrected Estimating Equation","Mendelian randomization with robust adjusted profile score","MR Egger regression","MR Weighted Median","MR Weighted Mode based estimator","Steiger filtering","MR using gene-by-environment interactions","Generalised summary-data-based mendelian randomisation","MR-Clust","Multivariable MR","Pleiotropy robust MVMR"],["<a href = 'https://github.com/WSpiller/MVMR'target='_blank'>https://github.com/WSpiller/MVMR<\/a>","<a href = 'https://github.com/jean997/cause'target='_blank'>https://github.com/jean997/cause<\/a>","<a href = 'https://github.com/LizaDarrous/lhcMR'target='_blank'>https://github.com/LizaDarrous/lhcMR<\/a>","<a href = 'https://github.com/noahlorinczcomi/MRBEE'target='_blank'>https://github.com/noahlorinczcomi/MRBEE<\/a>","<a href = 'https://github.com/qingyuanzhao/mr.raps'target='_blank'>https://github.com/qingyuanzhao/mr.raps<\/a>","<a href = 'https://github.com/mrcieu/twosamplemr'target='_blank'>https://github.com/mrcieu/twosamplemr<\/a>","<a href = 'https://github.com/mrcieu/twosamplemr'target='_blank'>https://github.com/mrcieu/twosamplemr<\/a>","<a href = 'https://github.com/mrcieu/twosamplemr'target='_blank'>https://github.com/mrcieu/twosamplemr<\/a>","<a href = 'https://github.com/mrcieu/twosamplemr'target='_blank'>https://github.com/mrcieu/twosamplemr<\/a>","<a href = 'https://github.com/yoonsucho/CAMERA'target='_blank'>https://github.com/yoonsucho/CAMERA<\/a>","<a href = 'https://yanglab.westlake.edu.cn/software/gsmr/'target='_blank'>https://yanglab.westlake.edu.cn/software/gsmr/<\/a>","<a href = 'https://github.com/cnfoley/mrclust'target='_blank'>https://github.com/cnfoley/mrclust<\/a>","<a href = 'https://github.com/WSpiller/MVMR'target='_blank'>https://github.com/WSpiller/MVMR<\/a>","<a href = 'https://github.com/aj-grant/robust-mvmr'target='_blank'>https://github.com/aj-grant/robust-mvmr<\/a>"],["MVMR","UVMR","UVMR, Bi-directional MR","UVMR, MVMR","UVMR","UVMR","UVMR","UVMR","UVMR, MVMR, Bi-directional MR","UVMR","UVMR, Bi-directional MR, MVMR","UVMR","MVMR","MVMR"],["Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Summary stats","Individual, Stratum spec. summary stats","Summary stats","Summary stats","Individual, Summary stats","Summary stats"],["Weak instruments","Weak instruments, UHP , CHP, Sample overlap","UHP , CHP, Sample overlap","Weak instruments, CHP, UHP ","Weak instruments, CHP, UHP ","UHP ","UHP ","Weak instruments, UHP , CHP","CHP","UHP , CHP","UHP ","UHP , CHP","UHP , CHP","UHP , CHP"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Method<\/th>\n      <th>Method (full name)<\/th>\n      <th>Code repository (URL)<\/th>\n      <th>Analysis Type<\/th>\n      <th>Data Types<\/th>\n      <th>Robust To<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"colReorder":true,"dom":"Brtlp","buttons":["colvis"],"columnDefs":[{"visible":false,"targets":[2,3,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Method","targets":1},{"name":"Method (full name)","targets":2},{"name":"Code repository (URL)","targets":3},{"name":"Analysis Type","targets":4},{"name":"Data Types","targets":5},{"name":"Robust To","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -245,10 +253,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -258,8 +265,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -272,6 +288,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -315,6 +450,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -340,6 +476,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -403,4 +565,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/open-mr-project/open-mr-project.github.io/blob/main/index.qmd" class="toc-action">View source</a></p></div></div></div></div></footer></body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/open-mr-project/open-mr-project.github.io/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>

@@ -19,7 +19,7 @@ data:
   method_name: MR using gene-by-environment interactions
   abbreviated_method_name: MR GxE
   publication_doi: https://doi.org/10.1093/ije/dyy204
-  code_repository_url: https://github.com/yoonsucho/CAMERA/tree/main
+  code_repository_url: https://github.com/yoonsucho/CAMERA
   code_language: R
   method_website: none
   other_url: none
