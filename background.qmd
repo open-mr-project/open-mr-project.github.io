@@ -132,3 +132,4 @@ The OpenMR project aims to improve empirical epidemiological studies by providin
 * [Steve Burgess' group website](https://www.mendelianrandomization.com/index.php/software-code)
 * [Chris Moreno-Stokoe's website](https://www.morenostok.io/mrsoftwarelist.html)
 * [TwoSampleMR guide to performing MR](https://mrcieu.github.io/TwoSampleMR/)
+* [Software code for drawing Mendelian randomization directed acyclic graphs and diagrams](https://remlapmot.github.io/mrdags/)
