@@ -1,7 +1,7 @@
 ---
 title: LHC-MR
 author: Jean Morrison
-date: ''
+date: '2021-12-14'
 comments:
   utterances:
     repo: open-mr-project/siteComments
@@ -42,7 +42,7 @@ data:
   title: LHC-MR
   author: Jean Morrison
   slug: lhcmr
-  pubdate: ''
+  pubdate: '2021-12-14'
   uvmr_class: greenbg
   mvmr_class: greybg
   bidirectional_class: greenbg

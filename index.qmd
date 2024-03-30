@@ -69,6 +69,7 @@ dat %>%
   select(`Method`, `Method (full name)`, `Code repository (URL)`, `Analysis Type`, `Data Types`, `Robust To`) %>%
   datatable(escape = FALSE, filter = "top", extensions = c('ColReorder', 'Buttons'), 
             options = list(colReorder = TRUE, dom = "Brtlp", 
+                           pageLength=100,
                            buttons = I('colvis'), 
                            columnDefs = list(list(visible = FALSE, targets = c(2, 3,5)))),
             plugins = c("scrollResize"))
