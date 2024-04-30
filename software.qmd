@@ -36,6 +36,19 @@ install.packages(
 
 ### Ubuntu Linux users
 
+For Ubuntu Linux Noble Numbat users running R 4.4 through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
+
+```r
+install.packages(
+  'TwoSampleMR',
+  repos = c(
+    'https://mrcieu.r-universe.dev/bin/linux/noble/4.4/',
+    'https://packagemanager.posit.co/cran/__linux__/noble/latest',
+    'https://cloud.r-project.org'
+  )
+)
+```
+
 For Ubuntu Linux Jammy Jellyfish users running R 4.3 through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
 
 ```r
@@ -49,9 +62,31 @@ install.packages(
 )
 ```
 
-For Ubuntu Linux Jammy Jellyfish users running R 4.3 in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install **TwoSampleMR**, run the following code.
+For Ubuntu Linux Noble Numbat users running R 4.4 in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install **TwoSampleMR**, run the following code.
 
 [^1]: As described in the following blog [post](https://tshafer.com/blog/2023/07/posit-package-manager-linux).
+
+```r
+options(HTTPUserAgent = sprintf(
+  "R/%s R (%s)",
+  getRversion(),
+  paste(getRversion(),
+        R.version["platform"],
+        R.version["arch"],
+        R.version["os"])
+))
+
+install.packages(
+  'TwoSampleMR',
+  repos = c(
+    'https://mrcieu.r-universe.dev/bin/linux/noble/4.4/',
+    'https://packagemanager.posit.co/cran/__linux__/noble/latest',
+    'https://cloud.r-project.org'
+  )
+)
+```
+
+The equivalent code for Jammy Jellyfish users running R 4.3 is as follows.
 
 ```r
 options(HTTPUserAgent = sprintf(
