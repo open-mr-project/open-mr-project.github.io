@@ -36,10 +36,9 @@ install.packages(
 
 ### Ubuntu Linux users
 
-For Ubuntu Linux Jammy Jellyfish users running R through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
+For Ubuntu Linux Jammy Jellyfish users running R 4.3 through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
 
 ```r
-# Installation code for Ubuntu Jammy Jellyfish users in RStudio Desktop or Server
 install.packages(
   'TwoSampleMR',
   repos = c(
@@ -50,12 +49,11 @@ install.packages(
 )
 ```
 
-For Ubuntu Linux Jammy Jellyfish users running R in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install **TwoSampleMR**, run the following code.
+For Ubuntu Linux Jammy Jellyfish users running R 4.3 in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install **TwoSampleMR**, run the following code.
 
 [^1]: As described in the following blog [post](https://tshafer.com/blog/2023/07/posit-package-manager-linux).
 
 ```r
-# Installation code for Ubuntu Jammy Jellyfish users running R in the Terminal
 options(HTTPUserAgent = sprintf(
   "R/%s R (%s)",
   getRversion(),
