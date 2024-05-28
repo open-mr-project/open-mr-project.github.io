@@ -38,7 +38,7 @@ It generates posts by converting the data into yaml format for each method, and 
 
 ### Add new blog post
 
-- create /posts/<new_page_name>/index.qmd
+- create `/posts/<new_page_name>/index.qmd`
 - Run `quarto render`
 
 ### Publishing
@@ -78,7 +78,7 @@ git push
 ### Forms
 
 - Currently using Microsoft Forms
-- Need to manually download the xl spreadsheet and use generate.r to convert for use on website
+- Need to manually download the Excel spreadsheet and use generate.r to convert for use on website
 - Potential to embed on static site
 
 Alternative approaches
