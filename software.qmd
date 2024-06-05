@@ -6,7 +6,7 @@ toc: true
 
 ## Introduction
 
-The MRC IEU R-universe <https://mrcieu.r-universe.dev> distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 22.04 Jammy Jellyfish, and for [WebR](https://docs.r-wasm.org/webr/latest/).
+The MRC IEU R-universe <https://mrcieu.r-universe.dev> distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 24.04 Noble Numbat, and for [WebR](https://docs.r-wasm.org/webr/latest/).
 
 If you would like a package added to the universe please open an issue in our [repository](https://github.com/MRCIEU/mrcieu.r-universe.dev/issues).
 
