@@ -8,7 +8,7 @@ toc: true
 
 Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.
 
-![Publications per week from PubMed search for Mendelian randomi[s/z]ation, title only. Credits [@MR_lit](https://twitter.com/Mendelian_lit)](https://github.com/explodecomputer/PubmedPlot/blob/gh-pages/articles/mr_files/figure-html/mr_fig-1.png?raw=true)
+![Publications per week from PubMed search for Mendelian randomi[s/z]ation, title only. Credits [@MR_lit](https://twitter.com/Mendelian_lit)](https://github.com/remlapmot/PubmedPlot/blob/gh-pages/articles/mr_files/figure-html/mr_fig-1.svg?raw=true)
 
 MR is not a panacea for causal inference, and robust inference depends on a number of conditions being satisfied, many of which are unprovable. To meet this challenge, numerous methods are being published every year that aim to improve the utility and reliability of the MR framework. Most methods are made available with accompanying open source software. However there is no simple way of discovering the full range of available methods, there are no guidelines on how to use different methods in conjunction and under what contexts, and there is no common standard against which these methods are evaluated.
 
