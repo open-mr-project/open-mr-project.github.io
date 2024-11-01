@@ -4,7 +4,7 @@ page-layout: full
 title-block-banner: false
 ---
 
-Welcome to the OpenMR project. This is a community created registry of statistical methods that aims to ultimately enable more reliable causal inference in Mendelian randomisation studies.
+Welcome to the OpenMR project. This is a community created registry of statistical methods that aims to ultimately enable more reliable causal inference in Mendelian randomization studies.
 
 Submit a new method to the registry using the form below, and also see the [software](software.qmd) page on how to improve accessibility of your software.
 

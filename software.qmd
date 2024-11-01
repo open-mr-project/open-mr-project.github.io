@@ -6,7 +6,7 @@ toc: true
 
 ## Introduction
 
-The MRC IEU R-universe <https://mrcieu.r-universe.dev> distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon (M1, M2, and M3) processors, Ubuntu Linux 24.04 Noble Numbat, and for [WebR](https://docs.r-wasm.org/webr/latest/).
+The MRC IEU R-universe <https://mrcieu.r-universe.dev> distributes binary R packages for many MR related packages which are currently only available on GitHub from where they have to be installed from source. Especially on Linux, installing packages from source can be very slow. The binary packages are available for several operating systems; Windows, macOS with both Intel and Apple silicon processors, Ubuntu Linux 24.04 Noble Numbat, and for [WebR](https://docs.r-wasm.org/webr/latest/).
 
 If you would like a package added to the universe please open an issue in our [repository](https://github.com/MRCIEU/mrcieu.r-universe.dev/issues).
 
@@ -55,7 +55,7 @@ install.packages(
 
 For Ubuntu Linux Noble Numbat users running R 4.4 in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install **TwoSampleMR**, run the following code.
 
-[^1]: As described in the following blog [post](https://tshafer.com/blog/2023/07/posit-package-manager-linux).
+[^1]: As described in the following [blogpost](https://tshafer.com/blog/2023/07/posit-package-manager-linux).
 
 ```r
 options(HTTPUserAgent = sprintf(
@@ -77,7 +77,7 @@ install.packages(
 )
 ```
 
-Binary packages are also available for R-devel on Linux, use the installation code above amending the r-universe URL to `https://mrcieu.r-universe.dev/bin/linux/noble/4.5/`.
+Binary packages are also available for R-devel on Linux by using the installation code above amending the r-universe URL to `https://mrcieu.r-universe.dev/bin/linux/noble/4.5/`.
 
 ### WebR users
 

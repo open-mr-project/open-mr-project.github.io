@@ -4,9 +4,9 @@ page-layout: full
 toc: true
 ---
 
-## MR in context
+## Mendelian randomization in context
 
-Mendelian randomisation (MR) is a statistical method that aims to approximate causal inference in a randomised controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.
+Mendelian randomization (MR) is a statistical method that aims to approximate causal inference in a randomized controlled trial, using genetic associations obtained from cheap and accessible observational cohorts. MR is often performed in an instrumental variables framework using summary data from genome wide association studies, making it a free and accessible analytical approach to a wide range of epidemiological questions. As such, thousands of MR studies are now being published per year. Many of these papers are unreliable.
 
 ![Publications per week from PubMed search for Mendelian randomi[s/z]ation, title only. Credits [@MR_lit](https://twitter.com/Mendelian_lit)](https://github.com/remlapmot/PubmedPlot/blob/gh-pages/articles/mr_files/figure-html/mr_fig-1.svg?raw=true){fig-alt="Scatter plot of publications per week from PubMed search for Mendelian randomi[s/z]ation in the title only."}
 
