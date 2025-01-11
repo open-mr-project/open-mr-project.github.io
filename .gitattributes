@@ -4,3 +4,6 @@
 *.html linguist-vendored
 *.[Rr]md linguist-detectable
 *.[Qq]md linguist-detectable
+*.js linguist-vendored
+*.css linguist-vendored
+*.scss linguist-vendored
