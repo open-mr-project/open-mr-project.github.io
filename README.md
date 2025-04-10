@@ -54,7 +54,10 @@ It generates posts by converting the data into yaml format for each method, and 
 ### Add new blog post
 
 - create `/posts/<new_page_name>/index.qmd`
-- Run `quarto render`
+- Run
+  ```sh
+  quarto render
+  ```
 
 ### Publishing
 
@@ -77,7 +80,10 @@ git push
 5. Format: `CSV`
 6. Click `Create file`
 7. Move that saved file `csv-Mendelianr-set.csv` to the `/data` directory (replacing the previous version)
-8. Regenerate quarto site (`quarto render`)
+8. Regenerate quarto site
+   ```sh
+   quarto render
+   ```
 
 ## Notes
 
