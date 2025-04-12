@@ -40,20 +40,20 @@ On macOS, binary packages are available for the release and previous versions of
 
 ### Ubuntu Linux users
 
-For Ubuntu Linux Noble Numbat users running R 4.4 through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
+For Ubuntu Linux Noble Numbat users running R 4.5 through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
 
 ```r
 install.packages(
   'TwoSampleMR',
   repos = c(
-    'https://mrcieu.r-universe.dev/bin/linux/noble/4.4/',
+    'https://mrcieu.r-universe.dev/bin/linux/noble/4.5/',
     'https://p3m.dev/cran/__linux__/noble/latest',
     'https://cloud.r-project.org'
   )
 )
 ```
 
-For Ubuntu Linux Noble Numbat users running R 4.4 in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended it seems that source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install **TwoSampleMR**, run the following code.
+For Ubuntu Linux Noble Numbat users running R 4.5 in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install **TwoSampleMR**, run the following code.
 
 [^1]: As described in the following [blogpost](https://tshafer.com/blog/2023/07/posit-package-manager-linux).
 
@@ -70,14 +70,12 @@ options(HTTPUserAgent = sprintf(
 install.packages(
   'TwoSampleMR',
   repos = c(
-    'https://mrcieu.r-universe.dev/bin/linux/noble/4.4/',
+    'https://mrcieu.r-universe.dev/bin/linux/noble/4.5/',
     'https://p3m.dev/cran/__linux__/noble/latest',
     'https://cloud.r-project.org'
   )
 )
 ```
-
-Binary packages are also available for R-devel on Linux by using the installation code above amending the r-universe URL to `https://mrcieu.r-universe.dev/bin/linux/noble/4.5/`.
 
 ### WebR users
 
