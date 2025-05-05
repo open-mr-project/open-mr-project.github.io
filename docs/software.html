@@ -161,7 +161,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe" id="toc-how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe" class="nav-link" data-scroll-target="#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe">How to install binary R packages from the MRC IEU R-universe</a>
   <ul class="collapse">
   <li><a href="#windows-and-mac-users" id="toc-windows-and-mac-users" class="nav-link" data-scroll-target="#windows-and-mac-users">Windows and Mac users</a></li>
-  <li><a href="#ubuntu-linux-users" id="toc-ubuntu-linux-users" class="nav-link" data-scroll-target="#ubuntu-linux-users">Ubuntu Linux users</a></li>
+  <li><a href="#ubuntu-linux-x86_64-users" id="toc-ubuntu-linux-x86_64-users" class="nav-link" data-scroll-target="#ubuntu-linux-x86_64-users">Ubuntu Linux x86_64 users</a></li>
+  <li><a href="#ubuntu-linux-arm-users" id="toc-ubuntu-linux-arm-users" class="nav-link" data-scroll-target="#ubuntu-linux-arm-users">Ubuntu Linux ARM users</a></li>
   <li><a href="#webr-users" id="toc-webr-users" class="nav-link" data-scroll-target="#webr-users">WebR users</a></li>
   </ul></li>
   </ul>
@@ -216,13 +217,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>On Windows, binary packages are available for the release, development, and previous versions of R.</p>
 <p>On macOS, binary packages are available for the release and previous versions of R.</p>
 </section>
-<section id="ubuntu-linux-users" class="level3">
-<h3 class="anchored" data-anchor-id="ubuntu-linux-users">Ubuntu Linux users</h3>
-<p>For Ubuntu Linux Noble Numbat users running R 4.5 through RStudio Desktop or RStudio Server, to install <strong>TwoSampleMR</strong> run the following code.</p>
+<section id="ubuntu-linux-x86_64-users" class="level3">
+<h3 class="anchored" data-anchor-id="ubuntu-linux-x86_64-users">Ubuntu Linux x86_64 users</h3>
+<p>For Ubuntu Linux Noble Numbat users running R 4.5 through RStudio Desktop or RStudio Server, to install <strong>TwoSampleMR</strong> on an x86_64 computer run the following code.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble/4.5/'</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5/'</span>,</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://p3m.dev/cran/__linux__/noble/latest'</span>,</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  )</span>
@@ -240,17 +241,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble/4.5/'</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5/'</span>,</span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://p3m.dev/cran/__linux__/noble/latest'</span>,</span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Linux users on another distribution need to use the source URL for r-universe packages, i.e., <code>https://mrcieu.r-universe.dev/</code>, but you may find that the Posit Public Package Manager has a URL for binary packages for your distribution, you can check <a href="https://packagemanager.posit.co/client/#/repos/cran/setup">on the setup page</a>.</p>
+</section>
+<section id="ubuntu-linux-arm-users" class="level3">
+<h3 class="anchored" data-anchor-id="ubuntu-linux-arm-users">Ubuntu Linux ARM users</h3>
+<p>For Ubuntu on ARM users you can install binary packages from r-universe by amending the URL in the <code>repos</code> argument as follows.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble-aarch64/4.5/'</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Linux ARM users on another distribution will need to use the source URL for r-universe packages.</p>
 </section>
 <section id="webr-users" class="level3">
 <h3 class="anchored" data-anchor-id="webr-users">WebR users</h3>
 <p>Web Assembly (WASM) binaries for WebR users are available with the code below when run in WebR (there is a <a href="https://webr.r-wasm.org/latest/">demo you can try out</a>). You can find out more about WebR from its <a href="https://docs.r-wasm.org/webr/latest/">documentation website</a>. Note that currently not all packages are available for WebR.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'TwoSampleMR'</span>,</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">'https://mrcieu.r-universe.dev'</span>, <span class="st">'https://repo.r-wasm.org'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'TwoSampleMR'</span>,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">'https://mrcieu.r-universe.dev'</span>, <span class="st">'https://repo.r-wasm.org'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
