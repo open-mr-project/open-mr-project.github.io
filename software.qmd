@@ -38,15 +38,15 @@ On Windows, binary packages are available for the release, development, and prev
 
 On macOS, binary packages are available for the release and previous versions of R.
 
-### Ubuntu Linux users
+### Ubuntu Linux x86_64 users
 
-For Ubuntu Linux Noble Numbat users running R 4.5 through RStudio Desktop or RStudio Server, to install **TwoSampleMR** run the following code.
+For Ubuntu Linux Noble Numbat users running R 4.5 through RStudio Desktop or RStudio Server, to install **TwoSampleMR** on an x86_64 computer run the following code.
 
 ```r
 install.packages(
   'TwoSampleMR',
   repos = c(
-    'https://mrcieu.r-universe.dev/bin/linux/noble/4.5/',
+    'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5/',
     'https://p3m.dev/cran/__linux__/noble/latest',
     'https://cloud.r-project.org'
   )
@@ -70,12 +70,30 @@ options(HTTPUserAgent = sprintf(
 install.packages(
   'TwoSampleMR',
   repos = c(
-    'https://mrcieu.r-universe.dev/bin/linux/noble/4.5/',
+    'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5/',
     'https://p3m.dev/cran/__linux__/noble/latest',
     'https://cloud.r-project.org'
   )
 )
 ```
+
+Linux users on another distribution need to use the source URL for r-universe packages, i.e., `https://mrcieu.r-universe.dev/`, but you may find that the Posit Public Package Manager has a URL for binary packages for your distribution, you can check [on the setup page](https://packagemanager.posit.co/client/#/repos/cran/setup).
+
+### Ubuntu Linux ARM users
+
+For Ubuntu on ARM users you can install binary packages from r-universe by amending the URL in the `repos` argument as follows.
+
+```r
+install.packages(
+  'TwoSampleMR',
+  repos = c(
+    'https://mrcieu.r-universe.dev/bin/linux/noble-aarch64/4.5/',
+    'https://cloud.r-project.org'
+  )
+)
+```
+
+Linux ARM users on another distribution will need to use the source URL for r-universe packages.
 
 ### WebR users
 
