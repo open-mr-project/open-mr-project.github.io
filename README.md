@@ -84,6 +84,11 @@ git push
    ```sh
    quarto render
    ```
+   or to run refreshing the cache
+   ```sh
+   quarto render --cache-refresh
+   ```
+
 
 ## Notes
 
