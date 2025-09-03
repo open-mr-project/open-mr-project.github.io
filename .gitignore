@@ -41,3 +41,5 @@ _main.rds
 # MS Office temporary files
 ~$*
 
+
+**/*.quarto_ipynb
