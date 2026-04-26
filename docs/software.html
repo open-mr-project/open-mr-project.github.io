@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Software – OpenMR project</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -67,15 +70,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5348f60334dd04cbc36623d8010fff4a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2a4f2bfc591cd5498fe57ca28617a45d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,8 +117,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">OpenMR project</span>
     </a>
@@ -164,8 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe" id="toc-how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe" class="nav-link" data-scroll-target="#how-to-install-binary-r-packages-from-the-mrc-ieu-r-universe">How to install binary R packages from the MRC IEU R-universe</a>
   <ul class="collapse">
   <li><a href="#windows-and-mac-users" id="toc-windows-and-mac-users" class="nav-link" data-scroll-target="#windows-and-mac-users">Windows and Mac users</a></li>
-  <li><a href="#ubuntu-linux-x86_64-users" id="toc-ubuntu-linux-x86_64-users" class="nav-link" data-scroll-target="#ubuntu-linux-x86_64-users">Ubuntu Linux x86_64 users</a></li>
-  <li><a href="#ubuntu-linux-arm-users" id="toc-ubuntu-linux-arm-users" class="nav-link" data-scroll-target="#ubuntu-linux-arm-users">Ubuntu Linux ARM users</a></li>
+  <li><a href="#ubuntu-linux-noble-numbat" id="toc-ubuntu-linux-noble-numbat" class="nav-link" data-scroll-target="#ubuntu-linux-noble-numbat">Ubuntu Linux Noble Numbat</a></li>
   <li><a href="#webr-users" id="toc-webr-users" class="nav-link" data-scroll-target="#webr-users">WebR users</a></li>
   </ul></li>
   </ul>
@@ -220,76 +219,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>On Windows, binary packages are available for the release, development, and previous versions of R.</p>
 <p>On macOS, binary packages are available for the release and previous versions of R.</p>
 </section>
-<section id="ubuntu-linux-x86_64-users" class="level3">
-<h3 class="anchored" data-anchor-id="ubuntu-linux-x86_64-users">Ubuntu Linux x86_64 users</h3>
-<p>For Ubuntu Linux Noble Numbat users running R 4.5 through RStudio Desktop or RStudio Server, to install <strong>TwoSampleMR</strong> on an x86_64 computer run the following code.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5'</span>,</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://p3m.dev/cran/__linux__/noble/latest'</span>,</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>For Ubuntu Linux Noble Numbat users running R 4.5 in the Terminal first amend the <code>HTTPUserAgent</code> option,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and then run the Linux installation code above. If the <code>HTTPUserAgent</code> option is not amended source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager’s CRAN packages. For this case, to install <strong>TwoSampleMR</strong>, run the following code.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">HTTPUserAgent =</span> <span class="fu">sprintf</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"R/%s R (%s)"</span>,</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">getRversion</span>(),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="fu">getRversion</span>(),</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        R.version[<span class="st">"platform"</span>],</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        R.version[<span class="st">"arch"</span>],</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        R.version[<span class="st">"os"</span>])</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5'</span>,</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://p3m.dev/cran/__linux__/noble/latest'</span>,</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Instead of obtaining CRAN binary packages from <em>p3m.dev</em> you can obtain them from the r-universe, e.g.,</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5'</span>,</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cran.r-universe.dev/bin/linux/noble-x86_64/4.5'</span>,</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Linux users on another distribution need to use the source URL for r-universe packages, i.e., <code>https://mrcieu.r-universe.dev</code>, but you may find that the Posit Public Package Manager has a URL for binary packages for your distribution, you can check <a href="https://packagemanager.posit.co/client/#/repos/cran/setup">on the setup page</a>. And Posit now distributes portable binary Linux x86_64 packages, a.k.a. <a href="https://posit.co/blog/introducing-portable-linux-r-binary-packages/"><em>manylinux</em></a>, again you specify the relevant <code>repos</code> URL.</p>
-</section>
-<section id="ubuntu-linux-arm-users" class="level3">
-<h3 class="anchored" data-anchor-id="ubuntu-linux-arm-users">Ubuntu Linux ARM users</h3>
-<p>For Ubuntu on ARM users you can install binary packages from r-universe by amending the URL in the <code>repos</code> argument as follows.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">'TwoSampleMR'</span>,</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://mrcieu.r-universe.dev/bin/linux/noble-aarch64/4.5'</span>,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cran.r-universe.dev/bin/linux/noble-aarch64/4.5'</span>,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://cloud.r-project.org'</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Linux ARM users on another distribution will need to use the source URL for r-universe packages.</p>
+<section id="ubuntu-linux-noble-numbat" class="level3">
+<h3 class="anchored" data-anchor-id="ubuntu-linux-noble-numbat">Ubuntu Linux Noble Numbat</h3>
+<p>Copying from the <a href="https://docs.r-universe.dev/install/binaries.html#binaries-linux">official documentation about Linux binary packages</a></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>linux_binary_repo <span class="ot">&lt;-</span> <span class="cf">function</span>(universe){</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sprintf</span>(<span class="st">'https://%s.r-universe.dev/bin/linux/noble-%s/%s/'</span>, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    universe,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    R.version<span class="sc">$</span>arch, </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">substr</span>(<span class="fu">getRversion</span>(), <span class="dv">1</span>, <span class="dv">3</span>))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># For example: enable ropensci and cran repositories </span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">linux_binary_repo</span>(<span class="fu">c</span>(<span class="st">'ropensci'</span>, <span class="st">'cran'</span>)))</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Then install say TwoSampleMR with</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"TwoSampleMR"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you prefer to obtain your CRAN binary packages from the Public Posit Package Manager see the setup page on the website. You will need a repos entry along the lines of</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>arch <span class="ot">&lt;-</span> R.version[<span class="st">"arch"</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>rv <span class="ot">&lt;-</span> <span class="fu">substr</span>(<span class="fu">getRversion</span>(), <span class="dv">1</span>, <span class="dv">3</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">CRAN =</span> <span class="fu">sprintf</span>(<span class="st">"https://packagemanager.posit.co/cran/latest/bin/linux/noble-%s/%s"</span>, arch, rv),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">runiverse =</span> <span class="fu">sprintf</span>(<span class="st">"https://mrcieu.r-universe.dev/bin/linux/noble-%s/%s/"</span>, arch, rv)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Then install say TwoSampleMR with</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"TwoSampleMR"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>As <code>ubuntu:latest</code> changes you would need to change the codename <code>noble</code> within this. For example, r-universe will likely swap to Resolute Raccoon (<code>resolute</code>) soon.</p>
+<p>The public Posit Package Manager also has binary packages available for several other Linux distributions.</p>
 </section>
 <section id="webr-users" class="level3">
 <h3 class="anchored" data-anchor-id="webr-users">WebR users</h3>
 <p>Web Assembly (WASM) binaries for WebR users are available with the code below when run in WebR (there is a <a href="https://webr.r-wasm.org/latest/">demo you can try out</a>). You can find out more about WebR from its <a href="https://docs.r-wasm.org/webr/latest/">documentation website</a>. Note that currently not all packages are available for WebR.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'TwoSampleMR'</span>,</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">'https://mrcieu.r-universe.dev'</span>, <span class="st">'https://repo.r-wasm.org'</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'TwoSampleMR'</span>,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">'https://mrcieu.r-universe.dev'</span>, <span class="st">'https://repo.r-wasm.org'</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>As described in the following <a href="https://tshafer.com/blog/2023/07/posit-package-manager-linux">blogpost</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
