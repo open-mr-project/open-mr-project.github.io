@@ -38,76 +38,42 @@ On Windows, binary packages are available for the release, development, and prev
 
 On macOS, binary packages are available for the release and previous versions of R.
 
-### Ubuntu Linux x86_64 users
+### Ubuntu Linux Noble Numbat
 
-For Ubuntu Linux Noble Numbat users running R 4.5 through RStudio Desktop or RStudio Server, to install **TwoSampleMR** on an x86_64 computer run the following code.
+Copying from the [official documentation about Linux binary packages](https://docs.r-universe.dev/install/binaries.html#binaries-linux)
 
 ```r
-install.packages(
-  'TwoSampleMR',
-  repos = c(
-    'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5',
-    'https://p3m.dev/cran/__linux__/noble/latest',
-    'https://cloud.r-project.org'
-  )
-)
+linux_binary_repo <- function(universe){
+  sprintf('https://%s.r-universe.dev/bin/linux/noble-%s/%s/', 
+    universe,
+    R.version$arch, 
+    substr(getRversion(), 1, 3))
+}
+
+# For example: enable ropensci and cran repositories 
+options(repos = linux_binary_repo(c('ropensci', 'cran')))
+
+# Then install say TwoSampleMR with
+install.packages("TwoSampleMR")
 ```
 
-For Ubuntu Linux Noble Numbat users running R 4.5 in the Terminal first amend the `HTTPUserAgent` option,[^1] and then run the Linux installation code above. If the `HTTPUserAgent` option is not amended source rather than binary packages are obtained for the Imports dependency packages from the Posit Public Package Manager's CRAN packages. For this case, to install **TwoSampleMR**, run the following code.
-
-[^1]: As described in the following [blogpost](https://tshafer.com/blog/2023/07/posit-package-manager-linux).
+If you prefer to obtain your CRAN binary packages from the Public Posit Package Manager see the setup page on the website. You will need a repos entry along the lines of
 
 ```r
-options(HTTPUserAgent = sprintf(
-  "R/%s R (%s)",
-  getRversion(),
-  paste(getRversion(),
-        R.version["platform"],
-        R.version["arch"],
-        R.version["os"])
+arch <- R.version["arch"]
+rv <- substr(getRversion(), 1, 3)
+options(repos = c(
+  CRAN = sprintf("https://packagemanager.posit.co/cran/latest/bin/linux/noble-%s/%s", arch, rv),
+  runiverse = sprintf("https://mrcieu.r-universe.dev/bin/linux/noble-%s/%s/", arch, rv)
 ))
 
-install.packages(
-  'TwoSampleMR',
-  repos = c(
-    'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5',
-    'https://p3m.dev/cran/__linux__/noble/latest',
-    'https://cloud.r-project.org'
-  )
-)
+# Then install say TwoSampleMR with
+install.packages("TwoSampleMR")
 ```
 
-Instead of obtaining CRAN binary packages from _p3m.dev_ you can obtain them from the r-universe, e.g.,
+As `ubuntu:latest` changes you would need to change the codename `noble` within this. For example, r-universe will likely swap to Resolute Raccoon (`resolute`) soon.
 
-```r
-install.packages(
-  'TwoSampleMR',
-  repos = c(
-    'https://mrcieu.r-universe.dev/bin/linux/noble-x86_64/4.5',
-    'https://cran.r-universe.dev/bin/linux/noble-x86_64/4.5',
-    'https://cloud.r-project.org'
-  )
-)
-```
-
-Linux users on another distribution need to use the source URL for r-universe packages, i.e., `https://mrcieu.r-universe.dev`, but you may find that the Posit Public Package Manager has a URL for binary packages for your distribution, you can check [on the setup page](https://packagemanager.posit.co/client/#/repos/cran/setup). And Posit now distributes portable binary Linux x86_64 packages, a.k.a. [_manylinux_](https://posit.co/blog/introducing-portable-linux-r-binary-packages/), again you specify the relevant `repos` URL.
-
-### Ubuntu Linux ARM users
-
-For Ubuntu on ARM users you can install binary packages from r-universe by amending the URL in the `repos` argument as follows.
-
-```r
-install.packages(
-  'TwoSampleMR',
-  repos = c(
-    'https://mrcieu.r-universe.dev/bin/linux/noble-aarch64/4.5',
-    'https://cran.r-universe.dev/bin/linux/noble-aarch64/4.5',
-    'https://cloud.r-project.org'
-  )
-)
-```
-
-Linux ARM users on another distribution will need to use the source URL for r-universe packages.
+The public Posit Package Manager also has binary packages available for several other Linux distributions.
 
 ### WebR users
 
